@@ -24,7 +24,7 @@ export const Footer = () => {
           <ListItem>Facilisis in pretium nisl aliquet</ListItem>
         </UnorderedList>
       </Center>
-      <AspectRatio>
+      <AspectRatio h={'500px'} ratio={1}>
         <Image alt={'地図'} src={staticPath.images.footerMap_svg} />
       </AspectRatio>
     </Grid>
