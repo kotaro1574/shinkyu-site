@@ -1,6 +1,5 @@
 import {
   AspectRatio,
-  Box,
   Center,
   Grid,
   Image,
@@ -26,7 +25,7 @@ export const Footer = () => {
         </UnorderedList>
       </Center>
       <AspectRatio>
-        <Image src={staticPath.images.footerMap_svg} />
+        <Image alt={'地図'} src={staticPath.images.footerMap_svg} />
       </AspectRatio>
     </Grid>
   )
