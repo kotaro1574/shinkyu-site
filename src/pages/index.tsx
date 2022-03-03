@@ -1,3 +1,4 @@
+import { Footer } from '@src/components/ui/Footer'
 import { Header } from '@src/components/ui/Header'
 import type { NextPage } from 'next'
 
@@ -6,6 +7,7 @@ const Home: NextPage = () => {
     <>
       <Header />
       <div>けろ</div>
+      <Footer />
     </>
   )
 }
