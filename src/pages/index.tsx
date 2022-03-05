@@ -1,15 +1,18 @@
 import { Footer } from '@src/components/ui/Footer'
 import { Header } from '@src/components/ui/Header'
-import type { NextPage } from 'next'
+import type { NextPageWithLayout } from 'next'
+import { Text } from '@chakra-ui/react'
 
-const Home: NextPage = () => {
-  return (
-    <>
-      <Header />
-      <div>けろ</div>
-      <Footer />
-    </>
-  )
+const Home: NextPageWithLayout = () => {
+  return <Text>こたろ！！！！</Text>
 }
+
+Home.getLayout = (page) => (
+  <>
+    <Header />
+    <div>{page}</div>
+    <Footer />
+  </>
+)
 
 export default Home
