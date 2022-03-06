@@ -11,7 +11,7 @@ export type PagesPath = typeof pagesPath
 export const staticPath = {
   images: {
     footerMap_svg: '/images/footerMap.svg',
-    繁内鍼灸治療院_svg: '/images/繁内鍼灸治療院.svg'
+    logo_svg: '/images/logo.svg'
   }
 } as const
 
