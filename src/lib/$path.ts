@@ -10,7 +10,8 @@ export type PagesPath = typeof pagesPath
 // prettier-ignore
 export const staticPath = {
   images: {
-    footerMap_svg: '/images/footerMap.svg'
+    footerMap_svg: '/images/footerMap.svg',
+    繁内鍼灸治療院_svg: '/images/繁内鍼灸治療院.svg'
   }
 } as const
 
