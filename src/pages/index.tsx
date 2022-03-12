@@ -8,12 +8,6 @@ const Home: NextPageWithLayout = () => {
   return <HomeContent />
 }
 
-Home.getLayout = (page) => (
-  <>
-    <Header />
-    <Box>{page}</Box>
-    <Footer />
-  </>
-)
+Home.getLayout = (page) => <Box>{page}</Box>
 
 export default Home
