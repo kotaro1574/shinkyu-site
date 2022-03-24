@@ -18,6 +18,8 @@ export const staticPath = {
     iikanngiTop_JPG: '/images/iikanngiTop.JPG',
     logo_svg: '/images/logo.svg',
     section1_1_png: '/images/section1-1.png',
+    section1_2_JPG: '/images/section1-2.JPG',
+    secttion1_3_JPG: '/images/secttion1-3.JPG',
     top1_jpg: '/images/top1.jpg',
     top_image_svg: '/images/top_image.svg',
     top_image_title_svg: '/images/top_image_title.svg'
