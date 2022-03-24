@@ -1,10 +1,33 @@
-import { AspectRatio, Box, Flex, Grid, HStack, Text } from '@chakra-ui/react'
+import { HamburgerIcon, Icon, TriangleUpIcon } from '@chakra-ui/icons'
+import {
+  AspectRatio,
+  Box,
+  Button,
+  Center,
+  Divider,
+  Flex,
+  Grid,
+  Heading,
+  Text,
+} from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
 import { staticPath } from '@src/lib/$path'
 
 export const HomeContent = () => {
   return (
     <Box>
+      <Center
+        bg={'#D8C176'}
+        h={12}
+        position={'fixed'}
+        right={0}
+        roundedBottomLeft={'sm'}
+        top={0}
+        w={12}
+        zIndex={9999}
+      >
+        <HamburgerIcon h={6} w={6} />
+      </Center>
       <Box position={'relative'}>
         <AspectRatio ratio={625 / 425} w={'full'}>
           <Image
@@ -21,7 +44,7 @@ export const HomeContent = () => {
           top={'50%'}
           transform={'translateY(-50%) translateX(-50%)'}
           w={'300px'}
-          zIndex={9999}
+          zIndex={999}
         >
           <Image
             alt={'top_title'}
@@ -30,7 +53,7 @@ export const HomeContent = () => {
           />
         </AspectRatio>
       </Box>
-      <Grid gap={6} px={4} py={8}>
+      <Grid gap={10} px={4} py={8}>
         <Grid gap={6}>
           <Text textAlign={'center'}>
             東広島市西条
@@ -77,6 +100,109 @@ export const HomeContent = () => {
               </Text>
             </Flex>
           </Flex>
+        </Grid>
+        <Grid gap={8}>
+          <Grid gap={2} m={'auto'} placeItems={'center'}>
+            <Heading fontSize={'xl'}>当院の特徴</Heading>
+            <Divider
+              borderBottomWidth={2}
+              borderColor={'#E7C65B'}
+              w={'110px'}
+            />
+          </Grid>
+          <Grid gap={4} placeItems={'center'}>
+            <Heading color={'#DBB025'} fontSize={'xl'}>
+              一人一人に合った施術
+            </Heading>
+            <AspectRatio
+              overflow={'hidden'}
+              ratio={625 / 425}
+              rounded={'sm'}
+              w={'full'}
+            >
+              <Image
+                alt={'top_image'}
+                layout={'fill'}
+                src={staticPath.images.section1_1_png}
+              />
+            </AspectRatio>
+            <Text>
+              治療を行う前に、問診、全身の状態を確認していき患者様ひとりひとりの身体にあった施術を提供させていただきます。
+            </Text>
+            <Button
+              bg={'#DBB025'}
+              color={'white'}
+              fontSize={'md'}
+              fontWeight={'medium'}
+              rightIcon={
+                <Icon as={TriangleUpIcon} transform={'rotate(90deg)'} />
+              }
+            >
+              詳しくはこちら
+            </Button>
+          </Grid>
+          <Grid gap={4} placeItems={'center'}>
+            <Heading color={'#DBB025'} fontSize={'xl'}>
+              一人一人に合った施術
+            </Heading>
+            <AspectRatio
+              overflow={'hidden'}
+              ratio={625 / 425}
+              rounded={'sm'}
+              w={'full'}
+            >
+              <Image
+                alt={'top_image'}
+                layout={'fill'}
+                src={staticPath.images.section1_1_png}
+              />
+            </AspectRatio>
+            <Text>
+              治療を行う前に、問診、全身の状態を確認していき患者様ひとりひとりの身体にあった施術を提供させていただきます。
+            </Text>
+            <Button
+              bg={'#DBB025'}
+              color={'white'}
+              fontSize={'md'}
+              fontWeight={'medium'}
+              rightIcon={
+                <Icon as={TriangleUpIcon} transform={'rotate(90deg)'} />
+              }
+            >
+              詳しくはこちら
+            </Button>
+          </Grid>
+          <Grid gap={4} placeItems={'center'}>
+            <Heading color={'#DBB025'} fontSize={'xl'}>
+              一人一人に合った施術
+            </Heading>
+            <AspectRatio
+              overflow={'hidden'}
+              ratio={625 / 425}
+              rounded={'sm'}
+              w={'full'}
+            >
+              <Image
+                alt={'top_image'}
+                layout={'fill'}
+                src={staticPath.images.section1_1_png}
+              />
+            </AspectRatio>
+            <Text>
+              治療を行う前に、問診、全身の状態を確認していき患者様ひとりひとりの身体にあった施術を提供させていただきます。
+            </Text>
+            <Button
+              bg={'#DBB025'}
+              color={'white'}
+              fontSize={'md'}
+              fontWeight={'medium'}
+              rightIcon={
+                <Icon as={TriangleUpIcon} transform={'rotate(90deg)'} />
+              }
+            >
+              詳しくはこちら
+            </Button>
+          </Grid>
         </Grid>
       </Grid>
     </Box>
