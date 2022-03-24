@@ -1,16 +1,9 @@
 import { Icon, TriangleUpIcon } from '@chakra-ui/icons'
-import {
-  AspectRatio,
-  Box,
-  Button,
-  Divider,
-  Grid,
-  Heading,
-  Text,
-} from '@chakra-ui/react'
+import { AspectRatio, Box, Button, Grid, Heading, Text } from '@chakra-ui/react'
 import { TopImage } from '@src/components/pages/Home/TopImage'
 import { BeautyAcupunctureCard } from '@src/components/ui/Card/BeautyAcupunctureCard'
 import { Image } from '@src/components/ui/Image'
+import { Title } from '@src/components/ui/Title'
 import { staticPath } from '@src/lib/$path'
 
 export const HomeContent = () => {
@@ -29,15 +22,8 @@ export const HomeContent = () => {
           <BeautyAcupunctureCard />
         </Grid>
         <Grid gap={8}>
-          <Grid gap={2} m={'auto'} placeItems={'center'}>
-            <Heading fontSize={'xl'}>当院の特徴</Heading>
-            <Divider
-              borderBottomWidth={2}
-              borderColor={'#E7C65B'}
-              w={'110px'}
-            />
-          </Grid>
           <Grid gap={4} placeItems={'center'}>
+            <Title title={'当院の特徴'} />
             <Heading color={'#DBB025'} fontSize={'xl'}>
               一人一人に合った施術
             </Heading>
@@ -71,7 +57,7 @@ export const HomeContent = () => {
           <Grid gap={4} placeItems={'center'}>
             <Heading color={'#DBB025'} fontSize={'xl'}>
               一人一人に合った施術
-            </Heading>
+            </Heading>s
             <AspectRatio
               overflow={'hidden'}
               ratio={625 / 425}
