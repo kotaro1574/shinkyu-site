@@ -1,9 +1,6 @@
 /* eslint-disable */
 // prettier-ignore
 export const pagesPath = {
-  content: {
-    $url: (url?: { hash?: string }) => ({ pathname: '/content' as const, hash: url?.hash })
-  },
   $url: (url?: { hash?: string }) => ({ pathname: '/' as const, hash: url?.hash })
 }
 
