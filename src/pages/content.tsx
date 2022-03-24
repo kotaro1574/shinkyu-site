@@ -57,7 +57,7 @@ export const HomeContent = () => {
           <Grid gap={4} placeItems={'center'}>
             <Heading color={'#DBB025'} fontSize={'xl'}>
               一人一人に合った施術
-            </Heading>s
+            </Heading>
             <AspectRatio
               overflow={'hidden'}
               ratio={625 / 425}
