@@ -12,6 +12,7 @@ export const staticPath = {
   images: {
     biyou_svg: '/images/biyou.svg',
     footerMap_svg: '/images/footerMap.svg',
+    headerLog_svg: '/images/headerLog.svg',
     iikanngiTop_JPG: '/images/iikanngiTop.JPG',
     logo_svg: '/images/logo.svg',
     section1_1_png: '/images/section1-1.png',
