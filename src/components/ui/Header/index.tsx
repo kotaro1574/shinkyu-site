@@ -1,26 +1,18 @@
 import { HamburgerIcon } from '@chakra-ui/icons'
 import {
   AspectRatio,
-  Box,
   Button,
   Center,
-  Drawer,
-  DrawerBody,
-  DrawerCloseButton,
-  DrawerContent,
-  DrawerHeader,
-  DrawerOverlay,
   Flex,
   FlexProps,
   useDisclosure,
 } from '@chakra-ui/react'
+import { Drawer } from '@src/components/ui/Drawer'
 import { Image } from '@src/components/ui/Image'
 import { staticPath } from '@src/lib/$path'
-import { useRef } from 'react'
 
 export const Header = ({ ...flexProps }: FlexProps) => {
   const { isOpen, onClose, onOpen } = useDisclosure()
-  const btnRef = useRef<HTMLButtonElement>(null)
   return (
     <>
       <Flex
@@ -47,22 +39,7 @@ export const Header = ({ ...flexProps }: FlexProps) => {
           予約
         </Button>
       </Flex>
-      <Drawer
-        finalFocusRef={btnRef}
-        isOpen={isOpen}
-        placement={'left'}
-        onClose={onClose}
-      >
-        <DrawerOverlay>
-          <DrawerContent>
-            <DrawerCloseButton />
-            <DrawerHeader>Menu</DrawerHeader>
-            <DrawerBody>
-              <Box>こたろ</Box>
-            </DrawerBody>
-          </DrawerContent>
-        </DrawerOverlay>
-      </Drawer>
+      <Drawer isOpen={isOpen} onClose={onClose} />
     </>
   )
 }
