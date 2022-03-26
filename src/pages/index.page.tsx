@@ -1,4 +1,5 @@
 import { Box, Button, Grid } from '@chakra-ui/react'
+import { Content } from '@src/components/layouts/Content'
 import { Header } from '@src/components/ui/Header'
 import { HomeContent } from '@src/pages/content'
 import type { NextPageWithLayout } from 'next'
@@ -11,9 +12,7 @@ Home.getLayout = (page) => {
   return (
     <Box maxW={'540px'}>
       <Header position={'sticky'} top={0} zIndex={'sticky'} />
-      <Box display={'flex'} flex={1} flexDirection={'column'}>
-        {page}
-      </Box>
+      <Content>{page}</Content>
       <Grid
         bottom={0}
         maxW={'540px'}
