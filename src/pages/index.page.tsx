@@ -1,4 +1,5 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Button, Grid } from '@chakra-ui/react'
+import { Header } from '@src/components/ui/Header'
 import { HomeContent } from '@src/pages/content'
 import type { NextPageWithLayout } from 'next'
 
@@ -6,6 +7,29 @@ const Home: NextPageWithLayout = () => {
   return <HomeContent />
 }
 
-Home.getLayout = (page) => <Box>{page}</Box>
+Home.getLayout = (page) => {
+  return (
+    <Box maxW={'540px'}>
+      <Header position={'sticky'} top={0} zIndex={'sticky'} />
+      <Box display={'flex'} flex={1} flexDirection={'column'}>
+        {page}
+      </Box>
+      <Grid
+        bottom={0}
+        maxW={'540px'}
+        pos={'sticky'}
+        templateColumns={'repeat(2, 1fr)'}
+        w={'full'}
+      >
+        <Button bg={'#DBB025'} color={'white'} rounded={0} w={'full'}>
+          電話で予約
+        </Button>
+        <Button bg={'green.500'} color={'white'} rounded={0} w={'full'}>
+          Lineで予約
+        </Button>
+      </Grid>
+    </Box>
+  )
+}
 
 export default Home
