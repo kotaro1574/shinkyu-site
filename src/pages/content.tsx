@@ -30,9 +30,9 @@ export const HomeContent = () => {
   return (
     <Box>
       <TopImage />
-      <Grid gap={10} px={4} py={8}>
+      <Box gap={10} p={4}>
         <Grid gap={6}>
-          <Text textAlign={'center'}>
+          <Text fontSize={'sm'} textAlign={'center'}>
             東広島市西条
             <br />
             鍼灸・整体・産後骨盤矯正・吸い玉
@@ -41,13 +41,17 @@ export const HomeContent = () => {
           </Text>
           <BeautyAcupunctureCard />
         </Grid>
-        <Grid gap={8}>
+        <Box mt={10}>
           <Title title={'当院の特徴'} />
           {FEATURES_OF_HOSPITAL.map((item, index) => (
-            <FeaturesOfHospital {...item} key={`FeaturesOfHospital-${index}`} />
+            <FeaturesOfHospital
+              mt={8}
+              {...item}
+              key={`FeaturesOfHospital-${index}`}
+            />
           ))}
-        </Grid>
-      </Grid>
+        </Box>
+      </Box>
     </Box>
   )
 }
