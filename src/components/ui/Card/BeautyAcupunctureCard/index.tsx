@@ -4,8 +4,8 @@ import { staticPath } from '@src/lib/$path'
 
 export const BeautyAcupunctureCard = () => (
   <Flex
-    bg={'#FAF7ED'}
-    borderColor={'#E7C65B'}
+    bg={'black.200'}
+    borderColor={'line.dark'}
     borderWidth={1}
     mx={'auto'}
     p={3}
@@ -32,9 +32,9 @@ export const BeautyAcupunctureCard = () => (
         広島市にある美容鍼灸サロンsourire.の
         沖田先生をお招きして、美容鍼灸も行っております。
       </Text>
-      <Text as={'span'} color={'#E7C65B'} textAlign={'end'}>
-        美容鍼灸についてはこちら
-      </Text>
+      {/*<Text as={'span'} color={'#E7C65B'} textAlign={'end'}>*/}
+      {/*  美容鍼灸についてはこちら*/}
+      {/*</Text>*/}
     </Flex>
   </Flex>
 )

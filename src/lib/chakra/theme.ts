@@ -51,8 +51,20 @@ export const theme = extendTheme({
     red: {
       500: '#C63D32',
     },
+    test: {
+      100: '#D8C3A1',
+      200: '#79877A',
+      500: '#FFA81E',
+      600: '#C36714',
+      700: '#6F3B0F',
+    },
     green: {
-      500: '#2FBD2F',
+      500: '#61C359',
+      line: '#2FBD2F',
+    },
+    bg: {
+      dark: '#767676',
+      light: '#FEEABC',
     },
     line: {
       dark: '#DEDEDE',

@@ -27,12 +27,12 @@ export const FeaturesOfHospital = ({
       <AspectRatio
         mx={'auto'}
         overflow={'hidden'}
-        ratio={300 / 200}
+        ratio={16 / 8}
         rounded={'sm'}
       >
         <Image alt={'top_image'} layout={'fill'} src={image} />
       </AspectRatio>
-      <Grid gap={2} mt={2}>
+      <Grid gap={3} mt={3}>
         <Heading color={'#DBB025'} fontSize={'lg'} textAlign={'center'}>
           {title}
         </Heading>
@@ -44,6 +44,7 @@ export const FeaturesOfHospital = ({
           color={'white'}
           fontSize={'sm'}
           fontWeight={'medium'}
+          h={'35px'}
           maxW={'170px'}
           mx={'auto'}
           rightIcon={<Icon as={TriangleUpIcon} transform={'rotate(90deg)'} />}
