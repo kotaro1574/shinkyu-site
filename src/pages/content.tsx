@@ -1,6 +1,14 @@
 import { Icon, TriangleUpIcon } from '@chakra-ui/icons'
-import { AspectRatio, Box, Button, Grid, Heading, Text } from '@chakra-ui/react'
-import { FeaturesOfHospital } from '@src/components/pages/Home/FeaturesOfHospital'
+import {
+  AspectRatio,
+  Box,
+  Button,
+  Divider,
+  Flex,
+  Grid,
+  Heading,
+  Text,
+} from '@chakra-ui/react'
 import { TopImage } from '@src/components/pages/Home/TopImage'
 import { BeautyAcupunctureCard } from '@src/components/ui/Card/BeautyAcupunctureCard'
 import { Image } from '@src/components/ui/Image'
@@ -32,7 +40,7 @@ export const HomeContent = () => {
   return (
     <Box>
       <TopImage />
-      <Box gap={10} p={4}>
+      <Box p={4}>
         <Grid as={'section'} gap={4}>
           <Text fontSize={'sm'} textAlign={'center'}>
             東広島市西条
@@ -42,7 +50,7 @@ export const HomeContent = () => {
             交通事故治療・各種保険扱い
           </Text>
           <Button
-            bg={'bronze.600'}
+            bg={'test.900'}
             color={'white'}
             fontSize={'sm'}
             fontWeight={'medium'}
@@ -53,8 +61,78 @@ export const HomeContent = () => {
           >
             詳しくはこちら
           </Button>
+
           <BeautyAcupunctureCard />
         </Grid>
+        <Box mt={10} textAlign={'center'}>
+          <Title title={'当院の施術'} />
+          <Box mt={4}>
+            <AspectRatio
+              mx={'auto'}
+              overflow={'hidden'}
+              ratio={16 / 8}
+              rounded={'sm'}
+            >
+              <Image
+                alt={'top_image'}
+                layout={'fill'}
+                src={staticPath.images.section1_1_png}
+              />
+            </AspectRatio>
+            <Heading
+              as={'h3'}
+              color={'test.900'}
+              fontSize={'lg'}
+              fontWeight={'medium'}
+              mt={2}
+            >
+              一人一人に合わせたオーダーメイドの治療
+            </Heading>
+            <Text fontSize={'sm'} mt={2}>
+              患者様の症状や全身の状態をしっかり問診・確認させていただき、患者様一人一人に合わせた施術を行います。
+              <br />
+              施術方法によって追加料金などは発生致しませんのでご安心ください。（価格は税込みとなります。）
+            </Text>
+            <Divider borderColor={'test.900'} mb={2} mt={4} />
+            <Flex alignItems={'flex-end'} justify={'space-between'}>
+              <Box fontSize={'sm'}>治療 (60分程度)</Box>
+              <Flex alignItems={'flex-end'}>
+                <Heading as={'h4'}>4,000円</Heading>
+                <Text fontSize={'xxs'}>（税込み）</Text>
+              </Flex>
+            </Flex>
+            <Divider borderColor={'test.900'} mb={4} mt={2} />
+          </Box>
+          <Box mt={6}>
+            <Heading
+              as={'h3'}
+              color={'test.900'}
+              fontSize={'lg'}
+              fontWeight={'medium'}
+            >
+              施術内容一覧
+            </Heading>
+            <Text fontSize={'sm'} mt={4}>
+              症状や現在の状態・ご希望を来院時にしっかり問診させていただき、患者様に最適なプランを提案させていただきます。
+            </Text>
+            <Grid gap={4} mt={4} templateColumns={'repeat(2, 1fr)'}>
+              {Array.from({ length: 5 }).map((item, index) => (
+                <AspectRatio
+                  key={index}
+                  overflow={'hidden'}
+                  ratio={150 / 120}
+                  rounded={'sm'}
+                >
+                  <Image
+                    alt={'top_image'}
+                    layout={'fill'}
+                    src={staticPath.images.top1_jpg}
+                  />
+                </AspectRatio>
+              ))}
+            </Grid>
+          </Box>
+        </Box>
         {/*  <Box as={'section'} mt={10}>*/}
         {/*    <Title title={'当院の特徴'} />*/}
         {/*    {FEATURES_OF_HOSPITAL.map((item, index) => (*/}
