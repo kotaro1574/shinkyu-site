@@ -2,7 +2,6 @@ import { Box } from '@chakra-ui/react'
 import { About } from '@src/components/pages/Home/About'
 import { TopImage } from '@src/components/pages/Home/TopImage'
 import { Treatment } from '@src/components/pages/Home/Treatment'
-import { Footer } from '@src/components/ui/Footer'
 
 // const FEATURES_OF_HOSPITAL = [
 //   {
@@ -69,7 +68,6 @@ export const HomeContent = () => {
         {/*    </Grid>*/}
         {/*  </Box>*/}
       </Box>
-      <Footer />
     </Box>
   )
 }
