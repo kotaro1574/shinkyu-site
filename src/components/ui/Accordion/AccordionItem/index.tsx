@@ -16,13 +16,13 @@ export const AccordionItem = ({ answer, question }: Props) => {
     <BaseAccordionItem>
       <h2>
         <AccordionButton _expanded={{ bg: 'test.900', color: 'white' }}>
-          <Box flex={'1'} fontSize={'sm'} textAlign={'left'}>
+          <Box flex={'1'} fontSize={'md'} textAlign={'left'}>
             {question}
           </Box>
           <AccordionIcon />
         </AccordionButton>
       </h2>
-      <AccordionPanel fontSize={'sm'} p={3}>
+      <AccordionPanel fontSize={'sm'} p={4}>
         {answer}
       </AccordionPanel>
     </BaseAccordionItem>
