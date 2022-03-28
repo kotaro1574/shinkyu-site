@@ -6,7 +6,7 @@ export const GlobalNavigation = ({ ...gridProps }: GridProps) => {
   return (
     <Grid as={'nav'} templateColumns={'repeat(2, 1fr)'} {...gridProps}>
       <Button
-        bg={'#DBB025'}
+        bg={'test.900'}
         color={'white'}
         leftIcon={<TelephoneIcon />}
         rounded={0}

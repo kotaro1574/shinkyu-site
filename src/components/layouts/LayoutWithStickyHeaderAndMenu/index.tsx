@@ -10,7 +10,7 @@ type Props = {
 
 export const LayoutWithStickyHeaderAndMenu = ({ children }: Props) => {
   return (
-    <Box maxW={'540px'}>
+    <Box>
       <Header position={'sticky'} top={0} zIndex={'sticky'} />
       <Content>{children}</Content>
       <GlobalNavigation bottom={0} position={'sticky'} />

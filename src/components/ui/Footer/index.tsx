@@ -1,32 +1,33 @@
-import {
-  AspectRatio,
-  Center,
-  Grid,
-  Image,
-  ListItem,
-  UnorderedList,
-} from '@chakra-ui/react'
+import { AspectRatio, Box, BoxProps, Grid, Text } from '@chakra-ui/react'
+import { Image } from '@src/components/ui/Image'
 import { staticPath } from '@src/lib/$path'
 
-export const Footer = () => {
+export const Footer = (props: BoxProps) => {
   return (
-    <Grid
-      bg={'#FAF7ED'}
-      h={'500px'}
-      mt={'auto'}
-      templateColumns={'repeat(2,1fr)'}
-    >
-      <Center>
-        <UnorderedList>
-          <ListItem>Lorem ipsum dolor sit amet</ListItem>
-          <ListItem>Consectetur adipiscing elit</ListItem>
-          <ListItem>Integer molestie lorem at massa</ListItem>
-          <ListItem>Facilisis in pretium nisl aliquet</ListItem>
-        </UnorderedList>
-      </Center>
-      <AspectRatio h={'500px'} ratio={1}>
-        <Image alt={'地図'} src={staticPath.images.footerMap_svg} />
+    <Box bg={'black.100'} mt={10} px={4} py={8} {...props}>
+      <AspectRatio mx={'auto'} ratio={200 / 20} width={'200px'}>
+        <Image
+          alt={'フッターロゴ'}
+          layout={'fill'}
+          src={staticPath.images.footerLog_svg}
+        />
       </AspectRatio>
-    </Grid>
+      <Grid borderBottomWidth={1} borderTopWidth={1} gap={1} mt={4} py={3}>
+        <Text fontSize={'xs'}>〒619-0215</Text>
+        <Text fontSize={'xs'}>京都府木津川市梅美台2丁目5-5</Text>
+        <Text fontSize={'xs'} fontWeight={'medium'}>
+          店前一台
+        </Text>
+      </Grid>
+      <Grid gap={1} mt={2} py={3}>
+        <Text fontSize={'xs'}>
+          診療時間：9:30〜12:30、15:00〜19:30（最終受付18:30）
+        </Text>
+        <Text fontSize={'xs'}>定休日：日曜日、第2.4月曜日</Text>
+        <Text fontSize={'xs'} fontWeight={'medium'}>
+          盆・年末年始・臨時休診あり
+        </Text>
+      </Grid>
+    </Box>
   )
 }

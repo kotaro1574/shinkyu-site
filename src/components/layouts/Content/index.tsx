@@ -7,7 +7,7 @@ type Props = {
 
 export const Content = ({ children }: Props) => {
   return (
-    <Box display={'flex'} flex={1} flexDirection={'column'}>
+    <Box display={'flex'} flex={1} flexDirection={'column'} h={'full'}>
       {children}
     </Box>
   )

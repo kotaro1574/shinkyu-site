@@ -17,7 +17,7 @@ export const Header = ({ ...flexProps }: FlexProps) => {
     <>
       <Flex
         alignItems={'center'}
-        bg={'#DBB025'}
+        bg={'test.900'}
         h={'50px'}
         justifyContent={'space-between'}
         maxW={'540px'}
