@@ -11,8 +11,9 @@ import {
 } from '@chakra-ui/react'
 import { TopImage } from '@src/components/pages/Home/TopImage'
 import { BeautyAcupunctureCard } from '@src/components/ui/Card/BeautyAcupunctureCard'
+import { SubTitle } from '@src/components/ui/Heading/SubTitle'
+import { Title } from '@src/components/ui/Heading/Title'
 import { Image } from '@src/components/ui/Image'
-import { Title } from '@src/components/ui/Title'
 import { staticPath } from '@src/lib/$path'
 
 // const FEATURES_OF_HOSPITAL = [
@@ -63,7 +64,7 @@ export const HomeContent = () => {
           </Button>
           <BeautyAcupunctureCard />
         </Grid>
-        <Box mt={10} textAlign={'center'}>
+        <Box as={'section'} mt={10} textAlign={'center'}>
           <Title>当院の施術</Title>
           <Box mt={4}>
             <AspectRatio
@@ -78,15 +79,7 @@ export const HomeContent = () => {
                 src={staticPath.images.section1_1_png}
               />
             </AspectRatio>
-            <Heading
-              as={'h3'}
-              color={'test.900'}
-              fontSize={'lg'}
-              fontWeight={'medium'}
-              mt={2}
-            >
-              一人一人に合わせたオーダーメイドの治療
-            </Heading>
+            <SubTitle mt={2}>一人一人に合わせたオーダーメイドの治療</SubTitle>
             <Text fontSize={'sm'} mt={2}>
               患者様の症状や全身の状態をしっかり問診・確認させていただき、患者様一人一人に合わせた施術を行います。
               <br />
@@ -103,14 +96,7 @@ export const HomeContent = () => {
             <Divider borderColor={'test.900'} mb={4} mt={2} />
           </Box>
           <Box mt={6}>
-            <Heading
-              as={'h3'}
-              color={'test.900'}
-              fontSize={'lg'}
-              fontWeight={'medium'}
-            >
-              施術内容一覧
-            </Heading>
+            <SubTitle>施術内容一覧</SubTitle>
             <Text fontSize={'sm'} mt={4}>
               症状や現在の状態・ご希望を来院時にしっかり問診させていただき、患者様に最適なプランを提案させていただきます。
             </Text>
