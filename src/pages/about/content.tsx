@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import { FeaturesOfHospital } from '@src/components/pages/About/FeaturesOfHospital'
 import { PractitionerIntroduction } from '@src/components/pages/About/PractitionerIntroduction'
+import { Questions } from '@src/components/pages/About/Questions'
 import { staticPath } from '@src/lib/$path'
 
 export type FeatureOfHospital = {
@@ -30,11 +31,39 @@ const FEATURES_OF_HOSPITAL: FeatureOfHospital[] = [
   },
 ]
 
+const QUESTIONS = [
+  {
+    answer: '当院は完全予約制です',
+    question: '予約は必要ですか？',
+  },
+  {
+    answer: '治療時間はどのくらい',
+    question: 'だいだい60分くらいです',
+  },
+  {
+    answer: '鍼治療って痛いですか？',
+    question: 'いたくねーよ',
+  },
+  {
+    answer: 'どんな服装で行けばいいですか？',
+    question: 'どんな服装でもバチコイや！！',
+  },
+  {
+    answer: '支払い方法は何がありますか？',
+    question: 'PayPay使えます',
+  },
+  {
+    answer: '駐車場はありますか？',
+    question: '一台あります',
+  },
+]
+
 export const AboutContent = () => {
   return (
     <Box p={4}>
-      <FeaturesOfHospital feature={FEATURES_OF_HOSPITAL} />
+      <FeaturesOfHospital as={'section'} feature={FEATURES_OF_HOSPITAL} />
       <PractitionerIntroduction as={'section'} mt={10} />
+      <Questions as={'section'} mt={10} />
     </Box>
   )
 }
