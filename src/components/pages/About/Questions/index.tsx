@@ -1,35 +1,43 @@
-import {
-  Accordion,
-  AccordionButton,
-  AccordionIcon,
-  AccordionItem,
-  AccordionPanel,
-  Box,
-  BoxProps,
-} from '@chakra-ui/react'
+import { Box, BoxProps } from '@chakra-ui/react'
+import { Accordion } from '@src/components/ui/Accordion'
+import { AccordionItem } from '@src/components/ui/Accordion/AccordionItem'
 import { Title } from '@src/components/ui/Heading/Title'
+
+const QUESTIONS = [
+  {
+    answer: '当院は完全予約制です',
+    question: '予約は必要ですか？',
+  },
+  {
+    answer: 'だいだい60分くらいです',
+    question: '治療時間はどのくらい？',
+  },
+  {
+    answer: 'いたくねーよ',
+    question: '鍼治療って痛いですか？',
+  },
+  {
+    answer: 'どんな服装でもバチコイや！！',
+    question: 'どんな服装で行けばいいですか？',
+  },
+  {
+    answer: 'PayPay使えます',
+    question: '支払い方法は何がありますか？',
+  },
+  {
+    answer: '一台あります',
+    question: '駐車場はありますか？',
+  },
+]
 
 export const Questions = (props: BoxProps) => {
   return (
     <Box {...props}>
       <Title>よくある質問</Title>
       <Accordion allowToggle mt={6}>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
-              <Box flex={'1'} textAlign={'left'}>
-                予約は必要ですか？
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          <AccordionPanel pb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </AccordionPanel>
-        </AccordionItem>
+        {QUESTIONS.map((question, index) => (
+          <AccordionItem {...question} key={index} />
+        ))}
       </Accordion>
     </Box>
   )
