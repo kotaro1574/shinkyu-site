@@ -6,7 +6,7 @@ import { Title } from '@src/components/ui/Heading/Title'
 export const Treatment = (props: BoxProps) => {
   return (
     <Box textAlign={'center'} {...props}>
-      <Title>当院の施術</Title>
+      <Title>施術内容</Title>
       <TailorMadeTreatment mt={6} />
       <TreatmentContents mt={6} />
     </Box>

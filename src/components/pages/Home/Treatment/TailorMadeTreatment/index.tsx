@@ -29,13 +29,13 @@ export const TailorMadeTreatment = (props: BoxProps) => {
           }
         />
       </AspectRatio>
-      <SubTitle mt={2}>一人一人に合わせたオーダーメイドの治療</SubTitle>
-      <Text fontSize={'sm'} mt={2}>
+      <SubTitle mt={4}>一人一人に合わせたオーダーメイドの治療</SubTitle>
+      <Text fontSize={'sm'} mt={4}>
         患者様の症状や全身の状態をしっかり問診・確認させていただき、患者様一人一人に合わせた施術を行います。
         <br />
         施術方法によって追加料金などは発生致しませんのでご安心ください。（価格は税込みとなります。）
       </Text>
-      <Divider borderColor={'test.900'} mb={2} mt={4} />
+      <Divider borderColor={'test.900'} mb={2} mt={6} />
       <Flex alignItems={'flex-end'} justify={'space-between'}>
         <Box fontSize={'sm'}>治療 (60分程度)</Box>
         <Flex alignItems={'flex-end'}>
@@ -43,7 +43,7 @@ export const TailorMadeTreatment = (props: BoxProps) => {
           <Text fontSize={'xxs'}>（税込み）</Text>
         </Flex>
       </Flex>
-      <Divider borderColor={'test.900'} mb={4} mt={2} />
+      <Divider borderColor={'test.900'} mb={6} mt={2} />
     </Box>
   )
 }
