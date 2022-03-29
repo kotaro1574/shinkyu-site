@@ -38,7 +38,7 @@ export const ConsultationHours = (porps: BoxProps) => {
             borderColor={'text.primary'}
             borderRightWidth={1}
             h={'10'}
-            key={index}
+            key={`week-${index}`}
             w={'100%'}
           >
             {week}
@@ -62,7 +62,7 @@ export const ConsultationHours = (porps: BoxProps) => {
             borderColor={'text.primary'}
             borderRightWidth={1}
             h={'10'}
-            key={index}
+            key={`am-${index}`}
             w={'100%'}
           >
             {item}
@@ -86,7 +86,7 @@ export const ConsultationHours = (porps: BoxProps) => {
             borderColor={'text.primary'}
             borderRightWidth={1}
             h={'10'}
-            key={index}
+            key={`pm-${index}`}
             w={'100%'}
           >
             {item}
