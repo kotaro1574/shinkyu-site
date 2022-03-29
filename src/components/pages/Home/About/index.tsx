@@ -1,8 +1,14 @@
 import { Icon, TriangleUpIcon } from '@chakra-ui/icons'
 import { Button, Grid, GridProps, Text } from '@chakra-ui/react'
 import { BeautyAcupunctureCard } from '@src/components/ui/Card/BeautyAcupunctureCard'
+import { pagesPath } from '@src/lib/$path'
+import { useRouter } from 'next/router'
 
 export const About = (props: GridProps) => {
+  const router = useRouter()
+  const onClickAboutPage = () => {
+    router.push(pagesPath.about.$url())
+  }
   return (
     <Grid gap={4} {...props}>
       <Text fontSize={'sm'} textAlign={'center'}>
@@ -21,6 +27,7 @@ export const About = (props: GridProps) => {
         maxW={'170px'}
         mx={'auto'}
         rightIcon={<Icon as={TriangleUpIcon} transform={'rotate(90deg)'} />}
+        onClick={onClickAboutPage}
       >
         詳しくはこちら
       </Button>
