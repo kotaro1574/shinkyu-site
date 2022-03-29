@@ -23,7 +23,10 @@ export const TailorMadeTreatment = (props: BoxProps) => {
         <Image
           alt={'top_image'}
           layout={'fill'}
-          src={staticPath.images.section1_1_png}
+          src={
+            staticPath.images.Treatment.TailorMadeTreatment
+              .AdobeStock_416225254_Preview_jpeg
+          }
         />
       </AspectRatio>
       <SubTitle mt={2}>一人一人に合わせたオーダーメイドの治療</SubTitle>
