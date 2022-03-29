@@ -22,6 +22,13 @@ export const staticPath = {
     Treatment: {
       TailorMadeTreatment: {
         AdobeStock_416225254_Preview_jpeg: '/images/Treatment/TailorMadeTreatment/AdobeStock_416225254_Preview.jpeg'
+      },
+      TreatmentContents: {
+        AdobeStock_217895936_Preview_jpeg: '/images/Treatment/TreatmentContents/AdobeStock_217895936_Preview.jpeg',
+        AdobeStock_252774376_Preview_jpeg: '/images/Treatment/TreatmentContents/AdobeStock_252774376_Preview.jpeg',
+        AdobeStock_2653232_Preview_jpeg: '/images/Treatment/TreatmentContents/AdobeStock_2653232_Preview.jpeg',
+        AdobeStock_410038415_Preview_jpeg: '/images/Treatment/TreatmentContents/AdobeStock_410038415_Preview.jpeg',
+        AdobeStock_90536261_Preview_jpeg: '/images/Treatment/TreatmentContents/AdobeStock_90536261_Preview.jpeg'
       }
     },
     biyou_svg: '/images/biyou.svg',
