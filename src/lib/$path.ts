@@ -19,6 +19,11 @@ export const staticPath = {
       AdobeStock_213691742_Preview_jpeg: '/images/TopSlider/AdobeStock_213691742_Preview.jpeg',
       AdobeStock_38149832_Preview_jpeg: '/images/TopSlider/AdobeStock_38149832_Preview.jpeg'
     },
+    Treatment: {
+      TailorMadeTreatment: {
+        AdobeStock_416225254_Preview_jpeg: '/images/Treatment/TailorMadeTreatment/AdobeStock_416225254_Preview.jpeg'
+      }
+    },
     biyou_svg: '/images/biyou.svg',
     footerLog_svg: '/images/footerLog.svg',
     footerMap_svg: '/images/footerMap.svg',
@@ -28,7 +33,6 @@ export const staticPath = {
     section1_1_png: '/images/section1-1.png',
     section1_2_JPG: '/images/section1-2.JPG',
     secttion1_3_JPG: '/images/secttion1-3.JPG',
-    top1_jpg: '/images/top1.jpg',
     top_image_svg: '/images/top_image.svg',
     top_image_title_svg: '/images/top_image_title.svg'
   }

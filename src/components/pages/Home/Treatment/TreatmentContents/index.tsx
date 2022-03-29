@@ -21,7 +21,7 @@ export const TreatmentContents = (props: BoxProps) => {
             <Image
               alt={'top_image'}
               layout={'fill'}
-              src={staticPath.images.top1_jpg}
+              src={staticPath.images.section1_1_png}
             />
           </AspectRatio>
         ))}
