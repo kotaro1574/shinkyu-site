@@ -14,6 +14,11 @@ export type PagesPath = typeof pagesPath
 export const staticPath = {
   images: {
     PractitionerIntroduction_JPG: '/images/PractitionerIntroduction.JPG',
+    TopSlider: {
+      AdobeStock_207377054_Preview_jpeg: '/images/TopSlider/AdobeStock_207377054_Preview.jpeg',
+      AdobeStock_213691742_Preview_jpeg: '/images/TopSlider/AdobeStock_213691742_Preview.jpeg',
+      AdobeStock_38149832_Preview_jpeg: '/images/TopSlider/AdobeStock_38149832_Preview.jpeg'
+    },
     biyou_svg: '/images/biyou.svg',
     footerLog_svg: '/images/footerLog.svg',
     footerMap_svg: '/images/footerMap.svg',
