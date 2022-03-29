@@ -1,4 +1,5 @@
 import { Box } from '@chakra-ui/react'
+import { ConsultationHours } from '@src/components/pages/About/ConsultationHours'
 import { FeaturesOfHospital } from '@src/components/pages/About/FeaturesOfHospital'
 import { PractitionerIntroduction } from '@src/components/pages/About/PractitionerIntroduction'
 import { Questions } from '@src/components/pages/About/Questions'
@@ -9,6 +10,7 @@ export const AboutContent = () => {
       <FeaturesOfHospital as={'section'} />
       <PractitionerIntroduction as={'section'} mt={10} />
       <Questions as={'section'} mt={10} />
+      <ConsultationHours as={'section'} mt={10} />
     </Box>
   )
 }
