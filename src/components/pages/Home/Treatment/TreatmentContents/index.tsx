@@ -1,6 +1,6 @@
-import { AspectRatio, Box, BoxProps, Grid, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Grid, Text } from '@chakra-ui/react'
+import { TreatmentContent } from '@src/components/pages/Home/Treatment/TreatmentContents/TreatmentContent'
 import { SubTitle } from '@src/components/ui/Heading/SubTitle'
-import { Image } from '@src/components/ui/Image'
 import { staticPath } from '@src/lib/$path'
 
 const TREATMENT_CONTENTS = [
@@ -46,31 +46,7 @@ export const TreatmentContents = (props: BoxProps) => {
       </Text>
       <Grid gap={4} mt={4} templateColumns={'repeat(2, 1fr)'}>
         {TREATMENT_CONTENTS.map((content, index) => (
-          <Box
-            _hover={{ opacity: '50%' }}
-            bg={'black'}
-            key={`treatment_content-${index}`}
-            position={'relative'}
-          >
-            <AspectRatio
-              opacity={'70%'}
-              overflow={'hidden'}
-              ratio={150 / 120}
-              rounded={'sm'}
-            >
-              <Image alt={'top_image'} layout={'fill'} src={content.image} />
-            </AspectRatio>
-            <Text
-              bottom={0}
-              color={'white'}
-              fontSize={'sm'}
-              fontWeight={'medium'}
-              position={'absolute'}
-              w={'full'}
-            >
-              {content.genre}
-            </Text>
-          </Box>
+          <TreatmentContent {...content} key={`treatment_content-${index}`} />
         ))}
       </Grid>
     </Box>
