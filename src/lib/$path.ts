@@ -25,6 +25,14 @@ export const staticPath = {
       AdobeStock_38149832_Preview_jpeg: '/images/TopSlider/AdobeStock_38149832_Preview.jpeg'
     },
     Treatment: {
+      Detail: {
+        AcupunctureAndMoxibustion: {
+          Acupuncture_jpeg: '/images/Treatment/Detail/AcupunctureAndMoxibustion/Acupuncture.jpeg',
+          BoxMoxibustion_jpeg: '/images/Treatment/Detail/AcupunctureAndMoxibustion/BoxMoxibustion.jpeg',
+          ElectricAcupuncture_jpeg: '/images/Treatment/Detail/AcupunctureAndMoxibustion/ElectricAcupuncture.jpeg',
+          Moxibustion_jpeg: '/images/Treatment/Detail/AcupunctureAndMoxibustion/Moxibustion.jpeg'
+        }
+      },
       TailorMadeTreatment: {
         AdobeStock_416225254_Preview_jpeg: '/images/Treatment/TailorMadeTreatment/AdobeStock_416225254_Preview.jpeg'
       },
