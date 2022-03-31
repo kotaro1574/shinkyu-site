@@ -4,6 +4,11 @@ export const pagesPath = {
   about: {
     $url: (url?: { hash?: string }) => ({ pathname: '/about' as const, hash: url?.hash })
   },
+  treatments: {
+    _pid: (pid: string | number) => ({
+      $url: (url?: { hash?: string }) => ({ pathname: '/treatments/[pid]' as const, query: { pid }, hash: url?.hash })
+    })
+  },
   $url: (url?: { hash?: string }) => ({ pathname: '/' as const, hash: url?.hash })
 }
 
