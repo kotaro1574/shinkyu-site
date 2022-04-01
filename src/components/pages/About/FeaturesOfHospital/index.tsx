@@ -1,5 +1,5 @@
 import { Box, BoxProps } from '@chakra-ui/react'
-import { FeaturesOfHospitalItem } from '@src/components/pages/About/FeaturesOfHospital/FeaturesOfHospitalItem'
+import { ContentItem } from '@src/components/ui/Content/ContentItem'
 import { Title } from '@src/components/ui/Heading/Title'
 import { staticPath } from '@src/lib/$path'
 
@@ -35,7 +35,7 @@ export const FeaturesOfHospital = (props: BoxProps) => {
     <Box {...props}>
       <Title>当院の特徴</Title>
       {FEATURES_OF_HOSPITAL.map((item, index) => (
-        <FeaturesOfHospitalItem {...item} key={index} mt={6} />
+        <ContentItem {...item} key={index} mt={6} />
       ))}
     </Box>
   )

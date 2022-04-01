@@ -1,7 +1,8 @@
 import { Box, BoxProps, Grid, Text } from '@chakra-ui/react'
 import { TreatmentContent } from '@src/components/pages/Home/Treatment/TreatmentContents/TreatmentContent'
 import { SubTitle } from '@src/components/ui/Heading/SubTitle'
-import { staticPath } from '@src/lib/$path'
+import { pagesPath, staticPath } from '@src/lib/$path'
+import { useRouter } from 'next/router'
 
 const TREATMENT_CONTENTS = [
   {
@@ -38,6 +39,7 @@ const TREATMENT_CONTENTS = [
 ]
 
 export const TreatmentContents = (props: BoxProps) => {
+  const router = useRouter()
   return (
     <Box {...props}>
       <SubTitle>施術内容一覧</SubTitle>
@@ -46,7 +48,11 @@ export const TreatmentContents = (props: BoxProps) => {
       </Text>
       <Grid gap={4} mt={4} templateColumns={'repeat(2, 1fr)'}>
         {TREATMENT_CONTENTS.map((content, index) => (
-          <TreatmentContent {...content} key={`treatment_content-${index}`} />
+          <TreatmentContent
+            {...content}
+            key={`treatment_content-${index}`}
+            onClick={() => router.push(pagesPath.treatments._pid(1).$url())}
+          />
         ))}
       </Grid>
     </Box>

@@ -14,12 +14,7 @@ type Props = {
   title: string
 } & GridProps
 
-export const FeaturesOfHospitalItem = ({
-  content,
-  image,
-  title,
-  ...gridProps
-}: Props) => {
+export const ContentItem = ({ content, image, title, ...gridProps }: Props) => {
   return (
     <Box {...gridProps}>
       <AspectRatio
