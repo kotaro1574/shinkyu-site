@@ -19,6 +19,15 @@ type Props = {
 
 export const Drawer = ({ isOpen, onClose }: Props) => {
   const router = useRouter()
+  const onClickHomePage = () => {
+    router.push(pagesPath.$url())
+    onClose()
+  }
+  const onClickAboutPage = () => {
+    router.push(pagesPath.about.$url())
+    onClose()
+  }
+
   return (
     <BaseDrawer isOpen={isOpen} placement={'left'} onClose={onClose}>
       <DrawerOverlay>
@@ -29,7 +38,7 @@ export const Drawer = ({ isOpen, onClose }: Props) => {
               cursor={'pointer'}
               ratio={200 / 20}
               width={'200px'}
-              onClick={() => router.push(pagesPath.$url())}
+              onClick={onClickHomePage}
             >
               <Image
                 alt={'ヘッダーロゴ'}
@@ -40,19 +49,13 @@ export const Drawer = ({ isOpen, onClose }: Props) => {
           </DrawerHeader>
           <DrawerBody p={0}>
             <Box
+              _hover={{ bg: 'black.100' }}
               borderBottomWidth={1}
               borderColor={'line.dark'}
               color={'text.primary'}
+              cursor={'pointer'}
               p={4}
-              onClick={() => router.push(pagesPath.about.$url())}
-            >
-              当医院について
-            </Box>
-            <Box
-              borderBottomWidth={1}
-              borderColor={'line.dark'}
-              color={'text.primary'}
-              p={4}
+              onClick={onClickAboutPage}
             >
               当医院について
             </Box>
