@@ -40,7 +40,7 @@ const ACUPUNCTURE_AND_MOXIBUSTION_CONTENTS = [
 
 export const TreatmentContent = () => {
   return (
-    <Box p={4} pt={10}>
+    <Box p={8} pt={10}>
       <Title>鍼灸</Title>
       {ACUPUNCTURE_AND_MOXIBUSTION_CONTENTS.map((item, index) => (
         <ContentItem {...item} key={`${item.title}_${index}`} mt={10} />

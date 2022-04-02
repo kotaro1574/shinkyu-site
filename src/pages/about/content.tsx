@@ -5,7 +5,7 @@ import { Questions } from '@src/components/pages/About/Questions'
 
 export const AboutContent = () => {
   return (
-    <Box p={4}>
+    <Box p={8}>
       <PractitionerIntroduction as={'section'} />
       <Questions as={'section'} mt={10} />
       <ConsultationHours as={'section'} mt={10} />
