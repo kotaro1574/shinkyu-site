@@ -25,7 +25,7 @@ const FEATURES_OF_HOSPITAL: FeatureOfHospital[] = [
   {
     content:
       '当院は完全予約制です。 プラベートな空間でご症状について 安心してご相談ください。',
-    image: staticPath.images.secttion1_3_JPG,
+    image: staticPath.images.section1_2_JPG,
     title: 'プライベートな空間で',
   },
 ]
