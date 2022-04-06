@@ -8,7 +8,7 @@ export const TopImage = () => (
       <Image
         alt={'top_image'}
         layout={'fill'}
-        src={staticPath.images.TopSlider.AdobeStock_213691742_Preview_jpeg}
+        src={staticPath.images.TopSlider.TopImage_JPG}
       />
     </AspectRatio>
     <AspectRatio
