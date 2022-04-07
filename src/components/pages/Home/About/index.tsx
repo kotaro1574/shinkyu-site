@@ -11,7 +11,7 @@ export const About = (props: BoxProps) => {
   return (
     <Box {...props}>
       <Title>当院について</Title>
-      <Flex alignItems={'center'} mt={4 }>
+      <Flex alignItems={'center'} mt={4}>
         <SignpostIcon color={'black.500'} mr={2} />
         <Text fontSize={'sm'}>東広島市西条</Text>
       </Flex>
