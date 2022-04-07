@@ -8,10 +8,10 @@ export const HomeContent = () => {
   return (
     <Box>
       <TopImage />
-      <Box p={8}>
+      <Box p={8} py={4}>
         <About as={'section'} />
-        <FeaturesOfHospital as={'section'} mt={10} />
-        <Treatment as={'section'} mt={10} />
+        <FeaturesOfHospital as={'section'} mt={7} />
+        <Treatment as={'section'} mt={7} />
       </Box>
     </Box>
   )
