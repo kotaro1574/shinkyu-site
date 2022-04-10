@@ -7,7 +7,8 @@ export const pagesPath = {
   treatments: {
     _pid: (pid: string | number) => ({
       $url: (url?: { hash?: string }) => ({ pathname: '/treatments/[pid]' as const, query: { pid }, hash: url?.hash })
-    })
+    }),
+    $url: (url?: { hash?: string }) => ({ pathname: '/treatments' as const, hash: url?.hash })
   },
   $url: (url?: { hash?: string }) => ({ pathname: '/' as const, hash: url?.hash })
 }
