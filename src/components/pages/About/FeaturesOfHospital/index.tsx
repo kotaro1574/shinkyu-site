@@ -1,4 +1,4 @@
-import { Box, BoxProps } from '@chakra-ui/react'
+import { Box, BoxProps, Flex } from '@chakra-ui/react'
 import { ContentItem } from '@src/components/ui/Content/ContentItem'
 import { Title } from '@src/components/ui/Heading/Title'
 import { staticPath } from '@src/lib/$path'
@@ -25,7 +25,7 @@ const FEATURES_OF_HOSPITAL: FeatureOfHospital[] = [
   {
     content:
       '当院は完全予約制です。 プラベートな空間でご症状について 安心してご相談ください。',
-    image: staticPath.images.section1_2_JPG,
+    image: staticPath.images.TopSlider.TopImage_JPG,
     title: 'プライベートな空間で',
   },
 ]
@@ -34,9 +34,27 @@ export const FeaturesOfHospital = (props: BoxProps) => {
   return (
     <Box {...props}>
       <Title>当院の特徴</Title>
-      {FEATURES_OF_HOSPITAL.map((item, index) => (
-        <ContentItem {...item} key={index} mt={6} />
-      ))}
+      <Flex
+        alignItems={'flex-starts'}
+        bg={'black.100'}
+        borderColor={'line.light'}
+        borderWidth={1}
+        mt={4}
+        overflowX={'scroll'}
+        p={4}
+        rounded={'md'}
+      >
+        {FEATURES_OF_HOSPITAL.map((item, index) => (
+          <ContentItem
+            {...item}
+            flexShrink={0}
+            key={index}
+            mr={4}
+            width={'200px'}
+          />
+        ))}
+        <Box flexShrink={0} width={'1px'} />
+      </Flex>
     </Box>
   )
 }

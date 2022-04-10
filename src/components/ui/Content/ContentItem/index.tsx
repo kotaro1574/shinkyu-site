@@ -18,10 +18,10 @@ export const ContentItem = ({ content, image, title, ...gridProps }: Props) => {
   return (
     <Box {...gridProps}>
       <AspectRatio
-        mx={'auto'}
         overflow={'hidden'}
-        ratio={16 / 8}
+        ratio={16 / 10}
         rounded={'sm'}
+        w={'200px'}
       >
         <Image alt={'top_image'} layout={'fill'} src={image} />
       </AspectRatio>
