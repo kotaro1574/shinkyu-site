@@ -2,7 +2,6 @@ import {
   AspectRatio,
   Box,
   BoxProps,
-  Divider,
   Flex,
   Heading,
   Text,
@@ -38,15 +37,22 @@ export const TreatmentFee = (props: BoxProps) => {
           <br />
           施術方法によって追加料金などは発生致しませんのでご安心ください。（価格は税込みとなります。）
         </Text>
-        <Divider borderColor={'test.900'} mb={2} mt={6} />
-        <Flex alignItems={'flex-end'} justify={'space-between'}>
+        <Flex
+          alignItems={'flex-end'}
+          bg={'black.100'}
+          borderColor={'line.light'}
+          borderWidth={1}
+          justify={'space-between'}
+          mt={4}
+          p={4}
+          rounded={'sm'}
+        >
           <Box fontSize={'sm'}>治療 (60分程度)</Box>
           <Flex alignItems={'flex-end'}>
             <Heading as={'h4'}>4,000円</Heading>
-            <Text fontSize={'xxs'}>（税込み）</Text>
+            <Text fontSize={'xxs'}>(税込み)</Text>
           </Flex>
         </Flex>
-        <Divider borderColor={'test.900'} mt={2} />
       </Box>
     </Box>
   )
