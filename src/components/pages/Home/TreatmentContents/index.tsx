@@ -1,22 +1,17 @@
 import { Box, BoxProps, Grid, Text } from '@chakra-ui/react'
 import { TreatmentContent } from '@src/components/pages/Home/TreatmentContents/TreatmentContent'
-import { SubTitle } from '@src/components/ui/Heading/SubTitle'
+import { Title } from '@src/components/ui/Heading/Title'
 import { pagesPath, staticPath } from '@src/lib/$path'
 import { useRouter } from 'next/router'
 
 const TREATMENT_CONTENTS = [
   {
-    genre: '針',
+    genre: '鍼灸',
     image:
       staticPath.images.Treatment.TreatmentContents
         .$1AdobeStock_217895936_Preview_jpeg,
   },
-  {
-    genre: '灸',
-    image:
-      staticPath.images.Treatment.TreatmentContents
-        .$2AdobeStock_90536261_Preview_jpeg,
-  },
+
   {
     genre: '整体',
     image:
@@ -42,11 +37,16 @@ export const TreatmentContents = (props: BoxProps) => {
   const router = useRouter()
   return (
     <Box {...props}>
-      <SubTitle>施術内容一覧</SubTitle>
+      <Title>施術内容一覧</Title>
       <Text fontSize={'sm'} mt={4}>
         症状や現在の状態・ご希望を来院時にしっかり問診させていただき、患者様に最適なプランを提案させていただきます。
       </Text>
-      <Grid gap={4} mt={4} templateColumns={'repeat(2, 1fr)'}>
+      <Grid
+        gap={4}
+        mt={4}
+        templateColumns={'repeat(2, 1fr)'}
+        textAlign={'center'}
+      >
         {TREATMENT_CONTENTS.map((content, index) => (
           <TreatmentContent
             {...content}

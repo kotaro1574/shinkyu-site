@@ -46,7 +46,7 @@ export const TreatmentFee = (props: BoxProps) => {
             <Text fontSize={'xxs'}>（税込み）</Text>
           </Flex>
         </Flex>
-        <Divider borderColor={'test.900'} mb={6} mt={2} />
+        <Divider borderColor={'test.900'} mt={2} />
       </Box>
     </Box>
   )

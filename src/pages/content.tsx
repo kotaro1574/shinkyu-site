@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/react'
 import { FeaturesOfHospital } from '@src/components/pages/About/FeaturesOfHospital'
 import { About } from '@src/components/pages/Home/About'
 import { TopImage } from '@src/components/pages/Home/TopImage'
+import { TreatmentContents } from '@src/components/pages/Home/TreatmentContents'
 import { TreatmentFee } from '@src/components/pages/Home/TreatmentFee'
 
 export const HomeContent = () => {
@@ -12,6 +13,7 @@ export const HomeContent = () => {
         <About as={'section'} />
         <FeaturesOfHospital as={'section'} mt={7} />
         <TreatmentFee as={'section'} mt={7} />
+        <TreatmentContents mt={7} />
       </Box>
     </Box>
   )
