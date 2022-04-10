@@ -1,5 +1,5 @@
 import { Box, BoxProps, Grid, Text } from '@chakra-ui/react'
-import { TreatmentContent } from '@src/components/pages/Home/Treatment/TreatmentContents/TreatmentContent'
+import { TreatmentContent } from '@src/components/pages/Home/TreatmentContents/TreatmentContent'
 import { SubTitle } from '@src/components/ui/Heading/SubTitle'
 import { pagesPath, staticPath } from '@src/lib/$path'
 import { useRouter } from 'next/router'

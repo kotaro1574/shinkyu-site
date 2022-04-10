@@ -26,7 +26,12 @@ export const ContentItem = ({ content, image, title, ...gridProps }: Props) => {
         <Image alt={'top_image'} layout={'fill'} src={image} />
       </AspectRatio>
       <Grid gap={3} mt={3}>
-        <Heading color={'#DBB025'} fontSize={'lg'} textAlign={'center'}>
+        <Heading
+          color={'#DBB025'}
+          fontSize={'lg'}
+          fontWeight={'medium'}
+          textAlign={'center'}
+        >
           {title}
         </Heading>
         <Text fontSize={'sm'} textAlign={'left'}>
