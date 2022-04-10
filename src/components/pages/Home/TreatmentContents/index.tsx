@@ -1,6 +1,6 @@
 import { Box, BoxProps, Grid, Text } from '@chakra-ui/react'
 import { TreatmentContent } from '@src/components/pages/Home/TreatmentContents/TreatmentContent'
-import { Title } from '@src/components/ui/Heading/Title'
+import { TitleWithLink } from '@src/components/ui/Heading/TitleWithLink'
 import { pagesPath, staticPath } from '@src/lib/$path'
 import { useRouter } from 'next/router'
 
@@ -37,7 +37,7 @@ export const TreatmentContents = (props: BoxProps) => {
   const router = useRouter()
   return (
     <Box {...props}>
-      <Title>施術内容一覧</Title>
+      <TitleWithLink>施術内容一覧</TitleWithLink>
       <Text fontSize={'sm'} mt={4}>
         症状や現在の状態・ご希望を来院時にしっかり問診させていただき、患者様に最適なプランを提案させていただきます。
       </Text>
