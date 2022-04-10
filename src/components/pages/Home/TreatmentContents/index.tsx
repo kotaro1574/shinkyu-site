@@ -37,7 +37,9 @@ export const TreatmentContents = (props: BoxProps) => {
   const router = useRouter()
   return (
     <Box {...props}>
-      <TitleWithLink>施術内容一覧</TitleWithLink>
+      <TitleWithLink href={pagesPath.treatments.$url()}>
+        施術内容一覧
+      </TitleWithLink>
       <Text fontSize={'sm'} mt={4}>
         症状や現在の状態・ご希望を来院時にしっかり問診させていただき、患者様に最適なプランを提案させていただきます。
       </Text>
