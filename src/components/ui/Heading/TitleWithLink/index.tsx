@@ -1,20 +1,25 @@
-import { Box, Flex, Spacer } from '@chakra-ui/react'
+import { Flex, Spacer } from '@chakra-ui/react'
+import { Link, LinkProps } from '@src/components/functional/Link'
 import { Title } from '@src/components/ui/Heading/Title'
 import { ReactNode } from 'react'
 
 type Props = {
   children: ReactNode
-  link?: string
-}
+  linkText?: string
+} & LinkProps
 
-export const TitleWithLink = ({ children, link = 'もっと見る' }: Props) => {
+export const TitleWithLink = ({
+  children,
+  href,
+  linkText = 'もっと見る',
+}: Props) => {
   return (
     <Flex alignItems={'flex-end'}>
       <Title>{children}</Title>
       <Spacer />
-      <Box color={'text.primary'} fontSize={'xs'}>
-        {`${link} >`}
-      </Box>
+      <Link color={'text.primary'} fontSize={'xs'} href={href}>
+        {`${linkText} >`}
+      </Link>
     </Flex>
   )
 }
