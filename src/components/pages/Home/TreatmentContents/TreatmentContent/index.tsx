@@ -12,14 +12,14 @@ export const TreatmentContent = ({ genre, image, ...boxProps }: Props) => {
       _hover={{ opacity: '50%' }}
       bg={'black'}
       position={'relative'}
-      rounded={'sm'}
+      rounded={'md'}
       {...boxProps}
     >
       <AspectRatio
         opacity={'70%'}
         overflow={'hidden'}
         ratio={150 / 120}
-        rounded={'sm'}
+        rounded={'md'}
       >
         <Image alt={'top_image'} layout={'fill'} src={image} />
       </AspectRatio>
