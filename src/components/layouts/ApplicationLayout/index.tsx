@@ -14,7 +14,7 @@ export const ApplicationLayout = ({ children }: Props) => {
         boxShadow={'md'}
         display={'flex'}
         flexDirection={'column'}
-        maxW={'400px'}
+        maxW={'450px'}
         minH={'full'}
         mx={'auto'}
         w={'full'}

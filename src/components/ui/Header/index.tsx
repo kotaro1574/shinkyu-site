@@ -1,19 +1,10 @@
 import { HamburgerIcon } from '@chakra-ui/icons'
-import {
-  AspectRatio,
-  Center,
-  Flex,
-  FlexProps,
-  useDisclosure,
-} from '@chakra-ui/react'
+import { Center, Flex, FlexProps, useDisclosure } from '@chakra-ui/react'
 import { Drawer } from '@src/components/ui/Drawer'
-import { Image } from '@src/components/ui/Image'
-import { pagesPath, staticPath } from '@src/lib/$path'
-import { useRouter } from 'next/router'
 
 export const Header = ({ ...flexProps }: FlexProps) => {
   const { isOpen, onClose, onOpen } = useDisclosure()
-  const router = useRouter()
+  // const router = useRouter()
   return (
     <>
       <Flex
@@ -29,18 +20,18 @@ export const Header = ({ ...flexProps }: FlexProps) => {
         <Center color={'text.primay'} p={0} rounded={'sm'} onClick={onOpen}>
           <HamburgerIcon />
         </Center>
-        <AspectRatio
-          cursor={'pointer'}
-          ratio={200 / 20}
-          width={'200px'}
-          onClick={() => router.push(pagesPath.$url())}
-        >
-          <Image
-            alt={'ヘッダーロゴ'}
-            layout={'fill'}
-            src={staticPath.images.footerLog_svg}
-          />
-        </AspectRatio>
+        {/*<AspectRatio*/}
+        {/*  cursor={'pointer'}*/}
+        {/*  ratio={200 / 20}*/}
+        {/*  width={'200px'}*/}
+        {/*  onClick={() => router.push(pagesPath.$url())}*/}
+        {/*>*/}
+        {/*  <Image*/}
+        {/*    alt={'ヘッダーロゴ'}*/}
+        {/*    layout={'fill'}*/}
+        {/*    src={staticPath.images.footerLog_svg}*/}
+        {/*  />*/}
+        {/*</AspectRatio>*/}
       </Flex>
       <Drawer isOpen={isOpen} onClose={onClose} />
     </>
