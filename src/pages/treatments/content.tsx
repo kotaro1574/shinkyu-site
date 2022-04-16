@@ -85,7 +85,7 @@ export const TreatmentsContent = () => {
         >
           {TREATMENT_LIST.map((item, index) => (
             <Box key={`TREATMENT_LIST_${index}`} overflow={'hidden'}>
-              <AspectRatio overflow={'hidden'} ratio={1 / 1} rounded={'sm'}>
+              <AspectRatio overflow={'hidden'} ratio={1} rounded={'sm'}>
                 <Image alt={'top_image'} layout={'fill'} src={item.image} />
               </AspectRatio>
               <Box
@@ -107,6 +107,9 @@ export const TreatmentsContent = () => {
                     mb={2}
                     mr={2}
                     p={0}
+                    onClick={() =>
+                      router.push(pagesPath.treatments._pid(1).$url())
+                    }
                   >
                     {tag}
                   </Button>

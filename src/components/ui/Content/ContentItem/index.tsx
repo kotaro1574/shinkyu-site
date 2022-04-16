@@ -17,26 +17,19 @@ type Props = {
 export const ContentItem = ({ content, image, title, ...gridProps }: Props) => {
   return (
     <Box {...gridProps}>
-      <AspectRatio
-        overflow={'hidden'}
-        ratio={16 / 10}
-        rounded={'sm'}
-        w={'200px'}
-      >
+      <AspectRatio overflow={'hidden'} ratio={16 / 8} rounded={'sm'}>
         <Image alt={'top_image'} layout={'fill'} src={image} />
       </AspectRatio>
-      <Grid gap={3} mt={3}>
+      <Grid gap={4} mt={5}>
         <Heading
           color={'test.900'}
           fontSize={'lg'}
           fontWeight={'medium'}
-          textAlign={'center'}
+          // textAlign={'center'}
         >
           {title}
         </Heading>
-        <Text fontSize={'sm'} textAlign={'left'}>
-          {content}
-        </Text>
+        <Text fontSize={'sm'}>{content}</Text>
       </Grid>
     </Box>
   )
