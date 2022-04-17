@@ -1,14 +1,5 @@
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import {
-  AspectRatio,
-  Box,
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  Button,
-  Flex,
-  Grid,
-} from '@chakra-ui/react'
+import { AspectRatio, Box, Button, Flex, Grid } from '@chakra-ui/react'
+import { LayoutWithTopImageAndBreadcrumb } from '@src/components/layouts/LayoutWithTopImageAndBreadcrumb'
 import { Title } from '@src/components/ui/Heading/Title'
 import { CaretRightIcon } from '@src/components/ui/Icon/CaretRightIcon'
 import { Image } from '@src/components/ui/Image'
@@ -50,31 +41,25 @@ const TREATMENT_LIST = [
 
 export const TreatmentsContent = () => {
   const router = useRouter()
+
+  const TREATMENTS_PAGE_BREADCRUMB = [
+    {
+      isCurrentPage: false,
+      name: 'ホーム',
+      onClick: () => router.push(pagesPath.$url()),
+    },
+    {
+      isCurrentPage: true,
+      name: '施術一覧',
+    },
+  ]
+
   return (
     <Box>
-      <AspectRatio h={'270px'} height={''} overflow={'hidden'} ratio={14 / 4}>
-        <Image
-          alt={'top_image'}
-          layout={'fill'}
-          src={staticPath.images.TopSlider.AdobeStock_38149832_Preview_jpeg}
-        />
-      </AspectRatio>
-      <Breadcrumb
-        bg={'black.100'}
-        p={2}
-        px={4}
-        separator={<ChevronRightIcon color={'gray.500'} />}
-        spacing={'8px'}
-      >
-        <BreadcrumbItem>
-          <BreadcrumbLink onClick={() => router.push(pagesPath.$url())}>
-            ホーム
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-          <BreadcrumbLink isCurrentPage>施術一覧</BreadcrumbLink>
-        </BreadcrumbItem>
-      </Breadcrumb>
+      <LayoutWithTopImageAndBreadcrumb
+        breadcrumb={TREATMENTS_PAGE_BREADCRUMB}
+        image={staticPath.images.TopSlider.AdobeStock_38149832_Preview_jpeg}
+      />
       <Box px={10} py={4}>
         <Title>施術一覧</Title>
         <Grid

@@ -1,7 +1,9 @@
 import { Box } from '@chakra-ui/react'
+import { LayoutWithTopImageAndBreadcrumb } from '@src/components/layouts/LayoutWithTopImageAndBreadcrumb'
 import { ContentItem } from '@src/components/ui/Content/ContentItem'
 import { Title } from '@src/components/ui/Heading/Title'
-import { staticPath } from '@src/lib/$path'
+import { pagesPath, staticPath } from '@src/lib/$path'
+import { useRouter } from 'next/router'
 
 const ACUPUNCTURE_AND_MOXIBUSTION_CONTENTS = [
   {
@@ -39,12 +41,35 @@ const ACUPUNCTURE_AND_MOXIBUSTION_CONTENTS = [
 ]
 
 export const TreatmentContent = () => {
+  const router = useRouter()
+  const TREATMENT_PAGE_BREADCRUMB = [
+    {
+      isCurrentPage: false,
+      name: 'ホーム',
+      onClick: () => router.push(pagesPath.$url()),
+    },
+    {
+      isCurrentPage: false,
+      name: '施術一覧',
+      onClick: () => router.push(pagesPath.treatments.$url()),
+    },
+    {
+      isCurrentPage: true,
+      name: '鍼灸',
+    },
+  ]
   return (
-    <Box p={8} pt={6}>
-      <Title>鍼灸</Title>
-      {ACUPUNCTURE_AND_MOXIBUSTION_CONTENTS.map((item, index) => (
-        <ContentItem {...item} key={`${item.title}_${index}`} mt={10} />
-      ))}
-    </Box>
+    <>
+      <LayoutWithTopImageAndBreadcrumb
+        breadcrumb={TREATMENT_PAGE_BREADCRUMB}
+        image={staticPath.images.TopSlider.AdobeStock_38149832_Preview_jpeg}
+      />
+      <Box p={8} pt={6}>
+        <Title>鍼灸</Title>
+        {ACUPUNCTURE_AND_MOXIBUSTION_CONTENTS.map((item, index) => (
+          <ContentItem {...item} key={`${item.title}_${index}`} mt={10} />
+        ))}
+      </Box>
+    </>
   )
 }

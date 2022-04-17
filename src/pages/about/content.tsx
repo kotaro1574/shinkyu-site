@@ -1,45 +1,30 @@
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import {
-  AspectRatio,
-  Box,
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-} from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
+import { LayoutWithTopImageAndBreadcrumb } from '@src/components/layouts/LayoutWithTopImageAndBreadcrumb'
 import { ConsultationHours } from '@src/components/pages/About/ConsultationHours'
 import { PractitionerIntroduction } from '@src/components/pages/About/PractitionerIntroduction'
 import { Questions } from '@src/components/pages/About/Questions'
-import { Image } from '@src/components/ui/Image'
 import { pagesPath, staticPath } from '@src/lib/$path'
 import { useRouter } from 'next/router'
 
 export const AboutContent = () => {
   const router = useRouter()
+  const ABOUT_PAGE_BREADCRUMB = [
+    {
+      isCurrentPage: false,
+      name: 'ホーム',
+      onClick: () => router.push(pagesPath.$url()),
+    },
+    {
+      isCurrentPage: true,
+      name: '当院について',
+    },
+  ]
   return (
     <Box>
-      <AspectRatio h={'270px'} height={''} overflow={'hidden'} ratio={14 / 4}>
-        <Image
-          alt={'top_image'}
-          layout={'fill'}
-          src={staticPath.images.TopSlider.AdobeStock_38149832_Preview_jpeg}
-        />
-      </AspectRatio>
-      <Breadcrumb
-        bg={'black.100'}
-        p={2}
-        px={4}
-        separator={<ChevronRightIcon color={'gray.500'} />}
-        spacing={'8px'}
-      >
-        <BreadcrumbItem>
-          <BreadcrumbLink onClick={() => router.push(pagesPath.$url())}>
-            ホーム
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-          <BreadcrumbLink isCurrentPage>当院について</BreadcrumbLink>
-        </BreadcrumbItem>
-      </Breadcrumb>
+      <LayoutWithTopImageAndBreadcrumb
+        breadcrumb={ABOUT_PAGE_BREADCRUMB}
+        image={staticPath.images.TopSlider.AdobeStock_207377054_Preview_jpeg}
+      />
       <Box p={8}>
         <PractitionerIntroduction as={'section'} />
         <Questions as={'section'} mt={10} />
