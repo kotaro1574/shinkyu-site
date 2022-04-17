@@ -1,7 +1,7 @@
 import { Box, BoxProps, Flex } from '@chakra-ui/react'
 import { ContentItem } from '@src/components/ui/Content/ContentItem'
-import { Title } from '@src/components/ui/Heading/Title'
-import { staticPath } from '@src/lib/$path'
+import { TitleWithLink } from '@src/components/ui/Heading/TitleWithLink'
+import { pagesPath, staticPath } from '@src/lib/$path'
 
 type FeatureOfHospital = {
   content: string
@@ -33,7 +33,7 @@ const FEATURES_OF_HOSPITAL: FeatureOfHospital[] = [
 export const FeaturesOfHospital = (props: BoxProps) => {
   return (
     <Box {...props}>
-      <Title>当院の特徴</Title>
+      <TitleWithLink href={pagesPath.features.$url()}>当院の特徴</TitleWithLink>
       <Flex
         alignItems={'flex-starts'}
         bg={'black.100'}
