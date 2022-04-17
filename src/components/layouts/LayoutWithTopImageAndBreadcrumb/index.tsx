@@ -8,13 +8,12 @@ import {
   BreadcrumbLink,
 } from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
-import { PagesPath } from '@src/lib/$path'
-import { useRouter } from 'next/router'
 
 type Props = {
   breadcrumb: {
+    isCurrentPage: boolean
     name: string
-    path: PagesPath | null
+    onClick?: () => void
   }[]
   image: string
 } & BoxProps
@@ -24,14 +23,6 @@ export const LayoutWithTopImageAndBreadcrumb = ({
   image,
   ...boxProps
 }: Props) => {
-  const router = useRouter()
-  const onClickPageTransition = async (
-    path: PagesPath | null
-  ): Promise<void> => {
-    if (!path) return
-    await router.push(path.$url())
-  }
-
   return (
     <Box {...boxProps}>
       <AspectRatio h={'270px'} height={''} overflow={'hidden'} ratio={14 / 4}>
@@ -44,14 +35,12 @@ export const LayoutWithTopImageAndBreadcrumb = ({
         separator={<ChevronRightIcon color={'gray.500'} />}
         spacing={'8px'}
       >
-        {breadcrumb.map((item, index) => (
+        {breadcrumb.map(({ isCurrentPage, name, onClick }, index) => (
           <BreadcrumbItem
-            isCurrentPage={!item.path}
+            isCurrentPage={isCurrentPage}
             key={`BreadcrumbItem_${index}`}
           >
-            <BreadcrumbLink onClick={() => onClickPageTransition(item.path)}>
-              {item.name}
-            </BreadcrumbLink>
+            <BreadcrumbLink onClick={onClick}>{name}</BreadcrumbLink>
           </BreadcrumbItem>
         ))}
       </Breadcrumb>
