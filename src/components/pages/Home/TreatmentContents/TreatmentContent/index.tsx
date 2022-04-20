@@ -18,7 +18,7 @@ export const TreatmentContent = ({ genre, image, ...boxProps }: Props) => {
       <AspectRatio
         opacity={'70%'}
         overflow={'hidden'}
-        ratio={150 / 120}
+        ratio={160 / 120}
         rounded={'md'}
       >
         <Image alt={'top_image'} layout={'fill'} src={image} />

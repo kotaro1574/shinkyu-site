@@ -56,6 +56,26 @@ export const staticPath = {
     section1_2_JPG: '/images/section1-2.JPG',
     top_image_svg: '/images/top_image.svg',
     top_image_title_svg: '/images/top_image_title.svg'
+  },
+  natsumi: {
+    about_top_jpg: '/natsumi/about-top.jpg',
+    about_top2_jpg: '/natsumi/about-top2.jpg',
+    pre: {
+      $160_120_jpg: '/natsumi/pre/160-120.jpg',
+      $450_150_jpg: '/natsumi/pre/450-150.jpg',
+      $450_150hari_jpg: '/natsumi/pre/450-150hari.jpg'
+    },
+    top_treatment: {
+      acupuncture_and_moxibustion_jpg: '/natsumi/top-treatment/acupuncture and moxibustion.jpg',
+      chiropractics_jpg: '/natsumi/top-treatment/chiropractics.jpg',
+      pelvic_correction_jpg: '/natsumi/top-treatment/pelvic-correction.jpg'
+    },
+    treatment_top_jpg: '/natsumi/treatment-top.jpg',
+    treatmentpage: {
+      ElectricAcupuncture_jpg: '/natsumi/treatmentpage/ElectricAcupuncture.jpg',
+      acupuncture_jpg: '/natsumi/treatmentpage/acupuncture.jpg',
+      moxibustion_jpg: '/natsumi/treatmentpage/moxibustion.jpg'
+    }
   }
 } as const
 
