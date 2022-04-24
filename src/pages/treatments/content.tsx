@@ -10,27 +10,21 @@ const TREATMENT_LIST = [
   {
     genre: '鍼灸',
     id: 'scupuncture_and_moxibustion',
-    image:
-      staticPath.images.Treatment.TreatmentContents
-        .$1AdobeStock_217895936_Preview_jpeg,
+    image: staticPath.natsumi.top_treatment.acupuncture_and_moxibustion_jpg,
     tags: ['鍼', '灸', 'パルス(電気鍼)', '箱灸'],
   },
 
   {
     genre: '整体',
     id: 'manipulative_treatment',
-    image:
-      staticPath.images.Treatment.TreatmentContents
-        .$3AdobeStock_252774376_Preview_jpeg,
+    image: staticPath.natsumi.top_treatment.chiropractics_jpg,
     tags: ['骨格矯正', '徒手療法'],
   },
 
   {
     genre: '産後骨盤矯正',
     id: 'postpartum_pelvic_correction',
-    image:
-      staticPath.images.Treatment.TreatmentContents
-        .$4AdobeStock_410038415_Preview_jpeg,
+    image: staticPath.natsumi.top_treatment.pelvic_correction_jpg,
     tags: ['産後骨盤矯正'],
   },
   {
@@ -62,7 +56,7 @@ export const TreatmentsContent = () => {
     <Box>
       <LayoutWithTopImageAndBreadcrumb
         breadcrumb={TREATMENTS_PAGE_BREADCRUMB}
-        image={staticPath.images.TopSlider.AdobeStock_38149832_Preview_jpeg}
+        image={staticPath.natsumi.treatment_top_jpg}
       />
       <Box px={10} py={4}>
         <Title>施術一覧</Title>
