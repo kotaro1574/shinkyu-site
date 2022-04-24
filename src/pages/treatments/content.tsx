@@ -9,6 +9,7 @@ import { useRouter } from 'next/router'
 const TREATMENT_LIST = [
   {
     genre: '鍼灸',
+    id: 'scupuncture_and_moxibustion',
     image:
       staticPath.images.Treatment.TreatmentContents
         .$1AdobeStock_217895936_Preview_jpeg,
@@ -17,6 +18,7 @@ const TREATMENT_LIST = [
 
   {
     genre: '整体',
+    id: 'manipulative_treatment',
     image:
       staticPath.images.Treatment.TreatmentContents
         .$3AdobeStock_252774376_Preview_jpeg,
@@ -25,6 +27,7 @@ const TREATMENT_LIST = [
 
   {
     genre: '産後骨盤矯正',
+    id: 'postpartum_pelvic_correction',
     image:
       staticPath.images.Treatment.TreatmentContents
         .$4AdobeStock_410038415_Preview_jpeg,
@@ -32,6 +35,7 @@ const TREATMENT_LIST = [
   },
   {
     genre: '吸い玉',
+    id: 'cupping_ball',
     image:
       staticPath.images.Treatment.TreatmentContents
         .$5AdobeStock_2653232_Preview_jpeg,
@@ -93,7 +97,7 @@ export const TreatmentsContent = () => {
                     mr={2}
                     p={0}
                     onClick={() =>
-                      router.push(pagesPath.treatments._pid(1).$url())
+                      router.push(pagesPath.treatments._pid(item.id).$url())
                     }
                   >
                     {tag}
