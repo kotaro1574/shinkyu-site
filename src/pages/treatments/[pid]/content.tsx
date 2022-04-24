@@ -9,25 +9,19 @@ const ACUPUNCTURE_AND_MOXIBUSTION_CONTENTS = [
   {
     content:
       '鍼治療とは、全身に点在するツボ（経穴）を鍼で刺激して身体の不調を改善する、東洋医学のひとつです。 鍼の刺激によって筋肉をほぐしたり、血行や代謝を促したりすることで、痛みやつらい症状を改善していきます。',
-    image:
-      staticPath.images.Treatment.Detail.AcupunctureAndMoxibustion
-        .Acupuncture_jpeg,
+    image: staticPath.natsumi.treatmentpage.acupuncture_jpg,
     title: '鍼治療',
   },
   {
     content:
       'お灸は、一般的にモグサ（艾）を皮膚の上（経絡上のツボ）に置いて燃やし、その温熱刺激によって体調を整える治療技術です。',
-    image:
-      staticPath.images.Treatment.Detail.AcupunctureAndMoxibustion
-        .Moxibustion_jpeg,
+    image: staticPath.natsumi.treatmentpage.moxibustion_jpg,
     title: '灸治療',
   },
   {
     content:
       '背中や腰、肩など、体に刺した鍼に電気を流し、筋肉に刺激を与える施術です。',
-    image:
-      staticPath.images.Treatment.Detail.AcupunctureAndMoxibustion
-        .ElectricAcupuncture_jpeg,
+    image: staticPath.natsumi.treatmentpage.ElectricAcupuncture_jpg,
     title: '電気鍼（パルス）',
   },
   {
@@ -62,7 +56,7 @@ export const TreatmentContent = () => {
     <>
       <LayoutWithTopImageAndBreadcrumb
         breadcrumb={TREATMENT_PAGE_BREADCRUMB}
-        image={staticPath.images.TopSlider.AdobeStock_38149832_Preview_jpeg}
+        image={staticPath.natsumi.treatment_top_jpg}
       />
       <Box p={8} pt={6}>
         <Title>鍼灸</Title>

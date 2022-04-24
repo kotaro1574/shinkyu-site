@@ -23,7 +23,7 @@ export const AboutContent = () => {
     <Box>
       <LayoutWithTopImageAndBreadcrumb
         breadcrumb={ABOUT_PAGE_BREADCRUMB}
-        image={staticPath.images.TopSlider.AdobeStock_207377054_Preview_jpeg}
+        image={staticPath.natsumi.about_top_jpg}
       />
       <Box p={8}>
         <PractitionerIntroduction as={'section'} />

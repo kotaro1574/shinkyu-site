@@ -7,23 +7,17 @@ import { useRouter } from 'next/router'
 const TREATMENT_CONTENTS = [
   {
     genre: '鍼灸',
-    image:
-      staticPath.images.Treatment.TreatmentContents
-        .$1AdobeStock_217895936_Preview_jpeg,
+    image: staticPath.natsumi.top_treatment.acupuncture_and_moxibustion_jpg,
   },
 
   {
     genre: '整体',
-    image:
-      staticPath.images.Treatment.TreatmentContents
-        .$3AdobeStock_252774376_Preview_jpeg,
+    image: staticPath.natsumi.top_treatment.chiropractics_jpg,
   },
 
   {
     genre: '産後骨盤矯正',
-    image:
-      staticPath.images.Treatment.TreatmentContents
-        .$4AdobeStock_410038415_Preview_jpeg,
+    image: staticPath.natsumi.top_treatment.pelvic_correction_jpg,
   },
   {
     genre: '吸い玉',

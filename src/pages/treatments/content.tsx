@@ -9,29 +9,27 @@ import { useRouter } from 'next/router'
 const TREATMENT_LIST = [
   {
     genre: '鍼灸',
-    image:
-      staticPath.images.Treatment.TreatmentContents
-        .$1AdobeStock_217895936_Preview_jpeg,
+    id: 'scupuncture_and_moxibustion',
+    image: staticPath.natsumi.top_treatment.acupuncture_and_moxibustion_jpg,
     tags: ['鍼', '灸', 'パルス(電気鍼)', '箱灸'],
   },
 
   {
     genre: '整体',
-    image:
-      staticPath.images.Treatment.TreatmentContents
-        .$3AdobeStock_252774376_Preview_jpeg,
+    id: 'manipulative_treatment',
+    image: staticPath.natsumi.top_treatment.chiropractics_jpg,
     tags: ['骨格矯正', '徒手療法'],
   },
 
   {
     genre: '産後骨盤矯正',
-    image:
-      staticPath.images.Treatment.TreatmentContents
-        .$4AdobeStock_410038415_Preview_jpeg,
+    id: 'postpartum_pelvic_correction',
+    image: staticPath.natsumi.top_treatment.pelvic_correction_jpg,
     tags: ['産後骨盤矯正'],
   },
   {
     genre: '吸い玉',
+    id: 'cupping_ball',
     image:
       staticPath.images.Treatment.TreatmentContents
         .$5AdobeStock_2653232_Preview_jpeg,
@@ -58,7 +56,7 @@ export const TreatmentsContent = () => {
     <Box>
       <LayoutWithTopImageAndBreadcrumb
         breadcrumb={TREATMENTS_PAGE_BREADCRUMB}
-        image={staticPath.images.TopSlider.AdobeStock_38149832_Preview_jpeg}
+        image={staticPath.natsumi.treatment_top_jpg}
       />
       <Box px={10} py={4}>
         <Title>施術一覧</Title>
@@ -93,7 +91,7 @@ export const TreatmentsContent = () => {
                     mr={2}
                     p={0}
                     onClick={() =>
-                      router.push(pagesPath.treatments._pid(1).$url())
+                      router.push(pagesPath.treatments._pid(item.id).$url())
                     }
                   >
                     {tag}

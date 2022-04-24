@@ -44,7 +44,7 @@ export const FeaturesContent = () => {
     <Box>
       <LayoutWithTopImageAndBreadcrumb
         breadcrumb={FEATURES_PAGE_BREADCRUMB}
-        image={staticPath.images.TopSlider.AdobeStock_207377054_Preview_jpeg}
+        image={staticPath.natsumi.about_top2_jpg}
       />
       <Box p={8} pt={6}>
         <Title>鍼灸</Title>
