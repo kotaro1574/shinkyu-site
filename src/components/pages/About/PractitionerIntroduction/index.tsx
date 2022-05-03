@@ -24,7 +24,7 @@ export const PractitionerIntroduction = (props: BoxProps) => {
         <Image
           alt={'top_image'}
           layout={'fill'}
-          src={staticPath.images.PractitionerIntroduction_JPG}
+          src={staticPath.natsumi.practitioner_jpg}
         />
       </AspectRatio>
       <Grid gap={2} mt={2}>

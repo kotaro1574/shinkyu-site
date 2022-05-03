@@ -63,10 +63,17 @@ export const staticPath = {
   natsumi: {
     about_top_jpg: '/natsumi/about-top.jpg',
     about_top2_jpg: '/natsumi/about-top2.jpg',
+    logo_svg: '/natsumi/logo.svg',
+    practitioner_jpg: '/natsumi/practitioner.jpg',
     pre: {
       $160_120_jpg: '/natsumi/pre/160-120.jpg',
       $450_150_jpg: '/natsumi/pre/450-150.jpg',
       $450_150hari_jpg: '/natsumi/pre/450-150hari.jpg'
+    },
+    top_feature: {
+      ordermade_jpg: '/natsumi/top-feature/ordermade.jpg',
+      private_jpg: '/natsumi/top-feature/private.jpg',
+      safety_jpg: '/natsumi/top-feature/safety.jpg'
     },
     top_treatment: {
       acupuncture_and_moxibustion_jpg: '/natsumi/top-treatment/acupuncture and moxibustion.jpg',
