@@ -13,19 +13,19 @@ const FEATURES_OF_HOSPITAL: FeatureOfHospital[] = [
   {
     content:
       '治療を行う前に、問診、全身の状態を確認していき患者様ひとりひとりの身体にあった施術を提供させていただきます。',
-    image: staticPath.images.section1_1_png,
+    image: staticPath.natsumi.top_feature.ordermade_jpg,
     title: '一人一人に合った施術',
   },
   {
     content:
       '当院の鍼灸治療で使用する針は すべて使い捨てです。 感染症の心配もありません。',
-    image: staticPath.images.section1_2_JPG,
+    image: staticPath.natsumi.top_feature.safety_jpg,
     title: '安心安全な施術',
   },
   {
     content:
       '当院は完全予約制です。 プラベートな空間でご症状について 安心してご相談ください。',
-    image: staticPath.images.TopSlider.TopImage_JPG,
+    image: staticPath.natsumi.top_feature.private_jpg,
     title: 'プライベートな空間で',
   },
 ]
