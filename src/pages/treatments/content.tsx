@@ -9,7 +9,7 @@ import { useRouter } from 'next/router'
 const TREATMENT_LIST = [
   {
     genre: '鍼灸',
-    id: 'scupuncture_and_moxibustion',
+    id: 'acupuncture_and_moxibustion',
     image: staticPath.natsumi.top_treatment.acupuncture_and_moxibustion_jpg,
     tags: ['鍼', '灸', 'パルス(電気鍼)', '箱灸'],
   },
