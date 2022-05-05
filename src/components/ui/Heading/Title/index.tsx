@@ -1,4 +1,4 @@
-import { Box, Heading } from '@chakra-ui/react'
+import { Box, Divider } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 
 type Props = {
@@ -7,17 +7,11 @@ type Props = {
 
 export const Title = ({ children }: Props) => {
   return (
-    <Heading>
-      <Box
-        as={'span'}
-        borderBottomWidth={2}
-        borderColor={'#E7C65B'}
-        fontSize={'xl'}
-        fontWeight={'medium'}
-        pb={1}
-      >
+    <Box>
+      <Box as={'span'} fontSize={'xl'} fontWeight={'medium'} pb={1}>
         {children}
       </Box>
-    </Heading>
+      <Divider borderColor={'#E7C65B'} borderWidth={1} w={'70px'} />
+    </Box>
   )
 }
