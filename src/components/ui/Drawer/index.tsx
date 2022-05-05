@@ -27,6 +27,10 @@ export const Drawer = ({ isOpen, onClose }: Props) => {
     router.push(pagesPath.about.$url())
     onClose()
   }
+  const onClickTreatmentsPage = () => {
+    router.push(pagesPath.treatments.$url())
+    onClose()
+  }
 
   return (
     <BaseDrawer isOpen={isOpen} placement={'left'} onClose={onClose}>
@@ -58,6 +62,17 @@ export const Drawer = ({ isOpen, onClose }: Props) => {
               onClick={onClickAboutPage}
             >
               当医院について
+            </Box>
+            <Box
+              _hover={{ bg: 'black.100' }}
+              borderBottomWidth={1}
+              borderColor={'line.dark'}
+              color={'text.primary'}
+              cursor={'pointer'}
+              p={4}
+              onClick={onClickTreatmentsPage}
+            >
+              施術内容一覧
             </Box>
           </DrawerBody>
         </DrawerContent>
