@@ -11,7 +11,7 @@ export const Title = ({ children }: Props) => {
       <Box as={'span'} fontSize={'xl'} fontWeight={'medium'} pb={1}>
         {children}
       </Box>
-      <Divider borderColor={'#E7C65B'} borderWidth={1} w={'70px'} />
+      <Divider borderColor={'#E7C65B'} borderWidth={1} mt={1} w={'45px'} />
     </Box>
   )
 }

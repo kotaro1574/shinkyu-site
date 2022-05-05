@@ -7,14 +7,14 @@ import {
   Text,
 } from '@chakra-ui/react'
 import { SubTitle } from '@src/components/ui/Heading/SubTitle'
-import { TitleWithLink } from '@src/components/ui/Heading/TitleWithLink'
+import { Title } from '@src/components/ui/Heading/Title'
 import { Image } from '@src/components/ui/Image'
-import { pagesPath, staticPath } from '@src/lib/$path'
+import { staticPath } from '@src/lib/$path'
 
 export const TreatmentFee = (props: BoxProps) => {
   return (
     <Box {...props}>
-      <TitleWithLink href={pagesPath.treatments.$url()}>施術料金</TitleWithLink>
+      <Title>施術について</Title>
       <Box mt={4}>
         <AspectRatio
           mx={'auto'}
