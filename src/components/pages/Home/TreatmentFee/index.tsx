@@ -14,7 +14,7 @@ import { staticPath } from '@src/lib/$path'
 export const TreatmentFee = (props: BoxProps) => {
   return (
     <Box {...props}>
-      <Title>施術料金</Title>
+      <Title>施術について</Title>
       <Box mt={4}>
         <AspectRatio
           mx={'auto'}
@@ -31,7 +31,7 @@ export const TreatmentFee = (props: BoxProps) => {
             }
           />
         </AspectRatio>
-        <SubTitle mt={4}>一人一人に合わせたオーダーメイドの治療</SubTitle>
+        <SubTitle mt={4}>一人一人に合わせた治療</SubTitle>
         <Text fontSize={'sm'} mt={4}>
           患者様の症状や全身の状態をしっかり問診・確認させていただき、患者様一人一人に合わせた施術を行います。
           <br />
