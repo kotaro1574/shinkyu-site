@@ -63,7 +63,22 @@ export const staticPath = {
   natsumi: {
     about_top_jpg: '/natsumi/about-top.jpg',
     about_top2_jpg: '/natsumi/about-top2.jpg',
-    logo_svg: '/natsumi/logo.svg',
+    logo: {
+      logo_svg: '/natsumi/logo/logo.svg',
+      logo10_svg: '/natsumi/logo/logo10.svg',
+      logo11_svg: '/natsumi/logo/logo11.svg',
+      logo12_svg: '/natsumi/logo/logo12.svg',
+      logo13_svg: '/natsumi/logo/logo13.svg',
+      logo14_svg: '/natsumi/logo/logo14.svg',
+      logo2_svg: '/natsumi/logo/logo2.svg',
+      logo3_svg: '/natsumi/logo/logo3.svg',
+      logo4_svg: '/natsumi/logo/logo4.svg',
+      logo5_svg: '/natsumi/logo/logo5.svg',
+      logo6_svg: '/natsumi/logo/logo6.svg',
+      logo7_svg: '/natsumi/logo/logo7.svg',
+      logo8_svg: '/natsumi/logo/logo8.svg',
+      logo9_svg: '/natsumi/logo/logo9.svg'
+    },
     practitioner_jpg: '/natsumi/practitioner.jpg',
     pre: {
       $160_120_jpg: '/natsumi/pre/160-120.jpg',

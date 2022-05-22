@@ -33,13 +33,14 @@ export const Header = ({ ...flexProps }: FlexProps) => {
         <AspectRatio
           cursor={'pointer'}
           ratio={200 / 20}
-          width={'200px'}
+          height={'55px'}
+          width={'422px'}
           onClick={() => router.push(pagesPath.$url())}
         >
           <Image
             alt={'ヘッダーロゴ'}
             layout={'fill'}
-            src={staticPath.natsumi.logo_svg}
+            src={staticPath.natsumi.logo.logo14_svg}
           />
         </AspectRatio>
         <Box />
