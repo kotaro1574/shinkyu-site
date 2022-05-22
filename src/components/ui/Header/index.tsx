@@ -19,22 +19,6 @@ export const Header = ({ ...flexProps }: FlexProps) => {
         <Center color={'text.primay'} p={0} rounded={'sm'} onClick={onOpen}>
           <HamburgerIcon />
         </Center>
-<<<<<<< HEAD
-        <AspectRatio
-          cursor={'pointer'}
-          ratio={200 / 20}
-          height={'55px'}
-          width={'422px'}
-          onClick={() => router.push(pagesPath.$url())}
-        >
-          <Image
-            alt={'ヘッダーロゴ'}
-            layout={'fill'}
-            src={staticPath.natsumi.logo.logo14_svg}
-          />
-        </AspectRatio>
-        <Box />
-=======
         {/*<AspectRatio*/}
         {/*  cursor={'pointer'}*/}
         {/*  ratio={200 / 20}*/}
@@ -48,7 +32,6 @@ export const Header = ({ ...flexProps }: FlexProps) => {
         {/*  />*/}
         {/*</AspectRatio>*/}
         {/*<Box />*/}
->>>>>>> 4bc320aab37c232a09908aff551251e9a942b555
       </Flex>
       <Drawer isOpen={isOpen} onClose={onClose} />
     </>
