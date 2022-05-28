@@ -20,7 +20,7 @@ export const Header = ({ ...flexProps }: FlexProps) => {
     <>
       <Flex
         alignItems={'center'}
-        bg={'#fff'}
+        bg={'test.900'}
         h={'50px'}
         maxW={'540px'}
         px={4}
@@ -36,11 +36,11 @@ export const Header = ({ ...flexProps }: FlexProps) => {
           <Image
             alt={'ヘッダーロゴ'}
             layout={'fill'}
-            src={staticPath.natsumi.logo.logo_svg}
+            src={staticPath.natsumi.logo1_svg}
           />
         </AspectRatio>
         <Spacer />
-        <Center color={'text.primay'} p={0} rounded={'sm'} onClick={onOpen}>
+        <Center color={'#fff'} p={0} rounded={'sm'} onClick={onOpen}>
           <HamburgerIcon />
         </Center>
       </Flex>

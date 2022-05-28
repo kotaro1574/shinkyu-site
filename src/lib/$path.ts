@@ -79,6 +79,7 @@ export const staticPath = {
       logo8_svg: '/natsumi/logo/logo8.svg',
       logo9_svg: '/natsumi/logo/logo9.svg'
     },
+    logo1_svg: '/natsumi/logo1.svg',
     practitioner_jpg: '/natsumi/practitioner.jpg',
     pre: {
       $160_120_jpg: '/natsumi/pre/160-120.jpg',
