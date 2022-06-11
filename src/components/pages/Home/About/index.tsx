@@ -1,6 +1,5 @@
 import { Box, BoxProps, Center, Flex, Text } from '@chakra-ui/react'
 import { TitleWithLink } from '@src/components/ui/Heading/TitleWithLink'
-import { HospitalLine } from '@src/components/ui/Icon/HospitalLineIcon'
 import { PinOutlineIcon } from '@src/components/ui/Icon/PinOutlineIcon'
 import { PlayCircleFillIcon } from '@src/components/ui/Icon/PlayCircleFillIcon'
 import { SignpostIcon } from '@src/components/ui/Icon/SignpostIcon'
