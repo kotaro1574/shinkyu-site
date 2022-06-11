@@ -78,7 +78,7 @@ export const TREATMENT_DETAIL_CONTENTS = [
   {
     contents: POSTPARTUM_PELVIC_CORRECTION_CONTENTS,
     id: 'postpartum_pelvic_correction',
-    title: '産後骨盤矯正',
+    title: '産後骨ケア',
   },
   {
     contents: CUPPING_BALL_CONTENTS,

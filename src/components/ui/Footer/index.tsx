@@ -13,17 +13,20 @@ export const Footer = (props: BoxProps) => {
         />
       </AspectRatio>
       <Grid borderBottomWidth={1} borderTopWidth={1} gap={1} mt={4} py={3}>
-        <Text fontSize={'xs'}>〒619-0215</Text>
-        <Text fontSize={'xs'}>京都府木津川市梅美台2丁目5-5</Text>
+        <Text fontSize={'xs'}>〒739-0035</Text>
+        <Text fontSize={'xs'}>
+          広島県東広島市西条町郷曽340-8アルソーレ東広島6番館101号室
+        </Text>
         <Text fontSize={'xs'} fontWeight={'medium'}>
-          店前一台
+          駐車場：店前1台あり
         </Text>
       </Grid>
       <Grid gap={1} mt={2} py={3}>
         <Text fontSize={'xs'}>
-          診療時間：9:30〜12:30、15:00〜19:30（最終受付18:30）
+          診療時間：19:30〜21:00(平日) 9:00〜18:00(土曜日)
         </Text>
         <Text fontSize={'xs'}>定休日：日曜日、第2.4月曜日</Text>
+        <Text fontSize={'xs'}>完全予約制(土曜日は遅い時間相談可)</Text>
         <Text fontSize={'xs'} fontWeight={'medium'}>
           盆・年末年始・臨時休診あり
         </Text>

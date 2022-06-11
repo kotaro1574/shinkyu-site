@@ -47,7 +47,7 @@ export const TreatmentFee = (props: BoxProps) => {
           p={4}
           rounded={'sm'}
         >
-          <Box fontSize={'sm'}>治療 (60分程度)</Box>
+          <Box fontSize={'sm'}>治療</Box>
           <Flex alignItems={'flex-end'}>
             <Heading as={'h4'}>4,000円</Heading>
             <Text fontSize={'xxs'}>(税込み)</Text>

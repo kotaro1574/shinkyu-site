@@ -28,15 +28,11 @@ export const About = (props: BoxProps) => {
       </Center>
       <Flex alignItems={'center'} mt={4}>
         <SignpostIcon color={'black.500'} mr={2} />
-        <Text fontSize={'sm'}>東広島市西条</Text>
+        <Text fontSize={'sm'}>広島県東広島市西条町</Text>
       </Flex>
       <Flex alignItems={'center'} mt={1}>
         <PinOutlineIcon color={'black.500'} mr={2} />
-        <Text fontSize={'sm'}>鍼灸・整体・産後骨盤矯正・吸い玉</Text>
-      </Flex>
-      <Flex alignItems={'center'} mt={1}>
-        <HospitalLine color={'black.500'} mr={2} />
-        <Text fontSize={'sm'}>交通事故治療・各種保険扱い</Text>
+        <Text fontSize={'sm'}>鍼灸・整体・産後骨ケア・吸い玉</Text>
       </Flex>
     </Box>
   )
