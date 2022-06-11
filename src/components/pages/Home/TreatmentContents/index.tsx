@@ -18,7 +18,7 @@ const TREATMENT_CONTENTS = [
   },
 
   {
-    genre: '産後骨盤矯正',
+    genre: '産後骨ケア',
     id: 'postpartum_pelvic_correction',
     image: staticPath.natsumi.top_treatment.pelvic_correction_jpg,
   },

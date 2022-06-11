@@ -10,7 +10,6 @@ export const HomeContent = () => {
       <TopImage />
       <Box p={8} py={4}>
         <About as={'section'} />
-        {/*<FeaturesOfHospital as={'section'} mt={10} />*/}
         <TreatmentFee as={'section'} mt={10} />
         <TreatmentContents mt={10} />
       </Box>
