@@ -11,6 +11,10 @@ export const theme = extendTheme({
       },
     },
   },
+  fonts: {
+    heading: "'Noto Sans JP', sans-serif;",
+    body: "'Noto Sans JP', sans-serif;",
+  },
   colors: {
     black: {
       50: '#F7F7F7',
