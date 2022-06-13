@@ -63,6 +63,7 @@ export const staticPath = {
   natsumi: {
     about_top_jpg: '/natsumi/about-top.jpg',
     about_top2_jpg: '/natsumi/about-top2.jpg',
+    headerLogo_svg: '/natsumi/headerLogo.svg',
     logo: {
       logo_svg: '/natsumi/logo/logo.svg',
       logo10_svg: '/natsumi/logo/logo10.svg',
@@ -96,6 +97,7 @@ export const staticPath = {
       chiropractics_jpg: '/natsumi/top-treatment/chiropractics.jpg',
       pelvic_correction_jpg: '/natsumi/top-treatment/pelvic-correction.jpg'
     },
+    topImageText_svg: '/natsumi/topImageText.svg',
     treatment_top_jpg: '/natsumi/treatment-top.jpg',
     treatmentpage: {
       ElectricAcupuncture_jpg: '/natsumi/treatmentpage/ElectricAcupuncture.jpg',

@@ -31,19 +31,14 @@ export const TopImage = () => {
       >
         <MotionBox
           animate={{ opacity: 1, y: [50, 0] }}
-          color={'#fff'}
-          flexDirection={'column'}
-          fontWeight={'bold'}
           initial={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          {/*<Image*/}
-          {/*  alt={'top_title'}*/}
-          {/*  layout={'fill'}*/}
-          {/*  src={staticPath.images.top_image_title_svg}*/}
-          {/*/>*/}
-          <Box>根本から原因をみつけ</Box>
-          <Box>痛みのない体へ</Box>
+          <Image
+            alt={'top_title'}
+            layout={'fill'}
+            src={staticPath.natsumi.topImageText_svg}
+          />
         </MotionBox>
       </AspectRatio>
     </Box>
