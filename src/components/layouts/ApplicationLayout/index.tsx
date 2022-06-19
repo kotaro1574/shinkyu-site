@@ -17,6 +17,7 @@ export const ApplicationLayout = ({ children }: Props) => {
         maxW={'450px'}
         minH={'full'}
         mx={'auto'}
+        position={'relative'}
         w={'full'}
       >
         {children}
