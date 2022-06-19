@@ -1,5 +1,5 @@
+import { LayoutWithHeaderAndMenu } from '@src/components/layouts/LayoutWithHeaderAndMenu'
 import { LayoutWithMainAndFooter } from '@src/components/layouts/LayoutWithMainAndFooter'
-import { LayoutWithStickyHeaderAndMenu } from '@src/components/layouts/LayoutWithStickyHeaderAndMenu'
 import { AboutContent } from '@src/pages/about/content'
 import type { NextPageWithLayout } from 'next'
 
@@ -9,9 +9,9 @@ const About: NextPageWithLayout = () => {
 
 About.getLayout = (page) => {
   return (
-    <LayoutWithStickyHeaderAndMenu>
+    <LayoutWithHeaderAndMenu>
       <LayoutWithMainAndFooter>{page}</LayoutWithMainAndFooter>
-    </LayoutWithStickyHeaderAndMenu>
+    </LayoutWithHeaderAndMenu>
   )
 }
 

@@ -1,49 +1,24 @@
 import { HamburgerIcon } from '@chakra-ui/icons'
-import {
-  AspectRatio,
-  Center,
-  Flex,
-  FlexProps,
-  Spacer,
-  useDisclosure,
-} from '@chakra-ui/react'
+import { Box, BoxProps, Center, useDisclosure } from '@chakra-ui/react'
 import { Drawer } from '@src/components/ui/Drawer'
-import { Image } from '@src/components/ui/Image'
-import { pagesPath, staticPath } from '@src/lib/$path'
-import { useRouter } from 'next/router'
 
-export const Header = ({ ...flexProps }: FlexProps) => {
+export const Header = ({ ...boxProps }: BoxProps) => {
   const { isOpen, onClose, onOpen } = useDisclosure()
-  const router = useRouter()
   return (
-    <>
-      <Flex
+    <Box {...boxProps}>
+      <Center
         alignItems={'center'}
         bg={'test.900'}
+        color={'#fff'}
         h={'45px'}
-        maxW={'540px'}
-        px={4}
-        w={'full'}
-        {...flexProps}
+        p={0}
+        roundedBottomLeft={'sm'}
+        w={'45px'}
+        onClick={onOpen}
       >
-        <AspectRatio
-          cursor={'pointer'}
-          ratio={200 / 40}
-          width={'160px'}
-          onClick={() => router.push(pagesPath.$url())}
-        >
-          <Image
-            alt={'ヘッダーロゴ'}
-            layout={'fill'}
-            src={staticPath.natsumi.headerLogo_svg}
-          />
-        </AspectRatio>
-        <Spacer />
-        <Center color={'#fff'} p={0} rounded={'sm'} onClick={onOpen}>
-          <HamburgerIcon />
-        </Center>
-      </Flex>
+        <HamburgerIcon />
+      </Center>
       <Drawer isOpen={isOpen} onClose={onClose} />
-    </>
+    </Box>
   )
 }

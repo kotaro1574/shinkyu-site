@@ -33,7 +33,7 @@ export const Drawer = ({ isOpen, onClose }: Props) => {
   }
 
   return (
-    <BaseDrawer isOpen={isOpen} placement={'left'} onClose={onClose}>
+    <BaseDrawer isOpen={isOpen} placement={'right'} onClose={onClose}>
       <DrawerOverlay>
         <DrawerContent roundedRight={'md'}>
           <DrawerCloseButton />
