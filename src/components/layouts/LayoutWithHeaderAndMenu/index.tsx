@@ -8,7 +8,7 @@ type Props = {
   children: ReactNode
 }
 
-export const LayoutWithStickyHeaderAndMenu = ({ children }: Props) => {
+export const LayoutWithHeaderAndMenu = ({ children }: Props) => {
   const windowSize = useGetWindowSize()
   const headerPosition = useMemo(() => {
     if (windowSize.width > 450) {

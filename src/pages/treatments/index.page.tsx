@@ -1,5 +1,5 @@
+import { LayoutWithHeaderAndMenu } from '@src/components/layouts/LayoutWithHeaderAndMenu'
 import { LayoutWithMainAndFooter } from '@src/components/layouts/LayoutWithMainAndFooter'
-import { LayoutWithStickyHeaderAndMenu } from '@src/components/layouts/LayoutWithStickyHeaderAndMenu'
 import { TreatmentsContent } from '@src/pages/treatments/content'
 import type { NextPageWithLayout } from 'next'
 
@@ -9,9 +9,9 @@ const Treatments: NextPageWithLayout = () => {
 
 Treatments.getLayout = (page) => {
   return (
-    <LayoutWithStickyHeaderAndMenu>
+    <LayoutWithHeaderAndMenu>
       <LayoutWithMainAndFooter>{page}</LayoutWithMainAndFooter>
-    </LayoutWithStickyHeaderAndMenu>
+    </LayoutWithHeaderAndMenu>
   )
 }
 
