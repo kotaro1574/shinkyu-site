@@ -1,9 +1,18 @@
-import { Box, BoxProps, Center, Flex, Text } from '@chakra-ui/react'
+import {
+  AspectRatio,
+  Box,
+  BoxProps,
+  Center,
+  Flex,
+  HStack,
+  Text,
+} from '@chakra-ui/react'
 import { TitleWithLink } from '@src/components/ui/Heading/TitleWithLink'
 import { PinOutlineIcon } from '@src/components/ui/Icon/PinOutlineIcon'
 import { PlayCircleFillIcon } from '@src/components/ui/Icon/PlayCircleFillIcon'
 import { SignpostIcon } from '@src/components/ui/Icon/SignpostIcon'
-import { pagesPath } from '@src/lib/$path'
+import { Image } from '@src/components/ui/Image'
+import { pagesPath, staticPath } from '@src/lib/$path'
 
 export const About = (props: BoxProps) => {
   return (
@@ -25,7 +34,26 @@ export const About = (props: BoxProps) => {
         </Box>
         <PlayCircleFillIcon color={'test.900'} />
       </Center>
-      <Flex alignItems={'center'} mt={4}>
+
+      <HStack justifyContent={'center'} mt={5} spacing={5}>
+        <AspectRatio height={'100px'} overflow={'hidden'} ratio={1} w={'100px'}>
+          <Image
+            alt={'top_image'}
+            layout={'fill'}
+            src={staticPath.images.topAboutSection_svg}
+          />
+        </AspectRatio>
+        <Text color={'test.900'} fontSize={'md'} fontWeight={'medium'}>
+          お身体の悩み、
+          <br />
+          鍼灸に関してのご相談、
+          <br />
+          ご予約、
+          <br />
+          お気軽にご相談ください。
+        </Text>
+      </HStack>
+      <Flex alignItems={'center'} mt={5}>
         <SignpostIcon color={'black.500'} mr={2} />
         <Text fontSize={'sm'}>広島県東広島市西条町</Text>
       </Flex>
