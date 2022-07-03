@@ -22,5 +22,5 @@ export const useGetWindowSize = () => {
       return
     }
   }, [])
-  return windowSize
+  return { windowSize }
 }

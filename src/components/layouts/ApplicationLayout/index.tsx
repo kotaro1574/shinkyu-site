@@ -8,7 +8,7 @@ type Props = {
 
 export const ApplicationLayout = ({ children }: Props) => {
   return (
-    <Box100vh bg={'#f3f9f8'}>
+    <Box100vh>
       <Box
         bg={'white'}
         boxShadow={'md'}
