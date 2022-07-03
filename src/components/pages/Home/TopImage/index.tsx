@@ -13,7 +13,8 @@ export const TopImage = () => {
 
   useEffect(() => {
     setTopImageHeight(height)
-  }, [height, setTopImageHeight])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [height])
 
   return (
     <Box position={'relative'} ref={heightInspectedEl}>
