@@ -4,9 +4,11 @@ import { Drawer } from '@src/components/ui/Drawer'
 import { useHeader } from '@src/components/ui/Header/hooks'
 import { Image } from '@src/components/ui/Image'
 import { staticPath } from '@src/lib/$path'
+import { useTopImageHeight } from '@src/lib/recoil/topImageHeight'
 import { motion } from 'framer-motion'
 
 export const Header = ({ ...boxProps }: BoxProps) => {
+  const { topImageHeight } = useTopImageHeight()
   const {
     headerInnerWidth,
     headerWidth,
@@ -14,7 +16,7 @@ export const Header = ({ ...boxProps }: BoxProps) => {
     isOpen,
     onClose,
     onOpen,
-  } = useHeader(306 - 45)
+  } = useHeader(topImageHeight - 45)
   const MotionFlex = motion<Omit<BoxProps, 'transition'>>(Flex)
 
   return (

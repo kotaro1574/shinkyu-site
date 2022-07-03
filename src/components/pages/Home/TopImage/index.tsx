@@ -2,12 +2,18 @@ import { AspectRatio, Box, BoxProps } from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
 import { useElementHeight } from '@src/hooks/useElementHeight'
 import { staticPath } from '@src/lib/$path'
+import { useTopImageHeight } from '@src/lib/recoil/topImageHeight'
 import { motion } from 'framer-motion'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect } from 'react'
 
 export const TopImage = () => {
   const MotionBox = motion<Omit<BoxProps, 'transition'>>(Box)
-  const { heightInspectedEl } = useElementHeight()
+  const { setTopImageHeight } = useTopImageHeight()
+  const { height, heightInspectedEl } = useElementHeight()
+
+  useEffect(() => {
+    setTopImageHeight(height)
+  }, [height, setTopImageHeight])
 
   return (
     <Box position={'relative'} ref={heightInspectedEl}>
