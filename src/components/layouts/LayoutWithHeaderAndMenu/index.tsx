@@ -9,7 +9,7 @@ type Props = {
 }
 
 export const LayoutWithHeaderAndMenu = ({ children }: Props) => {
-  const windowSize = useGetWindowSize()
+  const { windowSize } = useGetWindowSize()
   const headerPosition = useMemo(() => {
     if (windowSize.width > 450) {
       return windowSize.width / 2 - 225

@@ -8,7 +8,7 @@ export const HomeContent = () => {
   return (
     <Box>
       <TopImage />
-      <Box p={8} py={4}>
+      <Box mt={6} p={8} py={4}>
         <About as={'section'} />
         <TreatmentFee as={'section'} mt={10} />
         <TreatmentContents mt={10} />
