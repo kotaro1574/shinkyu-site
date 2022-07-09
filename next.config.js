@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+/** @type {{reactStrictMode: boolean, pageExtensions: string[], experimental: {optimizeFonts: boolean}}} */
 const nextConfig = {
   experimental: {
     optimizeFonts: true,

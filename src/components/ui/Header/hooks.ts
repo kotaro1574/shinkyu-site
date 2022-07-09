@@ -17,6 +17,7 @@ export const useHeader = (activePoint: number) => {
         setIsHeaderActive(false)
       }
     }
+
     window.addEventListener('scroll', scrollWindow)
     return () => {
       window.removeEventListener('scroll', scrollWindow)

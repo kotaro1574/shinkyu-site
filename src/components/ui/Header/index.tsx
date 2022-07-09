@@ -22,7 +22,7 @@ export const Header = ({ ...boxProps }: BoxProps) => {
   return (
     <Flex h={'45px'} justifyContent={'flex-end'} w={headerWidth} {...boxProps}>
       {isHeaderActive && (
-        <MotionFlex bg={'test.900'} pl={4} w={headerInnerWidth}>
+        <MotionFlex bg={'test.900'} key={'header'} pl={4} w={headerInnerWidth}>
           <AspectRatio ratio={147 / 25} w={200}>
             <Image
               alt={'header_image'}
