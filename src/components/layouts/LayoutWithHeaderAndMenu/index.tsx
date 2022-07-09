@@ -1,14 +1,16 @@
 import { Content } from '@src/components/layouts/Content'
-import { Header } from '@src/components/ui/Header'
+import { HomePageHeader } from '@src/components/layouts/Header/HomePageHeader'
+import { OtherPageHeader } from '@src/components/layouts/Header/OtherPageHeader'
 import { GlobalNavigation } from '@src/components/ui/Navigation/GlobalNavigation'
 import { useGetWindowSize } from '@src/hooks/useGetWindowSize'
 import { ReactNode, useMemo } from 'react'
 
 type Props = {
   children: ReactNode
+  isHomePage?: boolean
 }
 
-export const LayoutWithHeaderAndMenu = ({ children }: Props) => {
+export const LayoutWithHeaderAndMenu = ({ children, isHomePage }: Props) => {
   const { windowSize } = useGetWindowSize()
   const headerPosition = useMemo(() => {
     if (windowSize.width > 450) {
@@ -20,12 +22,16 @@ export const LayoutWithHeaderAndMenu = ({ children }: Props) => {
 
   return (
     <>
-      <Header
-        position={'fixed'}
-        right={headerPosition}
-        top={0}
-        zIndex={'sticky'}
-      />
+      {isHomePage ? (
+        <HomePageHeader
+          position={'fixed'}
+          right={headerPosition}
+          top={0}
+          zIndex={'sticky'}
+        />
+      ) : (
+        <OtherPageHeader position={'sticky'} top={0} zIndex={'sticky'} />
+      )}
       <Content>{children}</Content>
       <GlobalNavigation bottom={0} position={'sticky'} />
     </>

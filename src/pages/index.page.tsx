@@ -9,7 +9,7 @@ const Home: NextPageWithLayout = () => {
 
 Home.getLayout = (page) => {
   return (
-    <LayoutWithHeaderAndMenu>
+    <LayoutWithHeaderAndMenu isHomePage>
       <LayoutWithMainAndFooter>{page}</LayoutWithMainAndFooter>
     </LayoutWithHeaderAndMenu>
   )

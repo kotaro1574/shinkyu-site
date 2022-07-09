@@ -2,7 +2,7 @@ import { useDisclosure } from '@chakra-ui/react'
 import { useGetWindowSize } from '@src/hooks/useGetWindowSize'
 import { useEffect, useState } from 'react'
 
-export const useHeader = (activePoint: number) => {
+export const useHomePageHeader = (activePoint: number) => {
   const { isOpen, onClose, onOpen } = useDisclosure()
   const [isHeaderActive, setIsHeaderActive] = useState<boolean>(false)
 
@@ -17,6 +17,7 @@ export const useHeader = (activePoint: number) => {
         setIsHeaderActive(false)
       }
     }
+
     window.addEventListener('scroll', scrollWindow)
     return () => {
       window.removeEventListener('scroll', scrollWindow)

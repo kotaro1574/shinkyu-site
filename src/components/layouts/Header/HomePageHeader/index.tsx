@@ -1,13 +1,12 @@
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { AspectRatio, BoxProps, Center, Flex } from '@chakra-ui/react'
+import { useHomePageHeader } from '@src/components/layouts/Header/HomePageHeader/hooks'
 import { Drawer } from '@src/components/ui/Drawer'
-import { useHeader } from '@src/components/ui/Header/hooks'
 import { Image } from '@src/components/ui/Image'
 import { staticPath } from '@src/lib/$path'
 import { useTopImageHeight } from '@src/lib/recoil/topImageHeight'
-import { motion } from 'framer-motion'
 
-export const Header = ({ ...boxProps }: BoxProps) => {
+export const HomePageHeader = ({ ...boxProps }: BoxProps) => {
   const { topImageHeight } = useTopImageHeight()
   const {
     headerInnerWidth,
@@ -16,13 +15,12 @@ export const Header = ({ ...boxProps }: BoxProps) => {
     isOpen,
     onClose,
     onOpen,
-  } = useHeader(topImageHeight - 45)
-  const MotionFlex = motion<Omit<BoxProps, 'transition'>>(Flex)
+  } = useHomePageHeader(topImageHeight - 45)
 
   return (
     <Flex h={'45px'} justifyContent={'flex-end'} w={headerWidth} {...boxProps}>
       {isHeaderActive && (
-        <MotionFlex bg={'test.900'} pl={4} w={headerInnerWidth}>
+        <Flex bg={'test.900'} pl={4} w={headerInnerWidth}>
           <AspectRatio ratio={147 / 25} w={200}>
             <Image
               alt={'header_image'}
@@ -30,7 +28,7 @@ export const Header = ({ ...boxProps }: BoxProps) => {
               src={staticPath.natsumi.headerLogo_svg}
             />
           </AspectRatio>
-        </MotionFlex>
+        </Flex>
       )}
       <Center
         alignItems={'center'}
