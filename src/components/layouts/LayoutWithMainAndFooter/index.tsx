@@ -1,5 +1,5 @@
 import { Box, BoxProps } from '@chakra-ui/react'
-import { Footer } from '@src/components/ui/Footer'
+import { Footer } from '@src/components/layouts/Footer'
 import { ReactNode } from 'react'
 
 type Props = {
