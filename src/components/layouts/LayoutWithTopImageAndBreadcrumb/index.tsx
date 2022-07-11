@@ -8,11 +8,12 @@ import {
   BreadcrumbLink,
 } from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
+import { ReactNode } from 'react'
 
 type Props = {
   breadcrumb: {
+    content: string | ReactNode
     isCurrentPage: boolean
-    name: string
     onClick?: () => void
   }[]
   image: string
@@ -29,18 +30,19 @@ export const LayoutWithTopImageAndBreadcrumb = ({
         <Image alt={'top_image'} layout={'fill'} src={image} />
       </AspectRatio>
       <Breadcrumb
+        alignItems={'center'}
         bg={'black.100'}
         p={2}
         px={4}
         separator={<ChevronRightIcon color={'gray.500'} />}
         spacing={'8px'}
       >
-        {breadcrumb.map(({ isCurrentPage, name, onClick }, index) => (
+        {breadcrumb.map(({ content, isCurrentPage, onClick }, index) => (
           <BreadcrumbItem
             isCurrentPage={isCurrentPage}
             key={`BreadcrumbItem_${index}`}
           >
-            <BreadcrumbLink onClick={onClick}>{name}</BreadcrumbLink>
+            <BreadcrumbLink onClick={onClick}>{content}</BreadcrumbLink>
           </BreadcrumbItem>
         ))}
       </Breadcrumb>

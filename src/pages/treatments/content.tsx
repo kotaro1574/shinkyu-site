@@ -2,6 +2,7 @@ import { AspectRatio, Box, Button, Flex, Grid } from '@chakra-ui/react'
 import { LayoutWithTopImageAndBreadcrumb } from '@src/components/layouts/LayoutWithTopImageAndBreadcrumb'
 import { Title } from '@src/components/ui/Heading/Title'
 import { CaretRightIcon } from '@src/components/ui/Icon/CaretRightIcon'
+import { HomeIcon } from '@src/components/ui/Icon/HomeIcon/HomeIcon'
 import { Image } from '@src/components/ui/Image'
 import { pagesPath, staticPath } from '@src/lib/$path'
 import { useRouter } from 'next/router'
@@ -42,13 +43,13 @@ export const TreatmentsContent = () => {
 
   const TREATMENTS_PAGE_BREADCRUMB = [
     {
+      content: <HomeIcon h={5} verticalAlign={'sub'} w={5} />,
       isCurrentPage: false,
-      name: 'ホーム',
       onClick: () => router.push(pagesPath.$url()),
     },
     {
+      content: '施術一覧',
       isCurrentPage: true,
-      name: '施術一覧',
     },
   ]
 

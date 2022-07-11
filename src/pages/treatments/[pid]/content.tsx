@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/react'
 import { LayoutWithTopImageAndBreadcrumb } from '@src/components/layouts/LayoutWithTopImageAndBreadcrumb'
 import { ContentItem } from '@src/components/ui/Content/ContentItem'
 import { Title } from '@src/components/ui/Heading/Title'
+import { HomeIcon } from '@src/components/ui/Icon/HomeIcon/HomeIcon'
 import { TREATMENT_DETAIL_CONTENTS } from '@src/constants/treatments'
 import { pagesPath, staticPath } from '@src/lib/$path'
 import { useRouter } from 'next/router'
@@ -11,18 +12,18 @@ export const TreatmentContent = () => {
   const router = useRouter()
   const TREATMENT_PAGE_BREADCRUMB = [
     {
+      content: <HomeIcon h={5} verticalAlign={'sub'} w={5} />,
       isCurrentPage: false,
-      name: 'ホーム',
       onClick: () => router.push(pagesPath.$url()),
     },
     {
+      content: '施術一覧',
       isCurrentPage: false,
-      name: '施術一覧',
       onClick: () => router.push(pagesPath.treatments.$url()),
     },
     {
+      content: '鍼灸',
       isCurrentPage: true,
-      name: '鍼灸',
     },
   ]
 

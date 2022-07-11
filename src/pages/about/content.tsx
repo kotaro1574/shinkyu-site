@@ -3,6 +3,7 @@ import { LayoutWithTopImageAndBreadcrumb } from '@src/components/layouts/LayoutW
 import { ConsultationHours } from '@src/components/pages/About/ConsultationHours'
 import { PractitionerIntroduction } from '@src/components/pages/About/PractitionerIntroduction'
 import { Questions } from '@src/components/pages/About/Questions'
+import { HomeIcon } from '@src/components/ui/Icon/HomeIcon/HomeIcon'
 import { pagesPath, staticPath } from '@src/lib/$path'
 import { useRouter } from 'next/router'
 
@@ -10,13 +11,13 @@ export const AboutContent = () => {
   const router = useRouter()
   const ABOUT_PAGE_BREADCRUMB = [
     {
+      content: <HomeIcon h={5} verticalAlign={'sub'} w={5} />,
       isCurrentPage: false,
-      name: 'ホーム',
       onClick: () => router.push(pagesPath.$url()),
     },
     {
+      content: '当院について',
       isCurrentPage: true,
-      name: '当院について',
     },
   ]
   return (

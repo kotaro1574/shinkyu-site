@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/react'
 import { LayoutWithTopImageAndBreadcrumb } from '@src/components/layouts/LayoutWithTopImageAndBreadcrumb'
 import { ContentItem } from '@src/components/ui/Content/ContentItem'
 import { Title } from '@src/components/ui/Heading/Title'
+import { HomeIcon } from '@src/components/ui/Icon/HomeIcon/HomeIcon'
 import { pagesPath, staticPath } from '@src/lib/$path'
 import { useRouter } from 'next/router'
 
@@ -31,13 +32,13 @@ export const FeaturesContent = () => {
 
   const FEATURES_PAGE_BREADCRUMB = [
     {
+      content: <HomeIcon h={5} verticalAlign={'sub'} w={5} />,
       isCurrentPage: false,
-      name: 'ホーム',
       onClick: () => router.push(pagesPath.$url()),
     },
     {
+      content: '当院の特徴',
       isCurrentPage: true,
-      name: '当院の特徴',
     },
   ]
   return (
