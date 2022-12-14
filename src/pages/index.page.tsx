@@ -1,5 +1,3 @@
-import { LayoutWithHeaderAndMenu } from '@src/components/layouts/LayoutWithHeaderAndMenu'
-import { LayoutWithMainAndFooter } from '@src/components/layouts/LayoutWithMainAndFooter'
 import { HomeContent } from '@src/pages/content'
 import type { NextPageWithLayout } from 'next'
 
@@ -8,11 +6,8 @@ const Home: NextPageWithLayout = () => {
 }
 
 Home.getLayout = (page) => {
-  return (
-    <LayoutWithHeaderAndMenu isHomePage>
-      <LayoutWithMainAndFooter>{page}</LayoutWithMainAndFooter>
-    </LayoutWithHeaderAndMenu>
-  )
+  // eslint-disable-next-line react/jsx-no-useless-fragment
+  return <>{page}</>
 }
 
 export default Home
