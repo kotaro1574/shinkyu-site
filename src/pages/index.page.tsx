@@ -6,6 +6,7 @@ const Home: NextPageWithLayout = () => {
 }
 
 Home.getLayout = (page) => {
+  // eslint-disable-next-line react/jsx-no-useless-fragment
   return <>{page}</>
 }
 

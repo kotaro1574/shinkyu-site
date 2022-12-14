@@ -1,5 +1,4 @@
 import { ChakraProvider } from '@chakra-ui/react'
-import { ApplicationLayout } from '@src/components/layouts/ApplicationLayout'
 import { theme } from '@src/lib/chakra/theme'
 import type { AppPropsWithLayout } from 'next/app'
 import { RecoilRoot } from 'recoil'
