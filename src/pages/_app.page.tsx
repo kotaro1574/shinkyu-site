@@ -9,9 +9,7 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
   return (
     <RecoilRoot>
       <ChakraProvider theme={theme}>
-        <ApplicationLayout>
-          {getLayout(<Component {...pageProps} />, pageProps)}
-        </ApplicationLayout>
+        {getLayout(<Component {...pageProps} />, pageProps)}
       </ChakraProvider>
     </RecoilRoot>
   )
