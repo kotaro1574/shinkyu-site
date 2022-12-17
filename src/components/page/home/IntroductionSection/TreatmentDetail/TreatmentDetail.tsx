@@ -19,7 +19,7 @@ export const TreatmentDetail = ({
       <AspectRatio
         h={'100%'}
         maxW={'600px'}
-        ml={isOdd ? 'auto' : '0'}
+        ml={isOdd ? '0' : 'auto'}
         overflow={'hidden'}
         ratio={5 / 3}
         rounded={2}
@@ -35,7 +35,7 @@ export const TreatmentDetail = ({
         bg={'rgba(247,247,247,0.8)'}
         bottom={0}
         gap={2}
-        left={isOdd ? '0' : '50%'}
+        left={isOdd ? '50%' : '0'}
         maxW={'50%'}
         position={'absolute'}
         px={10}
