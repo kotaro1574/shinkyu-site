@@ -1,4 +1,6 @@
 import { AspectRatio, Box } from '@chakra-ui/react'
+import { AboutSection } from '@src/components/page/home/AboutSection/AboutSection'
+import { IntroductionSection } from '@src/components/page/home/IntroductionSection/IntroductionSection'
 import { Image } from '@src/components/ui/Image'
 
 export const HomeContent = () => {
@@ -11,7 +13,8 @@ export const HomeContent = () => {
           src={'https://source.unsplash.com/random'}
         />
       </AspectRatio>
-      <Box h={'300px'} />
+      <AboutSection />
+      <IntroductionSection />
     </Box>
   )
 }
