@@ -1,9 +1,11 @@
-import { Box, Container, Grid } from '@chakra-ui/react'
+import { Box, BoxProps, Container, Grid } from '@chakra-ui/react'
 import { Button } from '@src/components/ui/Button/Button'
 
-export const Header = () => {
+type Props = BoxProps
+
+export const Header = ({ ...props }: Props) => {
   return (
-    <Box as={'header'}>
+    <Box as={'header'} py={2} {...props}>
       <Container>
         <Grid
           alignItems={'center'}

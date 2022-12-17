@@ -1,3 +1,4 @@
+import { BaseLayout } from '@src/components/layouts/BaseLayout/BaseLayout'
 import { HomeContent } from '@src/pages/content'
 import type { NextPageWithLayout } from 'next'
 
@@ -6,8 +7,7 @@ const Home: NextPageWithLayout = () => {
 }
 
 Home.getLayout = (page) => {
-  // eslint-disable-next-line react/jsx-no-useless-fragment
-  return <>{page}</>
+  return <BaseLayout>{page}</BaseLayout>
 }
 
 export default Home
