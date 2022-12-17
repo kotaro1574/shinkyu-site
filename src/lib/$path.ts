@@ -38,6 +38,7 @@ export const staticPath = {
       }
     },
     biyou_svg: '/images/biyou.svg',
+    footer_jpg: '/images/footer.jpg',
     footerLog_svg: '/images/footerLog.svg',
     footerMap_svg: '/images/footerMap.svg',
     headerLog_svg: '/images/headerLog.svg',
