@@ -13,6 +13,7 @@ type Props = {
   items: typeof QUESTIONS_CONTENTS
 } & AccordionProps
 
+// TODO: リファクタする
 export const QuestionAccordion = ({ items, ...props }: Props) => {
   return (
     <ChakraAccordion allowToggle {...props}>
