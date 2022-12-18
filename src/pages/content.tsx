@@ -2,8 +2,8 @@ import { AspectRatio, Box } from '@chakra-ui/react'
 import { AboutSection } from '@src/components/page/home/AboutSection/AboutSection'
 import { ConsultationHoursSection } from '@src/components/page/home/ConsultationHoursSection/ConsultationHoursSection'
 import { IntroductionSection } from '@src/components/page/home/IntroductionSection/IntroductionSection'
-import { TreatmentSection } from '@src/components/page/home/TreatmentSection/TreatmentSection'
 import { QuestionSection } from '@src/components/page/home/QuestionSection/QuestionSection'
+import { TreatmentSection } from '@src/components/page/home/TreatmentSection/TreatmentSection'
 import { Image } from '@src/components/ui/Image'
 
 export const HomeContent = () => {
