@@ -1,6 +1,6 @@
 import { Box, Center, Container, Grid, Heading } from '@chakra-ui/react'
-import { TreatmentDetail } from '@src/components/page/home/IntroductionSection/TreatmentDetail/TreatmentDetail'
 import { TREATMENT_DETAIL_CONTENTS } from '@src/constants/treatments'
+import { TreatmentDetail } from '@src/feature/treatment/TreatmentDetail'
 
 export const TreatmentSection = () => {
   const isOdd = (index: number) => index % 2 === 0
