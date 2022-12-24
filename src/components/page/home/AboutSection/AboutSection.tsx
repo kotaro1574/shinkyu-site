@@ -1,4 +1,4 @@
-import { Container, Heading } from '@chakra-ui/react'
+import { Box, Container, Heading } from '@chakra-ui/react'
 
 export const AboutSection = () => {
   return (
@@ -6,7 +6,11 @@ export const AboutSection = () => {
       <Heading lineHeight={2} textAlign={'center'}>
         よりよい生活が送れるように
         <br />
-        患者様ひとりひとりに適した
+        患者様
+        <Box as={'span'} color={'#21B5C1'}>
+          ひとりひとり
+        </Box>
+        に適した
         <br />
         サービスを提供する
       </Heading>
