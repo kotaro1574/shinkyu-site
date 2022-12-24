@@ -1,6 +1,6 @@
 import { Container, Heading } from '@chakra-ui/react'
-import { QuestionAccordion } from '@src/components/ui/QuestionAccordion/QuestionAccordion'
 import { QUESTIONS_CONTENTS } from '@src/constants/questions'
+import { QuestionAccordion } from '@src/feature/question/QuestionAccordion'
 
 export const QuestionSection = () => {
   return (
