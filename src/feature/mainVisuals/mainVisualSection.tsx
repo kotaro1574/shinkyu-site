@@ -15,7 +15,7 @@ export const MainVisualSection = () => {
       <Swiper
         loop
         autoplay={{
-          delay: 5000,
+          delay: 7000,
           disableOnInteraction: false,
           waitForTransition: false,
         }}
@@ -34,7 +34,7 @@ export const MainVisualSection = () => {
                 layout={'fill'}
                 src={image}
                 transform={isActive ? 'scale(1.05)' : ''}
-                transitionDuration={isActive ? '5s' : ''}
+                transitionDuration={'7s'}
               />
             )}
           </SwiperSlide>
