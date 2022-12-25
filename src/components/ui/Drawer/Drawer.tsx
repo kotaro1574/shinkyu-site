@@ -9,6 +9,7 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
+  IconButton,
   useDisclosure,
 } from '@chakra-ui/react'
 import React from 'react'
@@ -21,20 +22,31 @@ export const Drawer = ({ ...props }: Props) => {
 
   return (
     <Box {...props}>
-      <Button ref={btnRef} onClick={onOpen}>
-        <HamburgerIcon />
-      </Button>
+      <IconButton
+        aria-label={'Search database'}
+        bgColor={'transparent'}
+        icon={<HamburgerIcon height={8} width={8} />}
+        ref={btnRef}
+        onClick={onOpen}
+      />
       <ChakraDrawer
         finalFocusRef={btnRef}
         isOpen={isOpen}
-        placement={'left'}
+        placement={'right'}
         onClose={onClose}
       >
         <DrawerOverlay>
           <DrawerContent>
             <DrawerCloseButton />
             <DrawerHeader>Menu</DrawerHeader>
-            <DrawerBody />
+            <DrawerBody>
+              <Box>当院について</Box>
+              <Box>施術について</Box>
+              <Box>よくある質問</Box>
+              <Box>診療時間</Box>
+              <Button bgColor={'#61C359'}>ラインで予約</Button>
+              <Button bgColor={'#7BC9CF'}>電話で予約</Button>
+            </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>
       </ChakraDrawer>
