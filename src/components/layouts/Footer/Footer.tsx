@@ -5,7 +5,7 @@ import { staticPath } from '@src/lib/$path'
 
 export const Footer = () => {
   return (
-    <Box as={'footer'} h={'400'} position={'relative'}>
+    <Box as={'footer'} position={'relative'}>
       <Image
         alt={'footer_image'}
         layout={'fill'}
@@ -15,11 +15,12 @@ export const Footer = () => {
       <Container h={'100%'} pb={4} pos={'relative'} pt={20}>
         <Center
           flexDirection={'column'}
+          gap={4}
           h={'100%'}
           justifyContent={'space-between'}
         >
-          <Grid templateColumns={'repeat(2, 1fr)'}>
-            <Box>
+          <Grid gap={4} templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }}>
+            <Box order={{ base: 2, md: 1 }}>
               <Box textAlign={'center'}>繁内鍼灸治療院</Box>
               <Box>
                 <Box>〒739-0035</Box>
@@ -32,7 +33,7 @@ export const Footer = () => {
                 <Button>電話で予約</Button>
               </Flex>
             </Box>
-            <Box>
+            <Box order={{ base: 1, md: 2 }}>
               <iframe
                 height={'200'}
                 loading={'lazy'}
