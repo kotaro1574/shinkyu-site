@@ -4,7 +4,7 @@ import { QuestionAccordion } from '@src/feature/question/QuestionAccordion'
 
 export const QuestionSection = () => {
   return (
-    <Container py={10}>
+    <Container py={{ base: 5, md: 10 }}>
       <Heading textAlign={'center'}>よくある質問</Heading>
       <QuestionAccordion items={QUESTIONS_CONTENTS} mt={8} />
     </Container>
