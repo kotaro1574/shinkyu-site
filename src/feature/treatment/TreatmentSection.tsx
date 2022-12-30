@@ -1,4 +1,6 @@
-import { Box, Center, Container, Grid, Heading } from '@chakra-ui/react'
+import { Box, Center, Grid } from '@chakra-ui/react'
+import { Container } from '@src/components/ui/Container/Container'
+import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
 import { TREATMENT_DETAIL_CONTENTS } from '@src/constants/treatments'
 import { TreatmentDetail } from '@src/feature/treatment/TreatmentDetail'
 
@@ -6,7 +8,7 @@ export const TreatmentSection = () => {
   const isOdd = (index: number) => index % 2 === 0
 
   return (
-    <Container py={{ base: 5, md: 10 }}>
+    <Container>
       <Center>
         <Grid
           alignItems={'center'}
@@ -15,9 +17,7 @@ export const TreatmentSection = () => {
           textAlign={'center'}
           w={'100%'}
         >
-          <Heading fontSize={{ base: '4xl', md: '7xl', sm: '5xl' }}>
-            施術について
-          </Heading>
+          <SectionHeading>施術について</SectionHeading>
           <Box
             fontSize={{ base: 'md', md: 'lg' }}
             lineHeight={1.8}
