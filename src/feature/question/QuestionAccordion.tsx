@@ -23,12 +23,21 @@ export const QuestionAccordion = ({ items, ...props }: Props) => {
             _expanded={{ bg: 'teal.400', color: 'white' }}
             py={4}
           >
-            <Box as={'span'} flex={'1'} textAlign={'left'}>
+            <Box
+              as={'span'}
+              flex={'1'}
+              fontSize={{ base: 'md', md: 'lg' }}
+              textAlign={'left'}
+            >
               {item.question}
             </Box>
             <AccordionIcon />
           </AccordionButton>
-          <AccordionPanel bg={'gray.50'} py={8}>
+          <AccordionPanel
+            bg={'gray.50'}
+            fontSize={{ base: 'md', md: 'lg' }}
+            py={8}
+          >
             ・{item.answer}
           </AccordionPanel>
         </AccordionItem>

@@ -21,8 +21,14 @@ export const Footer = () => {
         >
           <Grid gap={4} templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }}>
             <Box order={{ base: 2, md: 1 }}>
-              <Box textAlign={'center'}>繁内鍼灸治療院</Box>
-              <Box>
+              <Box
+                fontSize={{ base: '2xl' }}
+                fontWeight={'medium'}
+                textAlign={'center'}
+              >
+                繁内鍼灸治療院
+              </Box>
+              <Box fontSize={{ base: 'md', md: 'lg' }} mt={4}>
                 <Box>〒739-0035</Box>
                 <Box>広島県東広島市西条町郷曽340-8</Box>
                 <Box>アルソーレ東広島6番館101号室</Box>
@@ -45,7 +51,9 @@ export const Footer = () => {
               />
             </Box>
           </Grid>
-          <Box>©2022繁内鍼灸治療院</Box>
+          <Box fontSize={{ base: 'xxs', md: 'xs' }} mt={4}>
+            ©2022繁内鍼灸治療院
+          </Box>
         </Center>
       </Container>
     </Box>

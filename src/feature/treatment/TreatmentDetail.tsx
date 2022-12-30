@@ -42,10 +42,14 @@ export const TreatmentDetail = ({
         py={5}
         rounded={2}
       >
-        <Box>{title}</Box>
-        <Box>{subTitle}</Box>
+        <Box fontSize={{ base: '2xl', md: '5xl' }} fontWeight={'medium'}>
+          {title}
+        </Box>
+        <Box fontSize={{ base: '10px', md: 'xxs' }}>{subTitle}</Box>
         <Divider borderColor={'#21B5C1'} borderWidth={1} maxW={'150px'} />
-        <Box lineHeight={1.7}>{description}</Box>
+        <Box fontSize={{ base: 'md', md: 'lg' }} lineHeight={1.8}>
+          {description}
+        </Box>
       </Grid>
     </Box>
   )

@@ -11,11 +11,11 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 export const MainVisualSection = () => {
   return (
-    <AspectRatio ratio={6 / 3}>
+    <AspectRatio h={{ base: '410px', md: '800px' }} ratio={4 / 3}>
       <Swiper
         loop
         autoplay={{
-          delay: 7000,
+          delay: 6000,
           disableOnInteraction: false,
           waitForTransition: false,
         }}
@@ -32,6 +32,7 @@ export const MainVisualSection = () => {
               <Image
                 alt={'top_image'}
                 layout={'fill'}
+                objectFit={'cover'}
                 src={image}
                 transform={isActive ? 'scale(1.05)' : ''}
                 transitionDuration={'7s'}

@@ -15,7 +15,12 @@ import { CONSULTATION_HOURS } from '@src/constants/consultationHours'
 export const ConsultationHoursSection = () => {
   return (
     <Container py={10}>
-      <Heading textAlign={'center'}>診療時間</Heading>
+      <Heading
+        fontSize={{ base: '4xl', md: '7xl', sm: '5xl' }}
+        textAlign={'center'}
+      >
+        診療時間
+      </Heading>
       <Center mt={8}>
         <TableContainer maxW={'500px'}>
           <Table size={'sm'}>
@@ -31,7 +36,7 @@ export const ConsultationHoursSection = () => {
             </Thead>
             <Tbody>
               <Tr>
-                <Td py={4}>9:00 ~ 18:00</Td>
+                <Td py={4}>09:00 ~ 18:00</Td>
                 {CONSULTATION_HOURS.mornings.map((morning, index) => (
                   <Th key={`morning_${index}`} py={4}>
                     {morning}
