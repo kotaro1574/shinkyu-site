@@ -15,11 +15,10 @@ export const TreatmentDetail = ({
   title,
 }: Props) => {
   return (
-    <Box position={'relative'}>
+    <Box position={{ md: 'relative' }}>
       <AspectRatio
-        h={'100%'}
-        maxW={'600px'}
-        ml={isOdd ? '0' : 'auto'}
+        maxW={{ sm: '600px' }}
+        ml={{ md: isOdd ? '0' : 'auto' }}
         overflow={'hidden'}
         ratio={5 / 3}
         rounded={2}
@@ -33,19 +32,24 @@ export const TreatmentDetail = ({
       </AspectRatio>
       <Grid
         bg={'rgba(247,247,247,0.8)'}
-        bottom={0}
+        bottom={{ base: 5, md: 0 }}
         gap={2}
-        left={isOdd ? '50%' : '0'}
-        maxW={'50%'}
-        position={'absolute'}
+        left={{ md: isOdd ? '50%' : '0' }}
+        maxW={{ base: '90%', md: '50%' }}
+        ml={{ base: 'auto', md: 0 }}
+        position={{ base: 'relative', md: 'absolute' }}
         px={10}
         py={5}
         rounded={2}
       >
-        <Box>{title}</Box>
-        <Box>{subTitle}</Box>
-        <Divider borderColor={'#21B5C1'} maxW={'150px'} />
-        <Box lineHeight={1.7}>{description}</Box>
+        <Box fontSize={{ base: '2xl', md: '5xl' }} fontWeight={'medium'}>
+          {title}
+        </Box>
+        <Box fontSize={{ base: '10px', md: 'xxs' }}>{subTitle}</Box>
+        <Divider borderColor={'#21B5C1'} borderWidth={1} maxW={'150px'} />
+        <Box fontSize={{ base: 'md', md: 'lg' }} lineHeight={1.8}>
+          {description}
+        </Box>
       </Grid>
     </Box>
   )

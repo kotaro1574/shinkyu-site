@@ -1,8 +1,8 @@
-import { AspectRatio, Box } from '@chakra-ui/react'
-import { Image } from '@src/components/ui/Image'
+import { Box } from '@chakra-ui/react'
 import { AboutSection } from '@src/feature/about/AboutSection'
 import { ConsultationHoursSection } from '@src/feature/consultationHours/ConsultationHoursSection'
 import { IntroductionSection } from '@src/feature/introdiuction/IntroductionSection'
+import { MainVisualSection } from '@src/feature/mainVisuals/mainVisualSection'
 import { QuestionSection } from '@src/feature/question/QuestionSection'
 import { TreatmentSection } from '@src/feature/treatment/TreatmentSection'
 import { useGetElementProperty } from '@src/hooks/useGetElementProperty'
@@ -21,13 +21,9 @@ export const HomeContent = () => {
 
   return (
     <Box>
-      <AspectRatio ratio={16 / 9} ref={targetRef}>
-        <Image
-          alt={'top_image'}
-          layout={'fill'}
-          src={'https://source.unsplash.com/random'}
-        />
-      </AspectRatio>
+      <Box ref={targetRef}>
+        <MainVisualSection />
+      </Box>
       <AboutSection />
       <IntroductionSection />
       <TreatmentSection />
