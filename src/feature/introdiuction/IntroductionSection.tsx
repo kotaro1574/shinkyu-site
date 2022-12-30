@@ -1,11 +1,12 @@
-import { AspectRatio, Box, Container, Flex } from '@chakra-ui/react'
+import { AspectRatio, Box, Flex } from '@chakra-ui/react'
+import { Container } from '@src/components/ui/Container/Container'
 import { Image } from '@src/components/ui/Image'
 import { staticPath } from '@src/lib/$path'
 
 export const IntroductionSection = () => {
   return (
-    <Box as={'section'} bg={'#f4fbfc'}>
-      <Container py={{ base: 5, md: 10 }}>
+    <Box bg={'#f4fbfc'}>
+      <Container>
         <Flex
           alignItems={{ base: 'center', md: 'start' }}
           flexDirection={{ base: 'column', md: 'row' }}

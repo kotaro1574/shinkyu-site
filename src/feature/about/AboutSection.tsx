@@ -1,8 +1,9 @@
-import { Box, Container, Heading } from '@chakra-ui/react'
+import { Box, Heading } from '@chakra-ui/react'
+import { Container } from '@src/components/ui/Container/Container'
 
 export const AboutSection = () => {
   return (
-    <Container as={'section'} py={{ base: 5, md: 10 }}>
+    <Container>
       <Heading
         fontSize={{ base: '2xl', md: '7xl', sm: '4xl' }}
         lineHeight={2}
