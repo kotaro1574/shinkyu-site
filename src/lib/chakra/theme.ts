@@ -9,7 +9,7 @@ export const theme = extendTheme({
       'html, body, #__next': {
         height: '100%',
         color: 'text.primary',
-        letterSpacing: '0.05em',
+        letterSpacing: '0.12em',
       },
     },
   },

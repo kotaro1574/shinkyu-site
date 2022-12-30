@@ -4,7 +4,7 @@ export const AboutSection = () => {
   return (
     <Container as={'section'} py={{ base: 5, md: 10 }}>
       <Heading
-        fontSize={{ base: 'xl', md: '7xl', sm: '4xl' }}
+        fontSize={{ base: '2xl', md: '7xl', sm: '4xl' }}
         lineHeight={2}
         textAlign={'center'}
       >
