@@ -24,7 +24,7 @@ export const staticPath = {
     section1_1_png: '/images/section1-1.png',
     section1_2_JPG: '/images/section1-2.JPG',
     top_image_title_svg: '/images/top_image_title.svg'
-  }
+  },
 } as const
 
 // prettier-ignore

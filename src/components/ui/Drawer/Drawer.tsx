@@ -9,6 +9,7 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
+  Flex,
   IconButton,
   useDisclosure,
 } from '@chakra-ui/react'
@@ -38,18 +39,41 @@ export const Drawer = ({ ...props }: Props) => {
         <DrawerOverlay>
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader>Menu</DrawerHeader>
-            <DrawerBody>
-              <Box>当院について</Box>
-              <Box>施術について</Box>
-              <Box>よくある質問</Box>
-              <Box>診療時間</Box>
-              <Button bgColor={'#61C359'}>ラインで予約</Button>
-              <Button bgColor={'#7BC9CF'}>電話で予約</Button>
+            <DrawerHeader bg={'#7BC9CF'} color={'white'}>
+              繁内鍼灸治療院
+            </DrawerHeader>
+            <DrawerBody p={'20px 16px'}>
+              <Box py={'10px'}>当院について</Box>
+              <Box py={'10px'}>施術について</Box>
+              <Box py={'10px'}>よくある質問</Box>
+              <Box paddingTop={'10px'} paddingBottom={'20px'}>
+                診療時間
+              </Box>
+              <Button bgColor={'#61C359'} color={'white'} marginRight={'8px'}>
+                ラインで予約
+              </Button>
+              <Button bgColor={'#7BC9CF'} color={'white'}>
+                電話で予約
+              </Button>
+              <Test text="natumi" color={'red'} />
             </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>
       </ChakraDrawer>
     </Box>
+  )
+}
+
+type TestProps = {
+  text: string
+  age?: number
+} & BoxProps
+
+const Test = ({ text, age, ...props }: TestProps) => {
+  return (
+    <Flex {...props}>
+      <Box>{text}</Box>
+      <Box>{age}</Box>
+    </Flex>
   )
 }

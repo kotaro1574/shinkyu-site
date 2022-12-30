@@ -24,7 +24,7 @@ export const Header = ({ ...props }: Props) => {
           </Flex>
           <Drawer
             display={{ base: 'block', lg: 'none' }}
-            pr={'20px'}
+            pr={{ base: 0, lg: '20px' }}
             textAlign={'right'}
           />
         </Grid>
