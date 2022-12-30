@@ -4,6 +4,11 @@ type Props = ButtonProps
 
 export const Button = ({ ...props }: Props) => {
   return (
-    <ChakraButton fontSize={20} fontWeight={'medium'} rounded={4} {...props} />
+    <ChakraButton
+      fontSize={'lg'}
+      fontWeight={'medium'}
+      rounded={4}
+      {...props}
+    />
   )
 }

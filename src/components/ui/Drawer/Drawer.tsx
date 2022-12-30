@@ -37,43 +37,45 @@ export const Drawer = ({ ...props }: Props) => {
         onClose={onClose}
       >
         <DrawerOverlay>
-          <DrawerContent>
-            <DrawerCloseButton />
-            <DrawerHeader bg={'#7BC9CF'} color={'white'}>
-              繁内鍼灸治療院
+          <DrawerContent bg={'teal.400'} color={'white'}>
+            <DrawerHeader
+              borderBottom={'1px solid white'}
+              fontWeight={'medium'}
+              pb={'20px'}
+              position={'relative'}
+            >
+              <Box>繁内鍼灸治療院</Box>
+              <DrawerCloseButton
+                color={'white'}
+                top={'50%'}
+                transform={'translateY(-50%)'}
+              />
             </DrawerHeader>
-            <DrawerBody p={'20px 16px'}>
-              <Box py={'10px'}>当院について</Box>
-              <Box py={'10px'}>施術について</Box>
-              <Box py={'10px'}>よくある質問</Box>
-              <Box paddingTop={'10px'} paddingBottom={'20px'}>
+            <DrawerBody px={'0'} py={'0'} textAlign={'center'}>
+              <Box borderBottom={'1px solid white'} py={'20px'}>
+                当院について
+              </Box>
+              <Box borderBottom={'1px solid white'} py={'20px'}>
+                施術について
+              </Box>
+              <Box borderBottom={'1px solid white'} py={'20px'}>
+                よくある質問
+              </Box>
+              <Box borderBottom={'1px solid white'} py={'20px'}>
                 診療時間
               </Box>
-              <Button bgColor={'#61C359'} color={'white'} marginRight={'8px'}>
-                ラインで予約
-              </Button>
-              <Button bgColor={'#7BC9CF'} color={'white'}>
-                電話で予約
-              </Button>
-              <Test text="natumi" color={'red'} />
+              <Flex justifyContent={'center'} pt={'20px'}>
+                <Button bgColor={'green.line'} color={'white'} mr={'12px'}>
+                  LINEで予約
+                </Button>
+                <Button bgColor={'teal.600'} color={'white'}>
+                  電話で予約
+                </Button>
+              </Flex>
             </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>
       </ChakraDrawer>
     </Box>
-  )
-}
-
-type TestProps = {
-  text: string
-  age?: number
-} & BoxProps
-
-const Test = ({ text, age, ...props }: TestProps) => {
-  return (
-    <Flex {...props}>
-      <Box>{text}</Box>
-      <Box>{age}</Box>
-    </Flex>
   )
 }
