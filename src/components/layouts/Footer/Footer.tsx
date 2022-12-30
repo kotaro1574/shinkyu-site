@@ -1,22 +1,24 @@
-import { Box, Center, Container, Flex, Grid } from '@chakra-ui/react'
+import { Box, BoxProps, Center, Flex, Grid } from '@chakra-ui/react'
 import { Button } from '@src/components/ui/Button/Button'
+import { Container } from '@src/components/ui/Container/Container'
 import { Image } from '@src/components/ui/Image'
 import { staticPath } from '@src/lib/$path'
 
-export const Footer = () => {
+type Props = BoxProps
+
+export const Footer = ({ ...props }: Props) => {
   return (
-    <Box as={'footer'} position={'relative'}>
+    <Box as={'footer'} position={'relative'} {...props}>
       <Image
         alt={'footer_image'}
         layout={'fill'}
         objectFit={'cover'}
         src={staticPath.images.footer_jpg}
       />
-      <Container h={'100%'} pb={4} pos={'relative'} pt={20}>
+      <Container pos={'relative'}>
         <Center
           flexDirection={'column'}
           gap={4}
-          h={'100%'}
           justifyContent={'space-between'}
         >
           <Grid gap={4} templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }}>
@@ -51,7 +53,7 @@ export const Footer = () => {
               />
             </Box>
           </Grid>
-          <Box fontSize={{ base: 'xxs', md: 'xs' }} mt={4}>
+          <Box fontSize={{ base: 'xxs', md: 'xs' }} mt={14}>
             ©2022繁内鍼灸治療院
           </Box>
         </Center>

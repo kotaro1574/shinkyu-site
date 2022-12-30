@@ -14,7 +14,7 @@ export const BaseLayout = ({ children }: Props) => {
         <Header />
       </Box>
       {children}
-      <Footer />
+      <Footer mt={'120px'} />
     </Box>
   )
 }
