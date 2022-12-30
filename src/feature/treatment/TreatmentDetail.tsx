@@ -3,6 +3,7 @@ import { Image } from '@src/components/ui/Image'
 
 type Props = {
   description: string
+  imagePath: string
   isOdd: boolean
   subTitle: string
   title: string
@@ -10,6 +11,7 @@ type Props = {
 
 export const TreatmentDetail = ({
   description,
+  imagePath,
   isOdd,
   subTitle,
   title,
@@ -20,14 +22,14 @@ export const TreatmentDetail = ({
         maxW={{ sm: '600px' }}
         ml={{ md: isOdd ? '0' : 'auto' }}
         overflow={'hidden'}
-        ratio={5 / 3}
+        ratio={6 / 3}
         rounded={2}
       >
         <Image
           alt={title}
           layout={'fill'}
           objectFit={'cover'}
-          src={'https://source.unsplash.com/random'}
+          src={imagePath}
         />
       </AspectRatio>
       <Grid
