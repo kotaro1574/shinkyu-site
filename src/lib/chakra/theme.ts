@@ -89,6 +89,11 @@ export const theme = extendTheme({
     },
   },
   fontSizes: {
+    '7xl': '36px',
+    '6xl': '28px',
+    '5xl': '26px',
+    '4xl': '24px',
+    '3xl': '22px',
     '2xl': '20px',
     xl: '18px',
     lg: '16px',
