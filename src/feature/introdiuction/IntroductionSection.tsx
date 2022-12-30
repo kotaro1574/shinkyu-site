@@ -6,12 +6,11 @@ export const IntroductionSection = () => {
     <Box as={'section'} bg={'#f4fbfc'}>
       <Container py={10}>
         <Center alignItems={'start'} gap={4}>
-          <Box lineHeight={1.7} w={'300px'}>
+          <Box lineHeight={1.7} maxW={'300px'}>
             繁内鍼灸治療院は広島県東広島市にある治療院です。鍼灸・整体・産後骨盤ケア・吸い玉を柱とし、それらを適切に組み合わせた治療を提供しております。お身体の悩み、鍼灸に関してのご相談、ご予約、お気軽にご相談ください。
           </Box>
           <Box>
             <AspectRatio
-              flexShrink={0}
               h={'200px'}
               overflow={'hidden'}
               ratio={4 / 3}
