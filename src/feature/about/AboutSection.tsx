@@ -11,7 +11,7 @@ export const AboutSection = () => {
         よりよい生活が送れるように
         <br />
         患者様
-        <Box as={'span'} color={'#21B5C1'}>
+        <Box as={'span'} color={'teal.400'}>
           ひとりひとり
         </Box>
         に適した
