@@ -12,8 +12,8 @@ import {
   IconButton,
   useDisclosure,
 } from '@chakra-ui/react'
-import React from 'react'
 import { Button } from '@src/components/ui/Button/Button'
+import React from 'react'
 
 type Props = BoxProps
 
