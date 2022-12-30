@@ -12,6 +12,9 @@ export const staticPath = {
   images: {
     PractitionerIntroduction_JPG: '/images/PractitionerIntroduction.JPG',
     footer_jpg: '/images/footer.jpg',
+    introduction: {
+      director_image_jpg: '/images/introduction/director_image.jpg'
+    },
     mainVisual: {
       slide_image_1_jpg: '/images/mainVisual/slide_image_1.jpg',
       slide_image_2_jpg: '/images/mainVisual/slide_image_2.jpg',

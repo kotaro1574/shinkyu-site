@@ -1,5 +1,6 @@
 import { AspectRatio, Box, Center, Container } from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
+import { staticPath } from '@src/lib/$path'
 
 export const IntroductionSection = () => {
   return (
@@ -20,7 +21,7 @@ export const IntroductionSection = () => {
               <Image
                 alt={'director_image'}
                 layout={'fill'}
-                src={'https://source.unsplash.com/random'}
+                src={staticPath.images.introduction.director_image_jpg}
               />
             </AspectRatio>
             <Box mt={1} textAlign={'end'}>
