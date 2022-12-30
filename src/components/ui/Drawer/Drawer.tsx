@@ -2,7 +2,6 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import {
   Box,
   BoxProps,
-  Button,
   Drawer as ChakraDrawer,
   DrawerBody,
   DrawerCloseButton,
@@ -14,6 +13,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react'
 import React from 'react'
+import { Button } from '@src/components/ui/Button/Button'
 
 type Props = BoxProps
 
@@ -52,16 +52,32 @@ export const Drawer = ({ ...props }: Props) => {
               />
             </DrawerHeader>
             <DrawerBody px={'0'} py={'0'} textAlign={'center'}>
-              <Box borderBottom={'1px solid white'} py={'20px'}>
+              <Box
+                _hover={{ bgColor: 'teal.500' }}
+                borderBottom={'1px solid white'}
+                py={'20px'}
+              >
                 当院について
               </Box>
-              <Box borderBottom={'1px solid white'} py={'20px'}>
+              <Box
+                _hover={{ bgColor: 'teal.500' }}
+                borderBottom={'1px solid white'}
+                py={'20px'}
+              >
                 施術について
               </Box>
-              <Box borderBottom={'1px solid white'} py={'20px'}>
+              <Box
+                _hover={{ bgColor: 'teal.500' }}
+                borderBottom={'1px solid white'}
+                py={'20px'}
+              >
                 よくある質問
               </Box>
-              <Box borderBottom={'1px solid white'} py={'20px'}>
+              <Box
+                _hover={{ bgColor: 'teal.500' }}
+                borderBottom={'1px solid white'}
+                py={'20px'}
+              >
                 診療時間
               </Box>
               <Flex justifyContent={'center'} pt={'20px'}>
