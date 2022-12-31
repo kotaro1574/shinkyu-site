@@ -24,7 +24,8 @@ export const Header = ({ ...props }: Props) => {
   return (
     <Box
       as={'header'}
-      color={isVisible ? 'black' : 'white'}
+      bgColor={isVisible ? 'white' : 'transparent'}
+      color={isVisible ? 'text.primary' : 'white'}
       fontSize={'lg'}
       py={2}
       {...props}
