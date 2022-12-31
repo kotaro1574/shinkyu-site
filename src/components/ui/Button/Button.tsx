@@ -7,6 +7,7 @@ export const Button = ({ ...props }: Props) => {
     <ChakraButton
       fontSize={'lg'}
       fontWeight={'medium'}
+      color={'white'}
       rounded={2}
       {...props}
     />
