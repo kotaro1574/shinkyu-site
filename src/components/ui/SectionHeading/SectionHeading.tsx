@@ -26,7 +26,7 @@ export const SectionHeading = ({ children, ...props }: Props) => {
       }}
       color={'teal.400'}
       fontSize={{ base: '4xl', md: '7xl', sm: '5xl' }}
-      fontWeight={{ base: 'medium', md: 'bold' }}
+      fontWeight={'medium'}
       {...props}
     >
       <Box>{children}</Box>
