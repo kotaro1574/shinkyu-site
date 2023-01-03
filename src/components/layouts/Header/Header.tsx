@@ -11,15 +11,13 @@ export const Header = ({ ...props }: Props) => {
 
   const [isVisible, setIsVisible] = useState(false)
 
-  const toggleVisibility = () => {
-    window.scrollY > overViewHeight ? setIsVisible(true) : setIsVisible(false)
-  }
-
   useEffect(() => {
+    const toggleVisibility = () => {
+      window.scrollY > overViewHeight ? setIsVisible(true) : setIsVisible(false)
+    }
     window.addEventListener('scroll', toggleVisibility)
     return () => window.removeEventListener('scroll', toggleVisibility)
-    // eslint-disable-next-line
-  }, [])
+  }, [overViewHeight])
 
   return (
     <Box
@@ -27,7 +25,6 @@ export const Header = ({ ...props }: Props) => {
       bgColor={isVisible ? 'white' : 'transparent'}
       color={isVisible ? 'text.primary' : 'white'}
       fontSize={'lg'}
-      py={2}
       {...props}
     >
       <Container>
