@@ -1,25 +1,38 @@
-import { Box, BoxProps, Container, Flex, Grid } from '@chakra-ui/react'
+import {
+  Box,
+  BoxProps,
+  Container,
+  Flex,
+  Grid,
+  useBreakpointValue,
+} from '@chakra-ui/react'
 import { Button } from '@src/components/ui/Button/Button'
 import { Drawer } from '@src/components/ui/Drawer/Drawer'
+import { HEADER_HEIGHT_PC, HEADER_HEIGHT_SP } from '@src/constant/style'
 import { useOverViewHeightContext } from '@src/provider/overViewHeight'
 import { useEffect, useState } from 'react'
 
 type Props = BoxProps
 
 export const Header = ({ ...props }: Props) => {
-  const { overViewHeight } = useOverViewHeightContext()
-
   const [isVisible, setIsVisible] = useState(false)
 
-  const toggleVisibility = () => {
-    window.scrollY > overViewHeight ? setIsVisible(true) : setIsVisible(false)
-  }
+  const { overViewHeight } = useOverViewHeightContext()
+  const headerHeight =
+    useBreakpointValue({
+      base: HEADER_HEIGHT_SP,
+      md: HEADER_HEIGHT_PC,
+    }) ?? 0
+
+  const visibleHeight = overViewHeight - headerHeight
 
   useEffect(() => {
+    const toggleVisibility = () => {
+      window.scrollY > visibleHeight ? setIsVisible(true) : setIsVisible(false)
+    }
     window.addEventListener('scroll', toggleVisibility)
     return () => window.removeEventListener('scroll', toggleVisibility)
-    // eslint-disable-next-line
-  }, [])
+  }, [visibleHeight])
 
   return (
     <Box
@@ -27,11 +40,15 @@ export const Header = ({ ...props }: Props) => {
       bgColor={isVisible ? 'white' : 'transparent'}
       color={isVisible ? 'text.primary' : 'white'}
       fontSize={'lg'}
-      py={2}
       {...props}
     >
       <Container>
-        <Grid alignItems={'center'} gap={4} templateColumns={'1fr auto'}>
+        <Grid
+          alignItems={'center'}
+          gap={4}
+          h={{ base: HEADER_HEIGHT_SP, md: HEADER_HEIGHT_PC }}
+          templateColumns={'1fr auto'}
+        >
           <Box fontSize={{ base: '4xl', lg: '3xl' }}>繁内鍼灸治療院</Box>
           <Flex
             alignItems={'center'}
