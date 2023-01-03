@@ -7,7 +7,7 @@ import {
   AccordionProps,
   Box,
 } from '@chakra-ui/react'
-import { QUESTIONS_CONTENTS } from '@src/constants/questions'
+import { QUESTIONS_CONTENTS } from '@src/feature/question/constant'
 
 type Props = {
   items: typeof QUESTIONS_CONTENTS

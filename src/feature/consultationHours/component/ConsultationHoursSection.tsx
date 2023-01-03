@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
-import { CONSULTATION_HOURS } from '@src/constants/consultationHours'
+import { CONSULTATION_HOURS } from '@src/feature/consultationHours/constant'
 
 export const ConsultationHoursSection = () => {
   return (

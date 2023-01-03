@@ -5,7 +5,7 @@ import 'swiper/css/scrollbar'
 
 import { AspectRatio } from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
-import { MAIN_VISUAL_SLIDE_IMAGES } from '@src/constants/mainVisual'
+import { MAIN_VISUAL_SLIDE_IMAGES } from '@src/feature/mainVisuals/constant'
 import { Autoplay, EffectFade } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 

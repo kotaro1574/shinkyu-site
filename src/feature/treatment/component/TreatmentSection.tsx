@@ -1,8 +1,8 @@
 import { Box, Center, chakra, Divider, Grid, Text } from '@chakra-ui/react'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
-import { TREATMENT_DETAIL_CONTENTS } from '@src/constants/treatments'
-import { TreatmentDetail } from '@src/feature/treatment/TreatmentDetail'
+import { TreatmentDetail } from '@src/feature/treatment/component/TreatmentDetail'
+import { TREATMENT_DETAIL_CONTENTS } from '@src/feature/treatment/constant'
 
 export const TreatmentSection = () => {
   const isOdd = (index: number) => index % 2 === 0
