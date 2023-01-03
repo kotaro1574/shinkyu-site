@@ -5,9 +5,9 @@ type Props = ButtonProps
 export const Button = ({ ...props }: Props) => {
   return (
     <ChakraButton
+      color={'white'}
       fontSize={'lg'}
       fontWeight={'medium'}
-      color={'white'}
       rounded={2}
       {...props}
     />

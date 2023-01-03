@@ -18,6 +18,7 @@ export const Header = ({ ...props }: Props) => {
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility)
     return () => window.removeEventListener('scroll', toggleVisibility)
+    // eslint-disable-next-line
   }, [])
 
   return (
