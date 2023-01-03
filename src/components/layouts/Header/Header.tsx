@@ -1,4 +1,11 @@
-import { Box, BoxProps, Container, Flex, Grid } from '@chakra-ui/react'
+import {
+  Box,
+  BoxProps,
+  Container,
+  Flex,
+  Grid,
+  useBreakpointValue,
+} from '@chakra-ui/react'
 import { Button } from '@src/components/ui/Button/Button'
 import { Drawer } from '@src/components/ui/Drawer/Drawer'
 import { HEADER_HEIGHT_PC, HEADER_HEIGHT_SP } from '@src/constant/style'
@@ -8,17 +15,24 @@ import { useEffect, useState } from 'react'
 type Props = BoxProps
 
 export const Header = ({ ...props }: Props) => {
-  const { overViewHeight } = useOverViewHeightContext()
-
   const [isVisible, setIsVisible] = useState(false)
+
+  const { overViewHeight } = useOverViewHeightContext()
+  const headerHeight =
+    useBreakpointValue({
+      base: HEADER_HEIGHT_SP,
+      md: HEADER_HEIGHT_PC,
+    }) ?? 0
+
+  const visibleHeight = overViewHeight - headerHeight
 
   useEffect(() => {
     const toggleVisibility = () => {
-      window.scrollY > overViewHeight ? setIsVisible(true) : setIsVisible(false)
+      window.scrollY > visibleHeight ? setIsVisible(true) : setIsVisible(false)
     }
     window.addEventListener('scroll', toggleVisibility)
     return () => window.removeEventListener('scroll', toggleVisibility)
-  }, [overViewHeight])
+  }, [visibleHeight])
 
   return (
     <Box
