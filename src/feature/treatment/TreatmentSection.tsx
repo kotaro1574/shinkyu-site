@@ -29,7 +29,7 @@ export const TreatmentSection = () => {
           <Box>1回 4,000 円(税込)</Box>
         </Grid>
       </Center>
-      <Grid gap={{ base: 10, md: 14 }} pt={10}>
+      <Grid gap={{ base: 10, md: 20 }} pt={10}>
         {TREATMENT_DETAIL_CONTENTS.map((treatment, index) => (
           <TreatmentDetail
             description={treatment.description}
