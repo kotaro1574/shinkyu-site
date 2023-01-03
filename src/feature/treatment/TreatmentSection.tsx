@@ -1,5 +1,5 @@
 import { Box, Center, Grid } from '@chakra-ui/react'
-import { Container } from '@src/components/ui/Container/Container'
+import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
 import { TREATMENT_DETAIL_CONTENTS } from '@src/constants/treatments'
 import { TreatmentDetail } from '@src/feature/treatment/TreatmentDetail'
@@ -8,7 +8,7 @@ export const TreatmentSection = () => {
   const isOdd = (index: number) => index % 2 === 0
 
   return (
-    <Container>
+    <SectionContainer>
       <Center>
         <Grid
           alignItems={'center'}
@@ -41,6 +41,6 @@ export const TreatmentSection = () => {
           />
         ))}
       </Grid>
-    </Container>
+    </SectionContainer>
   )
 }

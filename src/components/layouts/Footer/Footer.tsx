@@ -1,7 +1,7 @@
 import { Box, BoxProps, Center, Flex, Grid } from '@chakra-ui/react'
 import { Button } from '@src/components/ui/Button/Button'
-import { Container } from '@src/components/ui/Container/Container'
 import { Image } from '@src/components/ui/Image'
+import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { staticPath } from '@src/lib/$path'
 
 type Props = BoxProps
@@ -15,7 +15,7 @@ export const Footer = ({ ...props }: Props) => {
         objectFit={'cover'}
         src={staticPath.images.footer_jpg}
       />
-      <Container pos={'relative'}>
+      <SectionContainer pos={'relative'}>
         <Center
           flexDirection={'column'}
           gap={4}
@@ -57,7 +57,7 @@ export const Footer = ({ ...props }: Props) => {
             ©2022繁内鍼灸治療院
           </Box>
         </Center>
-      </Container>
+      </SectionContainer>
     </Box>
   )
 }

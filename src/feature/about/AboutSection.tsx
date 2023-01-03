@@ -1,9 +1,9 @@
 import { Box, Heading } from '@chakra-ui/react'
-import { Container } from '@src/components/ui/Container/Container'
+import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 
 export const AboutSection = () => {
   return (
-    <Container>
+    <SectionContainer>
       <Heading
         fontSize={{ base: '2xl', md: '7xl', sm: '4xl' }}
         lineHeight={2}
@@ -19,6 +19,6 @@ export const AboutSection = () => {
         <br />
         サービスを提供する
       </Heading>
-    </Container>
+    </SectionContainer>
   )
 }

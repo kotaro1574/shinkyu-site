@@ -1,6 +1,5 @@
 import {
   Center,
-  Container,
   Table,
   TableContainer,
   Tbody,
@@ -9,12 +8,13 @@ import {
   Thead,
   Tr,
 } from '@chakra-ui/react'
+import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
 import { CONSULTATION_HOURS } from '@src/constants/consultationHours'
 
 export const ConsultationHoursSection = () => {
   return (
-    <Container py={10}>
+    <SectionContainer py={10}>
       <SectionHeading>診療時間</SectionHeading>
       <Center mt={8}>
         <TableContainer maxW={'500px'}>
@@ -50,6 +50,6 @@ export const ConsultationHoursSection = () => {
           </Table>
         </TableContainer>
       </Center>
-    </Container>
+    </SectionContainer>
   )
 }
