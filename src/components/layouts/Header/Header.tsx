@@ -1,6 +1,7 @@
 import { Box, BoxProps, Container, Flex, Grid } from '@chakra-ui/react'
 import { Button } from '@src/components/ui/Button/Button'
 import { Drawer } from '@src/components/ui/Drawer/Drawer'
+import { HEADER_HEIGHT_PC, HEADER_HEIGHT_SP } from '@src/constant/style'
 import { useOverViewHeightContext } from '@src/provider/overViewHeight'
 import { useEffect, useState } from 'react'
 
@@ -28,7 +29,12 @@ export const Header = ({ ...props }: Props) => {
       {...props}
     >
       <Container>
-        <Grid alignItems={'center'} gap={4} templateColumns={'1fr auto'}>
+        <Grid
+          alignItems={'center'}
+          gap={4}
+          h={{ base: HEADER_HEIGHT_SP, md: HEADER_HEIGHT_PC }}
+          templateColumns={'1fr auto'}
+        >
           <Box fontSize={{ base: '4xl', lg: '3xl' }}>繁内鍼灸治療院</Box>
           <Flex
             alignItems={'center'}
