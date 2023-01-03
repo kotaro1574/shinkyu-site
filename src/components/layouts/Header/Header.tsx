@@ -14,7 +14,6 @@ export const Header = ({ ...props }: Props) => {
   const toggleVisibility = () => {
     window.scrollY > overViewHeight ? setIsVisible(true) : setIsVisible(false)
   }
-  console.log(isVisible)
 
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility)
