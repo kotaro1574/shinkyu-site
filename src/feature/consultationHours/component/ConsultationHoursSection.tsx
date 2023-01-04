@@ -1,4 +1,5 @@
 import {
+  BoxProps,
   Center,
   Table,
   TableContainer,
@@ -7,7 +8,6 @@ import {
   Th,
   Thead,
   Tr,
-  BoxProps,
 } from '@chakra-ui/react'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'

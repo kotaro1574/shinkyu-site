@@ -4,6 +4,7 @@ import {
   Container,
   Flex,
   Grid,
+  Link,
   useBreakpointValue,
 } from '@chakra-ui/react'
 import { Button } from '@src/components/ui/Button/Button'
@@ -49,16 +50,18 @@ export const Header = ({ ...props }: Props) => {
           h={{ base: HEADER_HEIGHT_SP, md: HEADER_HEIGHT_PC }}
           templateColumns={'1fr auto'}
         >
-          <Box fontSize={{ base: '4xl', lg: '3xl' }}>繁内鍼灸治療院</Box>
+          <Link fontSize={{ base: '4xl', lg: '3xl' }} href={'#top'}>
+            繁内鍼灸治療院
+          </Link>
           <Flex
             alignItems={'center'}
             display={{ base: 'none', lg: 'flex' }}
             gap={4}
           >
-            <Box>当院について</Box>
-            <Box>施術について</Box>
-            <Box>よくある質問</Box>
-            <Box>診療時間</Box>
+            <Link href={'#about'}>当院について</Link>
+            <Link href={'#treatment'}>施術について</Link>
+            <Link href={'#question'}>よくある質問</Link>
+            <Link href={'#hours'}>診療時間</Link>
             <Button bgColor={'green.line'}>LINEで予約</Button>
             <Button bgColor={'teal.400'}>電話で予約</Button>
           </Flex>
