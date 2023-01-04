@@ -24,11 +24,11 @@ export const HomeContent = () => {
       <Box ref={targetRef}>
         <MainVisualSection />
       </Box>
-      <AboutSection />
-      <IntroductionSection />
-      <TreatmentSection />
-      <QuestionSection />
-      <ConsultationHoursSection />
+      <AboutSection id={'about'} />
+      <IntroductionSection id={'introduction'} />
+      <TreatmentSection id={'treatment'} />
+      <QuestionSection id={'question'} />
+      <ConsultationHoursSection id={'hours'} />
     </Box>
   )
 }
