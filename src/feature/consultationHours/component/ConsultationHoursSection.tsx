@@ -7,14 +7,17 @@ import {
   Th,
   Thead,
   Tr,
+  BoxProps,
 } from '@chakra-ui/react'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
 import { CONSULTATION_HOURS } from '@src/feature/consultationHours/constant'
 
-export const ConsultationHoursSection = () => {
+type Props = BoxProps
+
+export const ConsultationHoursSection = ({ ...props }: Props) => {
   return (
-    <SectionContainer py={10}>
+    <SectionContainer py={10} {...props}>
       <SectionHeading>診療時間</SectionHeading>
       <Center mt={8}>
         <TableContainer maxW={'500px'}>
