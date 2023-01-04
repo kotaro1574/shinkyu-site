@@ -1,14 +1,24 @@
-import { Box, Center, chakra, Divider, Grid, Text } from '@chakra-ui/react'
+import {
+  Box,
+  BoxProps,
+  Center,
+  chakra,
+  Divider,
+  Grid,
+  Text,
+} from '@chakra-ui/react'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
 import { TreatmentDetail } from '@src/feature/treatment/component/TreatmentDetail'
 import { TREATMENT_DETAIL_CONTENTS } from '@src/feature/treatment/constant'
 
-export const TreatmentSection = () => {
+type Props = BoxProps
+
+export const TreatmentSection = ({ ...props }: Props) => {
   const isOdd = (index: number) => index % 2 === 0
 
   return (
-    <SectionContainer>
+    <SectionContainer {...props}>
       <Center>
         <Grid
           alignItems={'center'}
