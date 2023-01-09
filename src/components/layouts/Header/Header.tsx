@@ -4,7 +4,6 @@ import {
   Container,
   Flex,
   Grid,
-  Link,
   useBreakpointValue,
 } from '@chakra-ui/react'
 import { Button } from '@src/components/ui/Button/Button'
@@ -51,24 +50,25 @@ export const Header = ({ ...props }: Props) => {
           h={{ base: HEADER_HEIGHT_SP, md: HEADER_HEIGHT_PC }}
           templateColumns={'1fr auto'}
         >
-          <Link fontSize={{ base: '4xl', lg: '3xl' }} href={'#top'}>
-            繁内鍼灸治療院
-          </Link>
+          <Box fontSize={{ base: '4xl', lg: '3xl' }}>
+            <Scroll to={'top'}>繁内鍼灸治療院</Scroll>
+          </Box>
+
           <Flex
             alignItems={'center'}
             display={{ base: 'none', lg: 'flex' }}
             gap={4}
           >
-            <Scroll smooth to={'about'} duration={600} offset={-60}>
+            <Scroll smooth duration={600} offset={-60} to={'about'}>
               当院について
             </Scroll>
-            <Scroll smooth to={'treatment'} duration={600} offset={-60}>
+            <Scroll smooth duration={600} offset={-60} to={'treatment'}>
               施術について
             </Scroll>
-            <Scroll smooth to={'question'} duration={600} offset={-60}>
+            <Scroll smooth duration={600} offset={-60} to={'question'}>
               よくある質問
             </Scroll>
-            <Scroll smooth to={'hours'} duration={600}>
+            <Scroll smooth duration={600} to={'hours'}>
               診療時間
             </Scroll>
             <Button bgColor={'green.line'}>LINEで予約</Button>
