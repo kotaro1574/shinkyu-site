@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { Button } from '@src/components/ui/Button/Button'
 import React from 'react'
+import { Link as Scroll } from 'react-scroll'
 
 type Props = BoxProps
 
@@ -44,7 +45,9 @@ export const Drawer = ({ ...props }: Props) => {
               pb={'20px'}
               position={'relative'}
             >
-              <Box>繁内鍼灸治療院</Box>
+              <Box>
+                <Scroll to={'top'}>繁内鍼灸治療院</Scroll>
+              </Box>
               <DrawerCloseButton
                 color={'white'}
                 top={'50%'}
@@ -52,33 +55,19 @@ export const Drawer = ({ ...props }: Props) => {
               />
             </DrawerHeader>
             <DrawerBody px={'0'} py={'0'} textAlign={'center'}>
-              <Box
-                _hover={{ bgColor: 'teal.500' }}
-                borderBottom={'1px solid white'}
-                py={'20px'}
-              >
-                当院について
-              </Box>
-              <Box
-                _hover={{ bgColor: 'teal.500' }}
-                borderBottom={'1px solid white'}
-                py={'20px'}
-              >
-                施術について
-              </Box>
-              <Box
-                _hover={{ bgColor: 'teal.500' }}
-                borderBottom={'1px solid white'}
-                py={'20px'}
-              >
-                よくある質問
-              </Box>
-              <Box
-                _hover={{ bgColor: 'teal.500' }}
-                borderBottom={'1px solid white'}
-                py={'20px'}
-              >
-                診療時間
+              <Box _hover={{ bgColor: 'teal.500' }}>
+                <Box borderBottom={'1px solid white'} py={'20px'}>
+                  <Scroll to={'about'}>当院について</Scroll>
+                </Box>
+                <Box borderBottom={'1px solid white'} py={'20px'}>
+                  <Scroll to={'treatment'}>施術について</Scroll>
+                </Box>
+                <Box borderBottom={'1px solid white'} py={'20px'}>
+                  <Scroll to={'question'}>よくある質問</Scroll>
+                </Box>
+                <Box borderBottom={'1px solid white'} py={'20px'}>
+                  <Scroll to={'hours'}>診療時間</Scroll>
+                </Box>
               </Box>
               <Flex justifyContent={'center'} pt={'20px'}>
                 <Button bgColor={'green.line'} color={'white'} mr={'12px'}>
