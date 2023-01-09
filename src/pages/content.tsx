@@ -22,7 +22,7 @@ export const HomeContent = () => {
   return (
     <Box>
       <Box ref={targetRef}>
-        <MainVisualSection />
+        <MainVisualSection id={'top'} />
       </Box>
       <AboutSection id={'about'} />
       <IntroductionSection id={'introduction'} />

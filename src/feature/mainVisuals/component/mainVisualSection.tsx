@@ -3,15 +3,17 @@ import 'swiper/css'
 import 'swiper/css/effect-fade'
 import 'swiper/css/scrollbar'
 
-import { AspectRatio } from '@chakra-ui/react'
+import { AspectRatio, BoxProps } from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
 import { MAIN_VISUAL_SLIDE_IMAGES } from '@src/feature/mainVisuals/constant'
 import { Autoplay, EffectFade } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-export const MainVisualSection = () => {
+type Props = BoxProps
+
+export const MainVisualSection = ({ ...props }: Props) => {
   return (
-    <AspectRatio h={{ base: '410px', md: '800px' }} ratio={4 / 3}>
+    <AspectRatio h={{ base: '410px', md: '800px' }} ratio={4 / 3} {...props}>
       <Swiper
         loop
         autoplay={{
