@@ -51,9 +51,9 @@ export const Header = ({ ...props }: Props) => {
           templateColumns={'1fr auto'}
         >
           <Box
+            _hover={{ opacity: '0.7' }}
             cursor={'pointer'}
             fontSize={{ base: '4xl', lg: '3xl' }}
-            _hover={{ opacity: '0.7' }}
           >
             <Scroll smooth duration={600} to={'top'}>
               繁内鍼灸治療院
@@ -86,8 +86,18 @@ export const Header = ({ ...props }: Props) => {
                 診療時間
               </Scroll>
             </Box>
-            <Button bgColor={'green.line'}>LINEで予約</Button>
-            <Button bgColor={'teal.400'}>電話で予約</Button>
+            <Button
+              _hover={{ bgColor: 'white', color: 'green.line' }}
+              bgColor={'green.line'}
+            >
+              LINEで予約
+            </Button>
+            <Button
+              _hover={{ bgColor: 'white', color: 'teal.400' }}
+              bgColor={'teal.400'}
+            >
+              電話で予約
+            </Button>
           </Flex>
           <Drawer
             display={{ base: 'block', lg: 'none' }}

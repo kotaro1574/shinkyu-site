@@ -46,7 +46,7 @@ export const Drawer = ({ ...props }: Props) => {
               pb={'20px'}
               position={'relative'}
             >
-              <Box cursor={'pointer'} _hover={{ opacity: '0.7' }}>
+              <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
                 <Scroll smooth duration={600} to={'top'} onClick={onClose}>
                   繁内鍼灸治療院
                 </Scroll>
@@ -73,8 +73,8 @@ export const Drawer = ({ ...props }: Props) => {
                     smooth
                     duration={600}
                     offset={-60}
-                    onClick={onClose}
                     to={'about'}
+                    onClick={onClose}
                   >
                     当院について
                   </Scroll>
@@ -88,8 +88,8 @@ export const Drawer = ({ ...props }: Props) => {
                     smooth
                     duration={600}
                     offset={-60}
-                    onClick={onClose}
                     to={'treatment'}
+                    onClick={onClose}
                   >
                     施術について
                   </Scroll>
@@ -103,8 +103,8 @@ export const Drawer = ({ ...props }: Props) => {
                     smooth
                     duration={600}
                     offset={-60}
-                    onClick={onClose}
                     to={'question'}
+                    onClick={onClose}
                   >
                     よくある質問
                   </Scroll>
@@ -114,16 +114,23 @@ export const Drawer = ({ ...props }: Props) => {
                   borderBottom={'1px solid white'}
                   py={'20px'}
                 >
-                  <Scroll smooth duration={600} onClick={onClose} to={'hours'}>
+                  <Scroll smooth duration={600} to={'hours'} onClick={onClose}>
                     診療時間
                   </Scroll>
                 </Box>
               </Box>
               <Flex justifyContent={'center'} pt={'20px'} onClick={onClose}>
-                <Button bgColor={'green.line'} color={'white'} mr={'12px'}>
+                <Button
+                  _hover={{ bgColor: 'white', color: 'green.line' }}
+                  bgColor={'green.line'}
+                  mr={'12px'}
+                >
                   LINEで予約
                 </Button>
-                <Button bgColor={'teal.600'} color={'white'}>
+                <Button
+                  _hover={{ bgColor: 'white', color: 'teal.600' }}
+                  bgColor={'teal.600'}
+                >
                   電話で予約
                 </Button>
               </Flex>
