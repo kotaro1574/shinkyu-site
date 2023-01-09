@@ -12,6 +12,7 @@ import { Drawer } from '@src/components/ui/Drawer/Drawer'
 import { HEADER_HEIGHT_PC, HEADER_HEIGHT_SP } from '@src/constant/style'
 import { useOverViewHeightContext } from '@src/provider/overViewHeight'
 import { useEffect, useState } from 'react'
+import { Link as Scroll } from 'react-scroll'
 
 type Props = BoxProps
 
@@ -58,10 +59,18 @@ export const Header = ({ ...props }: Props) => {
             display={{ base: 'none', lg: 'flex' }}
             gap={4}
           >
-            <Link href={'#about'}>当院について</Link>
-            <Link href={'#treatment'}>施術について</Link>
-            <Link href={'#question'}>よくある質問</Link>
-            <Link href={'#hours'}>診療時間</Link>
+            <Scroll smooth to={'about'} duration={600} offset={-60}>
+              当院について
+            </Scroll>
+            <Scroll smooth to={'treatment'} duration={600} offset={-60}>
+              施術について
+            </Scroll>
+            <Scroll smooth to={'question'} duration={600} offset={-60}>
+              よくある質問
+            </Scroll>
+            <Scroll smooth to={'hours'} duration={600}>
+              診療時間
+            </Scroll>
             <Button bgColor={'green.line'}>LINEで予約</Button>
             <Button bgColor={'teal.400'}>電話で予約</Button>
           </Flex>
