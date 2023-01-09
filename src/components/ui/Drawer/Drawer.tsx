@@ -46,7 +46,7 @@ export const Drawer = ({ ...props }: Props) => {
               pb={'20px'}
               position={'relative'}
             >
-              <Box cursor={'pointer'}>
+              <Box cursor={'pointer'} _hover={{ opacity: '0.7' }}>
                 <Scroll smooth duration={600} to={'top'} onClick={onClose}>
                   繁内鍼灸治療院
                 </Scroll>
