@@ -45,7 +45,7 @@ export const Drawer = ({ ...props }: Props) => {
               pb={'20px'}
               position={'relative'}
             >
-              <Box>
+              <Box cursor={'pointer'}>
                 <Scroll to={'top'}>繁内鍼灸治療院</Scroll>
               </Box>
               <DrawerCloseButton
@@ -54,18 +54,39 @@ export const Drawer = ({ ...props }: Props) => {
                 transform={'translateY(-50%)'}
               />
             </DrawerHeader>
-            <DrawerBody px={'0'} py={'0'} textAlign={'center'}>
-              <Box _hover={{ bgColor: 'teal.500' }}>
-                <Box borderBottom={'1px solid white'} py={'20px'}>
+            <DrawerBody
+              px={'0'}
+              py={'0'}
+              textAlign={'center'}
+              cursor={'pointer'}
+            >
+              <Box>
+                <Box
+                  borderBottom={'1px solid white'}
+                  py={'20px'}
+                  _hover={{ bgColor: 'teal.500' }}
+                >
                   <Scroll to={'about'}>当院について</Scroll>
                 </Box>
-                <Box borderBottom={'1px solid white'} py={'20px'}>
+                <Box
+                  borderBottom={'1px solid white'}
+                  py={'20px'}
+                  _hover={{ bgColor: 'teal.500' }}
+                >
                   <Scroll to={'treatment'}>施術について</Scroll>
                 </Box>
-                <Box borderBottom={'1px solid white'} py={'20px'}>
+                <Box
+                  borderBottom={'1px solid white'}
+                  py={'20px'}
+                  _hover={{ bgColor: 'teal.500' }}
+                >
                   <Scroll to={'question'}>よくある質問</Scroll>
                 </Box>
-                <Box borderBottom={'1px solid white'} py={'20px'}>
+                <Box
+                  borderBottom={'1px solid white'}
+                  py={'20px'}
+                  _hover={{ bgColor: 'teal.500' }}
+                >
                   <Scroll to={'hours'}>診療時間</Scroll>
                 </Box>
               </Box>

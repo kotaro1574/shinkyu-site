@@ -50,7 +50,7 @@ export const Header = ({ ...props }: Props) => {
           h={{ base: HEADER_HEIGHT_SP, md: HEADER_HEIGHT_PC }}
           templateColumns={'1fr auto'}
         >
-          <Box fontSize={{ base: '4xl', lg: '3xl' }}>
+          <Box fontSize={{ base: '4xl', lg: '3xl' }} cursor={'pointer'}>
             <Scroll to={'top'}>繁内鍼灸治療院</Scroll>
           </Box>
 
@@ -58,6 +58,7 @@ export const Header = ({ ...props }: Props) => {
             alignItems={'center'}
             display={{ base: 'none', lg: 'flex' }}
             gap={4}
+            cursor={'pointer'}
           >
             <Scroll smooth duration={600} offset={-60} to={'about'}>
               当院について
