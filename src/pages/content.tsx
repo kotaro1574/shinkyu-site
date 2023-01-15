@@ -22,13 +22,13 @@ export const HomeContent = () => {
   return (
     <Box>
       <Box ref={targetRef}>
-        <MainVisualSection />
+        <MainVisualSection id={'top'} />
       </Box>
-      <AboutSection />
-      <IntroductionSection />
-      <TreatmentSection />
-      <QuestionSection />
-      <ConsultationHoursSection />
+      <AboutSection id={'about'} />
+      <IntroductionSection id={'introduction'} />
+      <TreatmentSection id={'treatment'} />
+      <QuestionSection id={'question'} />
+      <ConsultationHoursSection id={'hours'} />
     </Box>
   )
 }

@@ -1,9 +1,11 @@
-import { Box, Heading } from '@chakra-ui/react'
+import { Box, BoxProps, Heading } from '@chakra-ui/react'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 
-export const AboutSection = () => {
+type Props = BoxProps
+
+export const AboutSection = ({ ...props }: Props) => {
   return (
-    <SectionContainer>
+    <SectionContainer {...props}>
       <Heading
         fontSize={{ base: '2xl', md: '7xl', sm: '4xl' }}
         lineHeight={2}

@@ -31,7 +31,7 @@ export const staticPath = {
       postpartum_jpg: '/images/treatment/postpartum.jpg',
       suckingball_jpg: '/images/treatment/suckingball.jpg'
     }
-  }
+  },
 } as const
 
 // prettier-ignore
