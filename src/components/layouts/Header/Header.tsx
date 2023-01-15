@@ -40,6 +40,7 @@ export const Header = ({ ...props }: Props) => {
       as={'header'}
       bgColor={isVisible ? 'white' : 'transparent'}
       color={isVisible ? 'text.primary' : 'white'}
+      boxShadow={isVisible ? 'base' : 'transparent'}
       fontSize={'lg'}
       {...props}
     >
