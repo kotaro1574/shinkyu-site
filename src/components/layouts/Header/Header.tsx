@@ -82,7 +82,7 @@ export const Header = ({ ...props }: Props) => {
               </Scroll>
             </Box>
             <Box _hover={{ opacity: '0.7' }}>
-              <Scroll smooth duration={600} to={'hours'}>
+              <Scroll smooth duration={600} offset={-60} to={'hours'}>
                 診療時間
               </Scroll>
             </Box>
