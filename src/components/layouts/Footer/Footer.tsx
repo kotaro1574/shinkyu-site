@@ -37,8 +37,18 @@ export const Footer = ({ ...props }: Props) => {
                 <Box>tel:090-1111-1111</Box>
               </Box>
               <Flex alignItems={'center'} gap={4} mt={4}>
-                <Button>LINEで予約</Button>
-                <Button>電話で予約</Button>
+                <Button
+                  _hover={{ bgColor: 'white', color: 'green.line' }}
+                  bgColor={'green.line'}
+                >
+                  LINEで予約
+                </Button>
+                <Button
+                  _hover={{ bgColor: 'white', color: 'teal.400' }}
+                  bgColor={'teal.400'}
+                >
+                  電話で予約
+                </Button>
               </Flex>
             </Box>
             <Box order={{ base: 1, md: 2 }}>
@@ -49,7 +59,7 @@ export const Footer = ({ ...props }: Props) => {
                 src={
                   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.945691620884!2d132.70690271604823!3d34.37730150797549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35506e1dbc5ea3d5%3A0x70f62b95765c90a8!2z44CSNzM5LTAwMzUg5bqD5bO255yM5p2x5bqD5bO25biC6KW_5p2h55S66YO35pu977yT77yU77yQ4oiS77yYIOOCouODq-OCveODvOODrOadseW6g-WztuWFreeVqumkqCAxMDE!5e0!3m2!1sja!2sjp!4v1660450601751!5m2!1sja!2sjp'
                 }
-                width={'340'}
+                // width={{ md: '340' }}
               />
             </Box>
           </Grid>

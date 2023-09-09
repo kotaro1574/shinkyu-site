@@ -20,7 +20,7 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
     <SectionContainer py={10} {...props}>
       <SectionHeading>診療時間</SectionHeading>
       <Center mt={8}>
-        <TableContainer maxW={'500px'}>
+        <TableContainer>
           <Table size={'sm'}>
             <Thead>
               <Tr bg={'teal.400'}>
