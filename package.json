@@ -15,7 +15,6 @@
     "format:eslint": "yarn lint:eslint --fix",
     "format:prettier": "yarn lint:prettier --write",
     "typecheck": "tsc --pretty --noEmit",
-    "generate:page": "scaffdog generate page",
     "gen:theme-typings": "chakra-cli tokens /src/lib/chakra/theme.ts"
   },
   "dependencies": {
