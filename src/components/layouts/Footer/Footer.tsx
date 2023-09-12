@@ -1,8 +1,6 @@
 import { Box, BoxProps, Center, Flex, Grid } from '@chakra-ui/react'
 import { Button } from '@src/components/ui/Button/Button'
-import { Image } from '@src/components/ui/Image'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
-import { staticPath } from '@src/lib/$path'
 
 type Props = BoxProps
 
