@@ -7,6 +7,7 @@ import { DefaultSeo } from 'next-seo'
 
 const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout ?? ((page) => page)
+
   return (
     <ChakraProvider theme={theme}>
       <OverviewHeightProvider>
