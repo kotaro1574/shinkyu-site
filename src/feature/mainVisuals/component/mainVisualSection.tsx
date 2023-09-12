@@ -13,7 +13,7 @@ type Props = BoxProps
 
 export const MainVisualSection = ({ ...props }: Props) => {
   return (
-    <AspectRatio mx={'auto'} ratio={7 / 4} {...props}>
+    <AspectRatio h={'600px'} {...props}>
       <Swiper
         loop
         autoplay={{

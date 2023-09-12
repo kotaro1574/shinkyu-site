@@ -33,7 +33,7 @@ export const Header = ({ ...props }: Props) => {
       as={'header'}
       backdropFilter={'blur(3px)'}
       bgColor={isVisible ? 'white' : 'rgba(56, 178, 172, 0.3)'}
-      boxShadow={isVisible ? 'base' : 'transparent'}
+      boxShadow={'base'}
       color={isVisible ? 'text.primary' : 'white'}
       fontSize={'lg'}
       maxW={'960px'}
