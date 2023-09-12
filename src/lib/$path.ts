@@ -18,6 +18,7 @@ export const staticPath = {
     mainVisual: {
       hari_3_jpg: '/images/mainVisual/hari-3.jpg',
       kanban_jpg: '/images/mainVisual/kanban.jpg',
+      mainVisual1_jpg: '/images/mainVisual/mainVisual1.jpg',
       okyu_2_jpg: '/images/mainVisual/okyu-2.jpg',
       slide_image_1_jpg: '/images/mainVisual/slide_image_1.jpg',
       slide_image_2_jpg: '/images/mainVisual/slide_image_2.jpg',
