@@ -7,7 +7,7 @@ type Props = BoxProps
 
 export const IntroductionSection = ({ ...props }: Props) => {
   return (
-    <Box bg={'#f4fbfc'} {...props}>
+    <Box bg={'telegram.50'} {...props}>
       <SectionContainer>
         <Flex
           alignItems={{ base: 'center', md: 'start' }}
