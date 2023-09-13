@@ -10,27 +10,15 @@ export type PagesPath = typeof pagesPath
 // prettier-ignore
 export const staticPath = {
   images: {
-    PractitionerIntroduction_JPG: '/images/PractitionerIntroduction.JPG',
-    footer_jpg: '/images/footer.jpg',
-    introduction: {
-      director_image_jpg: '/images/introduction/director_image.jpg'
-    },
-    mainVisual: {
-      slide_image_1_jpg: '/images/mainVisual/slide_image_1.jpg',
-      slide_image_2_jpg: '/images/mainVisual/slide_image_2.jpg',
-      slide_image_3_jpg: '/images/mainVisual/slide_image_3.jpg',
-      slide_image_4_jpg: '/images/mainVisual/slide_image_4.jpg'
-    },
-    section1_1_png: '/images/section1-1.png',
-    section1_2_JPG: '/images/section1-2.JPG',
-    top_image_title_svg: '/images/top_image_title.svg',
-    treatment: {
-      acupuncture_jpg: '/images/treatment/acupuncture.jpg',
-      manipulative_jpg: '/images/treatment/manipulative.jpg',
-      moxibustion_jpg: '/images/treatment/moxibustion.jpg',
-      postpartum_jpg: '/images/treatment/postpartum.jpg',
-      suckingball_jpg: '/images/treatment/suckingball.jpg'
-    }
+    director_image_jpg: '/images/director_image.jpg',
+    mainVisual1_jpg: '/images/mainVisual1.jpg',
+    mainVisual2_jpg: '/images/mainVisual2.jpg',
+    mainVisual3_jpg: '/images/mainVisual3.jpg',
+    treatment_hari_jpg: '/images/treatment-hari.jpg',
+    treatment_kotsuban_jpg: '/images/treatment-kotsuban.jpg',
+    treatment_okyu_jpg: '/images/treatment-okyu.jpg',
+    treatment_seitai_jpg: '/images/treatment-seitai.jpg',
+    treatment_suidama_jpg: '/images/treatment-suidama.jpg'
   }
 } as const
 

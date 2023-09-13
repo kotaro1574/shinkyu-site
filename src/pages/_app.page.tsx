@@ -7,6 +7,7 @@ import { DefaultSeo } from 'next-seo'
 
 const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout ?? ((page) => page)
+
   return (
     <ChakraProvider theme={theme}>
       <OverviewHeightProvider>
@@ -21,7 +22,7 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
                 alt: 'Og Image Alt',
                 height: 600,
                 type: 'image/jpeg',
-                url: staticPath.images.mainVisual.slide_image_1_jpg,
+                url: staticPath.images.mainVisual1_jpg,
                 width: 800,
               },
             ],

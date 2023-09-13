@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
 import { Footer } from '@src/components/layouts/Footer/Footer'
 import { Header } from '@src/components/layouts/Header/Header'
 import { ReactNode } from 'react'
@@ -9,12 +9,16 @@ type Props = {
 
 export const BaseLayout = ({ children }: Props) => {
   return (
-    <Box>
-      <Box position={'fixed'} w={'100%'} zIndex={10}>
-        <Header />
-      </Box>
-      {children}
-      <Footer mt={'120px'} />
+    <Box bg={'gray.100'}>
+      <Container bg={'white'} p={0}>
+        <Box boxShadow={'base'}>
+          <Box position={'fixed'} w={'100%'} zIndex={10}>
+            <Header px={4} />
+          </Box>
+          {children}
+          <Footer mt={'120px'} />
+        </Box>
+      </Container>
     </Box>
   )
 }

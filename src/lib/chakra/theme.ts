@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 import { extendTheme } from '@chakra-ui/react'
 
@@ -33,14 +34,6 @@ export const theme = extendTheme({
     text: {
       primary: '#333333',
       secondary: '#969696',
-    },
-    form: {
-      bronze: {
-        500: '#A97322',
-      },
-      terugreen: {
-        500: '#006979',
-      },
     },
   },
   fontSizes: {
