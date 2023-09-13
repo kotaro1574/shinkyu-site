@@ -37,8 +37,8 @@ export const theme = extendTheme({
     },
   },
   fontSizes: {
-    '7xl': '36px',
-    '6xl': '28px',
+    '7xl': '34px',
+    '6xl': '30px',
     '5xl': '26px',
     '4xl': '24px',
     '3xl': '22px',

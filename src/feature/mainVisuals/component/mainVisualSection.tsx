@@ -46,7 +46,7 @@ export const MainVisualSection = ({ ...props }: Props) => (
     </Swiper>
     <Heading
       color={'white'}
-      fontSize={{ base: '2xl', md: '7xl', sm: '4xl' }}
+      fontSize={{ base: '2xl', md: '6xl', sm: '4xl', lg: '7xl' }}
       lineHeight={2}
       position={'absolute'}
       right={5}

@@ -1,5 +1,4 @@
 import { Box } from '@chakra-ui/react'
-import { AboutSection } from '@src/feature/about/component/AboutSection'
 import { ConsultationHoursSection } from '@src/feature/consultationHours/component/ConsultationHoursSection'
 import { IntroductionSection } from '@src/feature/introduction/component/IntroductionSection'
 import { MainVisualSection } from '@src/feature/mainVisuals/component/mainVisualSection'
@@ -24,9 +23,8 @@ export const HomeContent = () => {
       <Box ref={targetRef}>
         <MainVisualSection id={'top'} />
       </Box>
-      <AboutSection id={'about'} />
-      <IntroductionSection id={'introduction'} />
       <TreatmentSection id={'treatment'} />
+      <IntroductionSection id={'introduction'} />
       <QuestionSection id={'question'} />
       <ConsultationHoursSection id={'hours'} />
     </Box>
