@@ -38,7 +38,7 @@ export const IntroductionSection = ({ ...props }: Props) => {
                 alt={'director_image'}
                 layout={'fill'}
                 objectFit={'cover'}
-                src={staticPath.images.introduction.director_image_jpg}
+                src={staticPath.images.director_image_jpg}
               />
             </AspectRatio>
             <Box
