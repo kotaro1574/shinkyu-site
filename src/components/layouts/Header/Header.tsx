@@ -32,7 +32,7 @@ export const Header = ({ ...props }: Props) => {
     <Box
       as={'header'}
       backdropFilter={'blur(3px)'}
-      bgColor={isVisible ? 'white' : 'rgba(56, 178, 172, 0.3)'}
+      bgColor={isVisible ? 'gray.50' : 'rgba(56, 178, 172, 0.3)'}
       boxShadow={'base'}
       color={isVisible ? 'text.primary' : 'white'}
       fontSize={'lg'}

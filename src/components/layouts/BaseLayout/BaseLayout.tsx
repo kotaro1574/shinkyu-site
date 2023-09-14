@@ -9,16 +9,16 @@ type Props = {
 
 export const BaseLayout = ({ children }: Props) => {
   return (
-    <Box bg={'gray.100'}>
-      <Container bg={'white'} p={0}>
-        <Box boxShadow={'base'}>
-          <Box position={'fixed'} w={'100%'} zIndex={10}>
-            <Header px={4} />
-          </Box>
-          {children}
-          <Footer mt={'120px'} />
-        </Box>
-      </Container>
+    <Box bg={'white'}>
+      {/* <Container bg={'gray.50'} p={0}> */}
+      <Box boxShadow={'base'}>
+        {/* <Box position={'fixed'} w={'100%'} zIndex={10}>
+          <Header px={4} />
+        </Box> */}
+        {children}
+        <Footer mt={'120px'} />
+      </Box>
+      {/* </Container> */}
     </Box>
   )
 }
