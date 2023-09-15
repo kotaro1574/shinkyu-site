@@ -1,4 +1,4 @@
-import { Box,BoxProps,Button, Center, Grid } from '@chakra-ui/react'
+import { Box, BoxProps, Button, Center, Grid } from '@chakra-ui/react'
 import { Logo } from '@src/components/ui/Logo/Logo'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { BsFillTelephoneFill, BsLine } from 'react-icons/bs'
@@ -6,7 +6,7 @@ import { Link as Scroll } from 'react-scroll'
 
 export const MenuSection = (props: BoxProps) => {
   return (
-    <SectionContainer py={'50px'} {...props}>
+    <SectionContainer pb={'50px'} pt={'50px'} {...props}>
       <Grid gap={8}>
         <Center>
           <Logo />

@@ -1,6 +1,7 @@
 import { AspectRatio, Box, BoxProps, Flex } from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
+import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
 import { staticPath } from '@src/lib/$path'
 
 type Props = BoxProps
@@ -8,12 +9,14 @@ type Props = BoxProps
 export const IntroductionSection = ({ ...props }: Props) => {
   return (
     <Box bg={'telegram.50'} {...props}>
-      <SectionContainer>
+      <SectionContainer pb={'50px'} pt={'50px'}>
+        <SectionHeading>当院について</SectionHeading>
         <Flex
           alignItems={{ base: 'center', md: 'start' }}
           flexDirection={{ base: 'column', md: 'row' }}
           gap={4}
           justifyContent={'center'}
+          mt={8}
         >
           <Box
             fontSize={{ base: 'md', md: 'lg' }}

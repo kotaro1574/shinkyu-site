@@ -18,7 +18,7 @@ export const TreatmentSection = ({ ...props }: Props) => {
   const isOdd = (index: number) => index % 2 === 0
 
   return (
-    <SectionContainer {...props}>
+    <SectionContainer pb={'150px'} {...props}>
       <Center>
         <Grid
           alignItems={'center'}
