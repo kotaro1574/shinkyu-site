@@ -23,7 +23,7 @@ export const TreatmentDetail = ({
         ml={{ md: isOdd ? '0' : 'auto' }}
         overflow={'hidden'}
         ratio={6 / 3}
-        rounded={2}
+        rounded={4}
       >
         <Image
           alt={title}
@@ -33,8 +33,10 @@ export const TreatmentDetail = ({
         />
       </AspectRatio>
       <Grid
-        bg={'rgba(247,247,247,0.8)'}
+        backdropFilter={'blur(3px)'}
+        bg={'rgba(247,247,247,0.6)'}
         bottom={{ base: 5, md: 0 }}
+        boxShadow={'base'}
         gap={2}
         left={{ md: isOdd ? '50%' : '0' }}
         maxW={{ base: '90%', md: '50%' }}
@@ -42,7 +44,7 @@ export const TreatmentDetail = ({
         position={{ base: 'relative', md: 'absolute' }}
         px={10}
         py={5}
-        rounded={2}
+        rounded={4}
       >
         <Box fontSize={{ base: '2xl', md: '5xl' }} fontWeight={'medium'}>
           {title}
