@@ -37,20 +37,14 @@ export const TreatmentSection = ({ ...props }: Props) => {
             下記の施術方法より一人一人に合わせた施術を選択し、相談しながら施術していきます。
           </Box>
           <Box>
-            <Text fontWeight={'medium'}>
+            <Text fontWeight={'bold'}>
               1回
-              <chakra.span fontSize={'6xl'} fontWeight={'bold'} ml={4}>
+              <chakra.span fontSize={'9xl'} ml={4} mr={2}>
                 4,000
               </chakra.span>
               円(税込)
             </Text>
-            <Divider
-              borderColor={'black'}
-              maxW={'210px'}
-              mx={'auto'}
-              my={0}
-              opacity={1}
-            />
+            <Divider borderColor={'black'} maxW={'300px'} mx={'auto'} my={0} />
           </Box>
         </Grid>
       </Center>
