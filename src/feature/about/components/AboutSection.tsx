@@ -1,9 +1,7 @@
 import { Box, BoxProps, Heading } from '@chakra-ui/react'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 
-type Props = BoxProps
-
-export const AboutSection = ({ ...props }: Props) => {
+export const AboutSection = (props: BoxProps) => {
   return (
     <SectionContainer {...props}>
       <Heading

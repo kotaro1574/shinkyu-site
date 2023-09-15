@@ -32,7 +32,7 @@ export const Header = ({ ...props }: Props) => {
     <Box
       as={'header'}
       backdropFilter={'blur(3px)'}
-      bgColor={isVisible ? 'white' : 'rgba(56, 178, 172, 0.3)'}
+      bgColor={isVisible ? 'gray.50' : 'rgba(56, 178, 172, 0.3)'}
       boxShadow={'base'}
       color={isVisible ? 'text.primary' : 'white'}
       fontSize={'lg'}
@@ -62,13 +62,13 @@ export const Header = ({ ...props }: Props) => {
           gap={4}
         >
           <Box _hover={{ opacity: '0.7' }}>
-            <Scroll smooth duration={600} offset={-60} to={'about'}>
-              当院について
+            <Scroll smooth duration={600} offset={-60} to={'treatment'}>
+              施術について
             </Scroll>
           </Box>
           <Box _hover={{ opacity: '0.7' }}>
-            <Scroll smooth duration={600} offset={-60} to={'treatment'}>
-              施術について
+            <Scroll smooth duration={600} offset={-60} to={'introduction'}>
+              当院について
             </Scroll>
           </Box>
           <Box _hover={{ opacity: '0.7' }}>
