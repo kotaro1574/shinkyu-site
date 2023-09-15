@@ -1,5 +1,4 @@
-import { Box, Heading } from '@chakra-ui/react'
-import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
+import { Box } from '@chakra-ui/react'
 import { AboutSection } from '@src/feature/about/components/AboutSection'
 import { ConsultationHoursSection } from '@src/feature/consultationHours/component/ConsultationHoursSection'
 import { IntroductionSection } from '@src/feature/introduction/component/IntroductionSection'

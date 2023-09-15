@@ -27,6 +27,7 @@ export const QuestionAccordion = ({ items, ...props }: Props) => {
               as={'span'}
               flex={'1'}
               fontSize={{ base: 'md', md: 'lg' }}
+              fontWeight={'medium'}
               textAlign={'left'}
             >
               {item.question}

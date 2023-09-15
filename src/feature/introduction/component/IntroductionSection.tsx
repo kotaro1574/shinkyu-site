@@ -35,7 +35,7 @@ export const IntroductionSection = ({ ...props }: Props) => {
             <AspectRatio
               overflow={'hidden'}
               ratio={{ base: 5 / 3, md: 4 / 3 }}
-              rounded={2}
+              rounded={4}
             >
               <Image
                 alt={'director_image'}
