@@ -6,8 +6,8 @@ export const Logo = () => {
   return (
     <AspectRatio ratio={155 / 30} w={'355px'}>
       <Image
-        layout={'fill'}
         alt={'logo_image'}
+        layout={'fill'}
         src={staticPath.images.logo_png}
       />
     </AspectRatio>
