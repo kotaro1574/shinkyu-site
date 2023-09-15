@@ -7,7 +7,7 @@ type Props = {
 
 export const SectionContainer = ({ children, ...props }: Props) => {
   return (
-    <ChakraContainer as={'section'} py={{ base: 10, md: 14 }} {...props}>
+    <ChakraContainer as={'section'} py={{ base: 16, md: '100px' }} {...props}>
       {children}
     </ChakraContainer>
   )

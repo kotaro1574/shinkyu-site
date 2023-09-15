@@ -11,6 +11,7 @@ export type PagesPath = typeof pagesPath
 export const staticPath = {
   images: {
     director_image_jpg: '/images/director_image.jpg',
+    logo_png: '/images/logo.png',
     mainVisual1_jpg: '/images/mainVisual1.jpg',
     mainVisual2_jpg: '/images/mainVisual2.jpg',
     mainVisual3_jpg: '/images/mainVisual3.jpg',

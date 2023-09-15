@@ -7,10 +7,10 @@ import { AspectRatio, Box, BoxProps, Center, FlexProps } from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
 import { MAIN_VISUAL_SLIDE_IMAGES } from '@src/feature/mainVisuals/constant'
 import { forwardRef, useRef } from 'react'
+import { AiFillCaretLeft, AiFillCaretRight } from 'react-icons/ai'
 import type SwiperCore from 'swiper'
 import { Autoplay, Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { AiFillCaretLeft, AiFillCaretRight } from 'react-icons/ai'
 
 export const MainVisualSection = ({ ...props }: BoxProps) => {
   const prevRef = useRef<HTMLDivElement>(null)
