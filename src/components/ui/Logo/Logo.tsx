@@ -1,4 +1,4 @@
-import { AspectRatio, Icon } from '@chakra-ui/react'
+import { AspectRatio } from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
 import { staticPath } from '@src/lib/$path'
 
