@@ -1,0 +1,12 @@
+{
+  "extensions": [
+    "steoates.autoimport",
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "ahmadawais.shades-of-purple",
+    "vscode-icons-team.vscode-icons"
+  ]
+}
