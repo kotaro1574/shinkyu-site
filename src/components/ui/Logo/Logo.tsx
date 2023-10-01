@@ -4,7 +4,7 @@ import { staticPath } from '@src/lib/$path'
 
 export const Logo = () => {
   return (
-    <AspectRatio ratio={155 / 30} w={'355px'}>
+    <AspectRatio ratio={155 / 30} w={{ base: '255px', md: '355px' }}>
       <Image
         alt={'logo_image'}
         layout={'fill'}
