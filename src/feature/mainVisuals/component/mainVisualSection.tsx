@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 // Import Swiper stles
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -34,11 +35,23 @@ export const MainVisualSection = ({ ...props }: BoxProps) => {
           disableOnInteraction: false,
           waitForTransition: false,
         }}
-        followFinger={false}
+        breakpoints={{
+          480: {
+            slidesPerView: 1.1,
+            spaceBetween: 12,
+          },
+          768: {
+            followFinger: false,
+            slidesPerView: 1.3,
+            spaceBetween: 12,
+          },
+          992: {
+            slidesPerView: 1.5,
+            spaceBetween: 15,
+          },
+        }}
         loopAdditionalSlides={2}
         modules={[Autoplay, Navigation]}
-        slidesPerView={1.5}
-        spaceBetween={15}
         speed={2000}
         onBeforeInit={onBeforeInit}
       >
@@ -46,9 +59,9 @@ export const MainVisualSection = ({ ...props }: BoxProps) => {
           <SwiperSlide key={`swiper_slide_${index}`}>
             {({ isActive }) => (
               <AspectRatio
-                h={{ base: '300px', lg: '450px', md: '350px' }}
+                h={{ base: '300px', lg: '550px', md: '350px' }}
                 overflow={'hidden'}
-                roundedBottom={4}
+                roundedBottom={{ sm: 4 }}
               >
                 <Image
                   alt={'top_image'}
@@ -62,10 +75,18 @@ export const MainVisualSection = ({ ...props }: BoxProps) => {
             )}
           </SwiperSlide>
         ))}
-        <SliderNavigationButton left={'15%'} ref={prevRef}>
+        <SliderNavigationButton
+          display={{ base: 'none', md: 'flex' }}
+          left={{ lg: '15%', md: '8%' }}
+          ref={prevRef}
+        >
           <AiFillCaretLeft color={'white'} fontSize={'20px'} />
         </SliderNavigationButton>
-        <SliderNavigationButton ref={nextRef} right={'15%'}>
+        <SliderNavigationButton
+          display={{ base: 'none', md: 'flex' }}
+          ref={nextRef}
+          right={{ lg: '15%', md: '8%' }}
+        >
           <AiFillCaretRight color={'white'} fontSize={'20px'} />
         </SliderNavigationButton>
       </Swiper>
