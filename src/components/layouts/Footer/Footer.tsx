@@ -1,6 +1,7 @@
-import { Box, BoxProps, Center, Flex, Grid } from '@chakra-ui/react'
-import { Button } from '@src/components/ui/Button/Button'
+import { Box, BoxProps, Button, Center, Flex, Grid } from '@chakra-ui/react'
+import { Logo } from '@src/components/ui/Logo/Logo'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
+import { BsFillTelephoneFill, BsLine } from 'react-icons/bs'
 
 type Props = BoxProps
 
@@ -15,13 +16,9 @@ export const Footer = ({ ...props }: Props) => {
         >
           <Grid gap={4} templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }}>
             <Box order={{ base: 2, md: 1 }}>
-              <Box
-                fontSize={{ base: '2xl' }}
-                fontWeight={'medium'}
-                textAlign={'center'}
-              >
-                繁内鍼灸治療院
-              </Box>
+              <Center>
+                <Logo w={'255px'} />
+              </Center>
               <Box fontSize={{ base: 'md', md: 'lg' }} mt={4}>
                 <Box>〒739-0035</Box>
                 <Box>広島県東広島市西条町郷曽340-8</Box>
@@ -30,14 +27,18 @@ export const Footer = ({ ...props }: Props) => {
               </Box>
               <Flex alignItems={'center'} gap={4} mt={4}>
                 <Button
-                  _hover={{ bgColor: 'white', color: 'green.line' }}
                   bgColor={'green.line'}
+                  color={'white'}
+                  colorScheme={'green'}
+                  leftIcon={<BsLine />}
                 >
                   LINEで予約
                 </Button>
                 <Button
-                  _hover={{ bgColor: 'white', color: 'teal.400' }}
                   bgColor={'teal.400'}
+                  color={'white'}
+                  colorScheme={'teal'}
+                  leftIcon={<BsFillTelephoneFill />}
                 >
                   電話で予約
                 </Button>
