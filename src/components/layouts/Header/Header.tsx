@@ -1,9 +1,17 @@
-import { Box, BoxProps, Flex, Grid, useBreakpointValue } from '@chakra-ui/react'
-import { Button } from '@src/components/ui/Button/Button'
+import {
+  Box,
+  BoxProps,
+  Button,
+  Flex,
+  Grid,
+  useBreakpointValue,
+} from '@chakra-ui/react'
 import { Drawer } from '@src/components/ui/Drawer/Drawer'
+import { Logo } from '@src/components/ui/Logo/Logo'
 import { HEADER_HEIGHT_PC, HEADER_HEIGHT_SP } from '@src/constant/style'
 import { useOverViewHeightContext } from '@src/provider/overViewHeight'
 import { useEffect, useState } from 'react'
+import { BsFillTelephoneFill, BsLine } from 'react-icons/bs'
 import { Link as Scroll } from 'react-scroll'
 
 type Props = BoxProps
@@ -32,11 +40,11 @@ export const Header = ({ ...props }: Props) => {
     <Box
       as={'header'}
       backdropFilter={'blur(3px)'}
-      bgColor={isVisible ? 'gray.50' : 'rgba(56, 178, 172, 0.3)'}
+      bgColor={'gray.50'}
       boxShadow={'base'}
-      color={isVisible ? 'text.primary' : 'white'}
+      color={'text.primary'}
+      display={isVisible ? 'black' : 'none'}
       fontSize={'lg'}
-      maxW={'960px'}
       {...props}
     >
       <Grid
@@ -45,13 +53,9 @@ export const Header = ({ ...props }: Props) => {
         h={{ base: HEADER_HEIGHT_SP, md: HEADER_HEIGHT_PC }}
         templateColumns={'1fr auto'}
       >
-        <Box
-          _hover={{ opacity: '0.7' }}
-          cursor={'pointer'}
-          fontSize={{ base: '4xl', lg: '3xl' }}
-        >
+        <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
           <Scroll smooth duration={600} to={'top'}>
-            繁内鍼灸治療院
+            <Logo w={'200px'} />
           </Scroll>
         </Box>
 
@@ -82,14 +86,18 @@ export const Header = ({ ...props }: Props) => {
             </Scroll>
           </Box>
           <Button
-            _hover={{ bgColor: 'white', color: 'green.line' }}
             bgColor={'green.line'}
+            color={'white'}
+            colorScheme={'green'}
+            leftIcon={<BsLine />}
           >
             LINEで予約
           </Button>
           <Button
-            _hover={{ bgColor: 'white', color: 'teal.400' }}
             bgColor={'teal.400'}
+            color={'white'}
+            colorScheme={'teal'}
+            leftIcon={<BsFillTelephoneFill />}
           >
             電話で予約
           </Button>
