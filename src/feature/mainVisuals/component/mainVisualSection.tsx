@@ -59,7 +59,7 @@ export const MainVisualSection = ({ ...props }: BoxProps) => {
           <SwiperSlide key={`swiper_slide_${index}`}>
             {({ isActive }) => (
               <AspectRatio
-                h={{ base: '300px', lg: '550px', md: '350px' }}
+                h={{ base: '300px', lg: '450px', md: '350px' }}
                 overflow={'hidden'}
                 roundedBottom={{ sm: 4 }}
               >
