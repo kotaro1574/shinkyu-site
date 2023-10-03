@@ -25,9 +25,15 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
           <Table size={'sm'}>
             <Thead>
               <Tr bg={'teal.400'}>
-                <Th p={{ base: 2, md: 4 }}>診療時間</Th>
+                <Th color={'white'} p={{ base: 2.5, sm: 4 }}>
+                  診療時間
+                </Th>
                 {CONSULTATION_HOURS.weeks.map((week, index) => (
-                  <Th key={`week_${index}`} p={{ base: 2, md: 4 }}>
+                  <Th
+                    color={'white'}
+                    key={`week_${index}`}
+                    p={{ base: 2.5, sm: 4 }}
+                  >
                     {week}
                   </Th>
                 ))}
@@ -35,17 +41,17 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
             </Thead>
             <Tbody>
               <Tr>
-                <Td p={{ base: 2, md: 4 }}>09:00 ~ 18:00</Td>
+                <Td p={{ base: 2.5, sm: 4 }}>09:00 ~ 18:00</Td>
                 {CONSULTATION_HOURS.mornings.map((morning, index) => (
-                  <Th key={`morning_${index}`} p={{ base: 2, md: 4 }}>
+                  <Th key={`morning_${index}`} p={{ base: 2.5, sm: 4 }}>
                     {morning}
                   </Th>
                 ))}
               </Tr>
               <Tr>
-                <Td p={{ base: 2, md: 4 }}>18:00 ~ 21:00</Td>
+                <Td p={{ base: 2.5, sm: 4 }}>18:00 ~ 21:00</Td>
                 {CONSULTATION_HOURS.afternoons.map((afternoon, index) => (
-                  <Th key={`afternoon_${index}`} p={{ base: 2, md: 4 }}>
+                  <Th key={`afternoon_${index}`} p={{ base: 2.5, sm: 4 }}>
                     {afternoon}
                   </Th>
                 ))}
