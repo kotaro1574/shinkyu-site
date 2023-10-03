@@ -43,6 +43,8 @@ export const MenuSection = (props: BoxProps) => {
         <Center gap={4}>
           <Button
             bgColor={'green.line'}
+            borderColor={'white'}
+            borderWidth={'1px'}
             color={'white'}
             colorScheme={'green'}
             leftIcon={<BsLine />}
@@ -51,6 +53,8 @@ export const MenuSection = (props: BoxProps) => {
           </Button>
           <Button
             bgColor={'teal.400'}
+            borderColor={'white'}
+            borderWidth={'1px'}
             color={'white'}
             colorScheme={'teal'}
             leftIcon={<BsFillTelephoneFill />}

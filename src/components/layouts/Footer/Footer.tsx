@@ -28,6 +28,8 @@ export const Footer = ({ ...props }: Props) => {
               <Flex alignItems={'center'} gap={4} mt={4}>
                 <Button
                   bgColor={'green.line'}
+                  borderColor={'white'}
+                  borderWidth={'1px'}
                   color={'white'}
                   colorScheme={'green'}
                   leftIcon={<BsLine />}
@@ -36,6 +38,8 @@ export const Footer = ({ ...props }: Props) => {
                 </Button>
                 <Button
                   bgColor={'teal.400'}
+                  borderColor={'white'}
+                  borderWidth={'1px'}
                   color={'white'}
                   colorScheme={'teal'}
                   leftIcon={<BsFillTelephoneFill />}
