@@ -49,7 +49,7 @@ export const Drawer = ({ ...props }: Props) => {
             >
               <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
                 <Scroll smooth duration={600} to={'top'} onClick={onClose}>
-                  <Logo w={'200px'} type={'white'} />
+                  <Logo type={'white'} w={'200px'} />
                 </Scroll>
               </Box>
               <DrawerCloseButton
