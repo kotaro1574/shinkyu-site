@@ -13,6 +13,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react'
 import { Button } from '@src/components/ui/Button/Button'
+import { Logo } from '@src/components/ui/Logo/Logo'
 import React from 'react'
 import { Link as Scroll } from 'react-scroll'
 
@@ -48,7 +49,7 @@ export const Drawer = ({ ...props }: Props) => {
             >
               <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
                 <Scroll smooth duration={600} to={'top'} onClick={onClose}>
-                  繁内鍼灸治療院
+                  <Logo w={'200px'} type={'white'} />
                 </Scroll>
               </Box>
               <DrawerCloseButton
