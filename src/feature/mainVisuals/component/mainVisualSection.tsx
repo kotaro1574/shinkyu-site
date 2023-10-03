@@ -31,7 +31,7 @@ export const MainVisualSection = ({ ...props }: BoxProps) => {
         centeredSlides
         loop
         autoplay={{
-          delay: 12000,
+          delay: 7000,
           disableOnInteraction: false,
           waitForTransition: false,
         }}
@@ -69,7 +69,7 @@ export const MainVisualSection = ({ ...props }: BoxProps) => {
                   objectFit={'cover'}
                   src={image}
                   transform={isActive ? 'scale(1.05)' : ''}
-                  transitionDuration={'13s'}
+                  transitionDuration={'10s'}
                 />
               </AspectRatio>
             )}
