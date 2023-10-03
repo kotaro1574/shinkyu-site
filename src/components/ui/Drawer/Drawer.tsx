@@ -2,6 +2,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import {
   Box,
   BoxProps,
+  Button,
   Drawer as ChakraDrawer,
   DrawerBody,
   DrawerCloseButton,
@@ -12,9 +13,9 @@ import {
   IconButton,
   useDisclosure,
 } from '@chakra-ui/react'
-import { Button } from '@src/components/ui/Button/Button'
 import { Logo } from '@src/components/ui/Logo/Logo'
 import React from 'react'
+import { BsFillTelephoneFill, BsLine } from 'react-icons/bs'
 import { Link as Scroll } from 'react-scroll'
 
 type Props = BoxProps
@@ -40,9 +41,13 @@ export const Drawer = ({ ...props }: Props) => {
         onClose={onClose}
       >
         <DrawerOverlay>
-          <DrawerContent bg={'teal.400'} color={'white'}>
+          <DrawerContent
+            backdropFilter={'blur(3px)'}
+            backgroundColor={'rgba(56, 178, 172, 0.7)'}
+            color={'white'}
+          >
             <DrawerHeader
-              borderBottom={'1px solid white'}
+              // borderBottom={'1px solid white'}
               fontWeight={'medium'}
               pb={'20px'}
               position={'relative'}
@@ -58,18 +63,9 @@ export const Drawer = ({ ...props }: Props) => {
                 transform={'translateY(-50%)'}
               />
             </DrawerHeader>
-            <DrawerBody
-              cursor={'pointer'}
-              px={'0'}
-              py={'0'}
-              textAlign={'center'}
-            >
+            <DrawerBody cursor={'pointer'} px={'0'} py={'0'}>
               <Box>
-                <Box
-                  _hover={{ bgColor: 'teal.500' }}
-                  borderBottom={'1px solid white'}
-                  py={'20px'}
-                >
+                <Box _hover={{ bgColor: 'teal.500' }} p={'24px'}>
                   <Scroll
                     smooth
                     duration={600}
@@ -77,14 +73,10 @@ export const Drawer = ({ ...props }: Props) => {
                     to={'about'}
                     onClick={onClose}
                   >
-                    当院について
+                    ・当院について
                   </Scroll>
                 </Box>
-                <Box
-                  _hover={{ bgColor: 'teal.500' }}
-                  borderBottom={'1px solid white'}
-                  py={'20px'}
-                >
+                <Box _hover={{ bgColor: 'teal.500' }} p={'24px'}>
                   <Scroll
                     smooth
                     duration={600}
@@ -92,14 +84,10 @@ export const Drawer = ({ ...props }: Props) => {
                     to={'treatment'}
                     onClick={onClose}
                   >
-                    施術について
+                    ・施術について
                   </Scroll>
                 </Box>
-                <Box
-                  _hover={{ bgColor: 'teal.500' }}
-                  borderBottom={'1px solid white'}
-                  py={'20px'}
-                >
+                <Box _hover={{ bgColor: 'teal.500' }} p={'24px'}>
                   <Scroll
                     smooth
                     duration={600}
@@ -107,30 +95,38 @@ export const Drawer = ({ ...props }: Props) => {
                     to={'question'}
                     onClick={onClose}
                   >
-                    よくある質問
+                    ・よくある質問
                   </Scroll>
                 </Box>
-                <Box
-                  _hover={{ bgColor: 'teal.500' }}
-                  borderBottom={'1px solid white'}
-                  py={'20px'}
-                >
+                <Box _hover={{ bgColor: 'teal.500' }} p={'24px'}>
                   <Scroll smooth duration={600} to={'hours'} onClick={onClose}>
-                    診療時間
+                    ・診療時間
                   </Scroll>
                 </Box>
               </Box>
-              <Flex justifyContent={'center'} pt={'20px'} onClick={onClose}>
+              <Flex
+                gap={4}
+                justifyContent={'center'}
+                mt={'24px'}
+                onClick={onClose}
+              >
                 <Button
-                  _hover={{ bgColor: 'white', color: 'green.line' }}
                   bgColor={'green.line'}
-                  mr={'12px'}
+                  borderColor={'white'}
+                  borderWidth={'1px'}
+                  color={'white'}
+                  colorScheme={'green'}
+                  leftIcon={<BsLine />}
                 >
                   LINEで予約
                 </Button>
                 <Button
-                  _hover={{ bgColor: 'white', color: 'teal.600' }}
-                  bgColor={'teal.600'}
+                  bgColor={'teal.400'}
+                  borderColor={'white'}
+                  borderWidth={'1px'}
+                  color={'white'}
+                  colorScheme={'teal'}
+                  leftIcon={<BsFillTelephoneFill />}
                 >
                   電話で予約
                 </Button>

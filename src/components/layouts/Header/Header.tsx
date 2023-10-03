@@ -89,6 +89,8 @@ export const Header = ({ ...props }: Props) => {
           </Box>
           <Button
             bgColor={'green.line'}
+            borderColor={'white'}
+            borderWidth={'1px'}
             color={'white'}
             colorScheme={'green'}
             leftIcon={<BsLine />}
@@ -97,6 +99,8 @@ export const Header = ({ ...props }: Props) => {
           </Button>
           <Button
             bgColor={'teal.400'}
+            borderColor={'white'}
+            borderWidth={'1px'}
             color={'white'}
             colorScheme={'teal'}
             leftIcon={<BsFillTelephoneFill />}
