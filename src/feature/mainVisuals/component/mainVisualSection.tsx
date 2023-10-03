@@ -104,9 +104,8 @@ const SliderNavigationButton = forwardRef<HTMLDivElement, FlexProps>(
       }}
       backdropFilter={'blur(3px)'}
       backgroundColor={'rgba(56, 178, 172, 0.5)'}
-      borderColor={'white'}
       borderRadius={'50%'}
-      borderWidth={'1px'}
+      boxShadow={'base'}
       cursor={'pointer'}
       height={'48px'}
       overflow={'hidden'}

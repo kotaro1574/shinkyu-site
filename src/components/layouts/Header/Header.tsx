@@ -61,8 +61,10 @@ export const Header = ({ ...props }: Props) => {
 
         <Flex
           alignItems={'center'}
+          color={'white'}
           cursor={'pointer'}
           display={{ base: 'none', lg: 'flex' }}
+          fontWeight={'medium'}
           gap={4}
         >
           <Box _hover={{ opacity: '0.7' }}>
