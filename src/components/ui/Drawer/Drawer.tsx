@@ -65,7 +65,7 @@ export const Drawer = ({ ...props }: Props) => {
             </DrawerHeader>
             <DrawerBody cursor={'pointer'} px={'0'} py={'0'}>
               <Box>
-                <Box _hover={{ bgColor: 'teal.500' }} p={'24px'}>
+                <Box _hover={{ opacity: '0.7' }} p={'24px'}>
                   <Scroll
                     smooth
                     duration={600}
@@ -76,7 +76,7 @@ export const Drawer = ({ ...props }: Props) => {
                     ・当院について
                   </Scroll>
                 </Box>
-                <Box _hover={{ bgColor: 'teal.500' }} p={'24px'}>
+                <Box _hover={{ opacity: '0.7' }} p={'24px'}>
                   <Scroll
                     smooth
                     duration={600}
@@ -87,7 +87,7 @@ export const Drawer = ({ ...props }: Props) => {
                     ・施術について
                   </Scroll>
                 </Box>
-                <Box _hover={{ bgColor: 'teal.500' }} p={'24px'}>
+                <Box _hover={{ opacity: '0.7' }} p={'24px'}>
                   <Scroll
                     smooth
                     duration={600}
@@ -98,7 +98,7 @@ export const Drawer = ({ ...props }: Props) => {
                     ・よくある質問
                   </Scroll>
                 </Box>
-                <Box _hover={{ bgColor: 'teal.500' }} p={'24px'}>
+                <Box _hover={{ opacity: '0.7' }} p={'24px'}>
                   <Scroll smooth duration={600} to={'hours'} onClick={onClose}>
                     ・診療時間
                   </Scroll>
