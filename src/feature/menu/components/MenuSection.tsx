@@ -1,4 +1,4 @@
-import { Box, BoxProps, Button, Center, Grid } from '@chakra-ui/react'
+import { Box, BoxProps, Button, Center, Flex, Grid } from '@chakra-ui/react'
 import { Logo } from '@src/components/ui/Logo/Logo'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { BsFillTelephoneFill, BsLine } from 'react-icons/bs'
@@ -11,27 +11,34 @@ export const MenuSection = (props: BoxProps) => {
         <Center>
           <Logo />
         </Center>
-        <Center display={{ base: 'none', md: 'flex' }} gap={4}>
-          <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
-            <Scroll smooth duration={600} offset={-60} to={'treatment'}>
-              施術について
-            </Scroll>
-          </Box>
-          <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
-            <Scroll smooth duration={600} offset={-60} to={'introduction'}>
-              当院について
-            </Scroll>
-          </Box>
-          <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
-            <Scroll smooth duration={600} offset={-60} to={'question'}>
-              よくある質問
-            </Scroll>
-          </Box>
-          <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
-            <Scroll smooth duration={600} offset={-60} to={'hours'}>
-              診療時間
-            </Scroll>
-          </Box>
+        <Center>
+          <Flex
+            flexWrap={'wrap'}
+            gap={4}
+            maxW={{ base: '255px', md: '500px' }}
+            mx={'auto'}
+          >
+            <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
+              <Scroll smooth duration={600} offset={-60} to={'treatment'}>
+                施術について
+              </Scroll>
+            </Box>
+            <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
+              <Scroll smooth duration={600} offset={-60} to={'introduction'}>
+                当院について
+              </Scroll>
+            </Box>
+            <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
+              <Scroll smooth duration={600} offset={-60} to={'question'}>
+                よくある質問
+              </Scroll>
+            </Box>
+            <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
+              <Scroll smooth duration={600} offset={-60} to={'hours'}>
+                診療時間
+              </Scroll>
+            </Box>
+          </Flex>
         </Center>
         <Center gap={4}>
           <Button
