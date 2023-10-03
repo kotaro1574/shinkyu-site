@@ -23,8 +23,8 @@ export const HomeContent = () => {
     <Box>
       <Box ref={targetRef}>
         <MainVisualSection id={'top'} />
+        <MenuSection id={'menu'} />
       </Box>
-      <MenuSection id={'menu'} />
       {/* <AboutSection id={'about'} /> */}
       <TreatmentSection id={'treatment'} />
       <IntroductionSection id={'introduction'} />

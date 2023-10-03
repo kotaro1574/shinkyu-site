@@ -59,7 +59,7 @@ export const MainVisualSection = ({ ...props }: BoxProps) => {
           <SwiperSlide key={`swiper_slide_${index}`}>
             {({ isActive }) => (
               <AspectRatio
-                h={{ base: '300px', lg: '550px', md: '350px' }}
+                h={{ base: '300px', lg: '450px', md: '350px' }}
                 overflow={'hidden'}
                 roundedBottom={{ sm: 4 }}
               >
@@ -104,9 +104,8 @@ const SliderNavigationButton = forwardRef<HTMLDivElement, FlexProps>(
       }}
       backdropFilter={'blur(3px)'}
       backgroundColor={'rgba(56, 178, 172, 0.5)'}
-      borderColor={'white'}
       borderRadius={'50%'}
-      borderWidth={'1px'}
+      boxShadow={'base'}
       cursor={'pointer'}
       height={'48px'}
       overflow={'hidden'}
