@@ -40,7 +40,7 @@ export const Header = ({ ...props }: Props) => {
     <Box
       as={'header'}
       backdropFilter={'blur(3px)'}
-      bgColor={'gray.50'}
+      backgroundColor={'rgba(56, 178, 172, 0.7)'}
       boxShadow={'base'}
       color={'text.primary'}
       display={isVisible ? 'black' : 'none'}
@@ -55,7 +55,7 @@ export const Header = ({ ...props }: Props) => {
       >
         <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
           <Scroll smooth duration={600} to={'top'}>
-            <Logo w={'200px'} />
+            <Logo type={'white'} w={'200px'} />
           </Scroll>
         </Box>
 

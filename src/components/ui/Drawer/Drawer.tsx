@@ -29,7 +29,7 @@ export const Drawer = ({ ...props }: Props) => {
         aria-label={'Search database'}
         bgColor={'transparent'}
         cursor={'pointer'}
-        icon={<HamburgerIcon height={8} width={8} />}
+        icon={<HamburgerIcon color={'white'} height={8} width={8} />}
         ref={btnRef}
         onClick={onOpen}
       />
