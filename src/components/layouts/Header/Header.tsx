@@ -1,17 +1,11 @@
-import {
-  Box,
-  BoxProps,
-  Button,
-  Flex,
-  Grid,
-  useBreakpointValue,
-} from '@chakra-ui/react'
+import { Box, BoxProps, Flex, Grid, useBreakpointValue } from '@chakra-ui/react'
+import { LineButton } from '@src/components/ui/Button/LineButton'
+import { TelephoneButton } from '@src/components/ui/Button/TelephoneButton'
 import { Drawer } from '@src/components/ui/Drawer/Drawer'
 import { Logo } from '@src/components/ui/Logo/Logo'
 import { HEADER_HEIGHT_PC, HEADER_HEIGHT_SP } from '@src/constant/style'
 import { useOverViewHeightContext } from '@src/provider/overViewHeight'
 import { useEffect, useState } from 'react'
-import { BsFillTelephoneFill, BsLine } from 'react-icons/bs'
 import { Link as Scroll } from 'react-scroll'
 
 type Props = BoxProps
@@ -87,26 +81,8 @@ export const Header = ({ ...props }: Props) => {
               診療時間
             </Scroll>
           </Box>
-          <Button
-            bgColor={'green.line'}
-            borderColor={'white'}
-            borderWidth={'1px'}
-            color={'white'}
-            colorScheme={'green'}
-            leftIcon={<BsLine />}
-          >
-            LINEで予約
-          </Button>
-          <Button
-            bgColor={'teal.400'}
-            borderColor={'white'}
-            borderWidth={'1px'}
-            color={'white'}
-            colorScheme={'teal'}
-            leftIcon={<BsFillTelephoneFill />}
-          >
-            電話で予約
-          </Button>
+          <LineButton />
+          <TelephoneButton />
         </Flex>
         <Drawer
           display={{ base: 'block', lg: 'none' }}

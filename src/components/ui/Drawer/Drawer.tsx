@@ -2,21 +2,24 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import {
   Box,
   BoxProps,
-  Button,
   Drawer as ChakraDrawer,
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
-  Flex,
+  Grid,
+  GridItem,
   IconButton,
   useDisclosure,
 } from '@chakra-ui/react'
 import { Logo } from '@src/components/ui/Logo/Logo'
 import React from 'react'
-import { BsFillTelephoneFill, BsLine } from 'react-icons/bs'
 import { Link as Scroll } from 'react-scroll'
+
+import { InstagramButton } from '../Button/InstagramButton'
+import { LineButton } from '../Button/LineButton'
+import { TelephoneButton } from '../Button/TelephoneButton'
 
 type Props = BoxProps
 
@@ -104,33 +107,17 @@ export const Drawer = ({ ...props }: Props) => {
                   </Scroll>
                 </Box>
               </Box>
-              <Flex
-                gap={4}
-                justifyContent={'center'}
-                mt={'24px'}
-                onClick={onClose}
-              >
-                <Button
-                  bgColor={'green.line'}
-                  borderColor={'white'}
-                  borderWidth={'1px'}
-                  color={'white'}
-                  colorScheme={'green'}
-                  leftIcon={<BsLine />}
-                >
-                  LINEで予約
-                </Button>
-                <Button
-                  bgColor={'teal.400'}
-                  borderColor={'white'}
-                  borderWidth={'1px'}
-                  color={'white'}
-                  colorScheme={'teal'}
-                  leftIcon={<BsFillTelephoneFill />}
-                >
-                  電話で予約
-                </Button>
-              </Flex>
+              <Grid gap={4} p={4} templateColumns={'1fr, 1fr'}>
+                <GridItem colSpan={1}>
+                  <LineButton />
+                </GridItem>
+                <GridItem colSpan={1}>
+                  <TelephoneButton />
+                </GridItem>
+                <GridItem colSpan={2}>
+                  <InstagramButton w={'100%'} />
+                </GridItem>
+              </Grid>
             </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>
