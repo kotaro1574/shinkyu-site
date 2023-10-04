@@ -1,10 +1,4 @@
-import {
-  Box,
-  BoxProps,
-  Flex,
-  Grid,
-  useBreakpointValue,
-} from '@chakra-ui/react'
+import { Box, BoxProps, Flex, Grid, useBreakpointValue } from '@chakra-ui/react'
 import { LineButton } from '@src/components/ui/Button/LineButton'
 import { TelephoneButton } from '@src/components/ui/Button/TelephoneButton'
 import { Drawer } from '@src/components/ui/Drawer/Drawer'
