@@ -6,6 +6,7 @@ import {
   Grid,
   useBreakpointValue,
 } from '@chakra-ui/react'
+import { LineButton } from '@src/components/ui/Button/LineButton'
 import { Drawer } from '@src/components/ui/Drawer/Drawer'
 import { Logo } from '@src/components/ui/Logo/Logo'
 import { HEADER_HEIGHT_PC, HEADER_HEIGHT_SP } from '@src/constant/style'
@@ -87,16 +88,7 @@ export const Header = ({ ...props }: Props) => {
               診療時間
             </Scroll>
           </Box>
-          <Button
-            bgColor={'green.line'}
-            borderColor={'white'}
-            borderWidth={'1px'}
-            color={'white'}
-            colorScheme={'green'}
-            leftIcon={<BsLine />}
-          >
-            LINEで予約
-          </Button>
+          <LineButton />
           <Button
             bgColor={'teal.400'}
             borderColor={'white'}

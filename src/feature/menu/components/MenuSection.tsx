@@ -1,4 +1,5 @@
 import { Box, BoxProps, Button, Center, Flex, Grid } from '@chakra-ui/react'
+import { LineButton } from '@src/components/ui/Button/LineButton'
 import { Logo } from '@src/components/ui/Logo/Logo'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { BsFillTelephoneFill, BsLine } from 'react-icons/bs'
@@ -41,16 +42,7 @@ export const MenuSection = (props: BoxProps) => {
           </Flex>
         </Center>
         <Center gap={4}>
-          <Button
-            bgColor={'green.line'}
-            borderColor={'white'}
-            borderWidth={'1px'}
-            color={'white'}
-            colorScheme={'green'}
-            leftIcon={<BsLine />}
-          >
-            LINEで予約
-          </Button>
+          <LineButton />
           <Button
             bgColor={'teal.400'}
             borderColor={'white'}

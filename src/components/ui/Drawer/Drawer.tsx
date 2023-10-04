@@ -17,6 +17,7 @@ import { Logo } from '@src/components/ui/Logo/Logo'
 import React from 'react'
 import { BsFillTelephoneFill, BsLine } from 'react-icons/bs'
 import { Link as Scroll } from 'react-scroll'
+import { LineButton } from '../Button/LineButton'
 
 type Props = BoxProps
 
@@ -110,16 +111,7 @@ export const Drawer = ({ ...props }: Props) => {
                 mt={'24px'}
                 onClick={onClose}
               >
-                <Button
-                  bgColor={'green.line'}
-                  borderColor={'white'}
-                  borderWidth={'1px'}
-                  color={'white'}
-                  colorScheme={'green'}
-                  leftIcon={<BsLine />}
-                >
-                  LINEで予約
-                </Button>
+                <LineButton />
                 <Button
                   bgColor={'teal.400'}
                   borderColor={'white'}
