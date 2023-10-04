@@ -2,18 +2,16 @@ import {
   AspectRatio,
   Box,
   BoxProps,
-  Button,
   Flex,
   Grid,
   Heading,
-  Link,
   Text,
 } from '@chakra-ui/react'
+import { InstagramButton } from '@src/components/ui/Button/InstagramButton'
 import { Image } from '@src/components/ui/Image'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
 import { staticPath } from '@src/lib/$path'
-import { BsInstagram } from 'react-icons/bs'
 
 type Props = BoxProps
 
@@ -60,23 +58,7 @@ export const IntroductionSection = ({ ...props }: Props) => {
               </Text>
             </Grid>
             <Flex alignItems={'center'} justifyContent={'space-between'}>
-              <Link
-                isExternal
-                href={'https://www.instagram.com/toshiki_harikyuu/?img_index=3'}
-              >
-                <Button
-                  _hover={{ filter: 'brightness(0.7)' }}
-                  backgroundImage={
-                    'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)'
-                  }
-                  borderColor={'white'}
-                  borderWidth={'1px'}
-                  colorScheme={'white'}
-                  leftIcon={<BsInstagram fontSize={'22px'} />}
-                >
-                  Instagram
-                </Button>
-              </Link>
+              <InstagramButton />
               <Box
                 fontSize={{ base: 'md', md: 'lg' }}
                 fontWeight={'medium'}

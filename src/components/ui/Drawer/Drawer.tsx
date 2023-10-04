@@ -8,7 +8,8 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
-  Flex,
+  Grid,
+  GridItem,
   IconButton,
   useDisclosure,
 } from '@chakra-ui/react'
@@ -16,6 +17,7 @@ import { Logo } from '@src/components/ui/Logo/Logo'
 import React from 'react'
 import { Link as Scroll } from 'react-scroll'
 
+import { InstagramButton } from '../Button/InstagramButton'
 import { LineButton } from '../Button/LineButton'
 import { TelephoneButton } from '../Button/TelephoneButton'
 
@@ -105,15 +107,17 @@ export const Drawer = ({ ...props }: Props) => {
                   </Scroll>
                 </Box>
               </Box>
-              <Flex
-                gap={4}
-                justifyContent={'center'}
-                mt={'24px'}
-                onClick={onClose}
-              >
-                <LineButton />
-                <TelephoneButton />
-              </Flex>
+              <Grid gap={4} p={4} templateColumns={'1fr, 1fr'}>
+                <GridItem colSpan={1}>
+                  <LineButton />
+                </GridItem>
+                <GridItem colSpan={1}>
+                  <TelephoneButton />
+                </GridItem>
+                <GridItem colSpan={2}>
+                  <InstagramButton w={'100%'} />
+                </GridItem>
+              </Grid>
             </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>
