@@ -1,8 +1,8 @@
-import { Box, BoxProps, Button, Center, Flex, Grid } from '@chakra-ui/react'
+import { Box, BoxProps, Center, Flex, Grid } from '@chakra-ui/react'
 import { LineButton } from '@src/components/ui/Button/LineButton'
+import { TelephoneButton } from '@src/components/ui/Button/TelephoneButton'
 import { Logo } from '@src/components/ui/Logo/Logo'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
-import { BsFillTelephoneFill } from 'react-icons/bs'
 
 type Props = BoxProps
 
@@ -28,16 +28,7 @@ export const Footer = ({ ...props }: Props) => {
               </Box>
               <Flex alignItems={'center'} gap={4} mt={4}>
                 <LineButton />
-                <Button
-                  bgColor={'teal.400'}
-                  borderColor={'white'}
-                  borderWidth={'1px'}
-                  color={'white'}
-                  colorScheme={'teal'}
-                  leftIcon={<BsFillTelephoneFill />}
-                >
-                  電話で予約
-                </Button>
+                <TelephoneButton />
               </Flex>
             </Box>
             <Box order={{ base: 1, md: 2 }}>
