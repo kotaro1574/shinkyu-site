@@ -12,7 +12,7 @@ import { Logo } from '@src/components/ui/Logo/Logo'
 import { HEADER_HEIGHT_PC, HEADER_HEIGHT_SP } from '@src/constant/style'
 import { useOverViewHeightContext } from '@src/provider/overViewHeight'
 import { useEffect, useState } from 'react'
-import { BsFillTelephoneFill, BsLine } from 'react-icons/bs'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 import { Link as Scroll } from 'react-scroll'
 
 type Props = BoxProps

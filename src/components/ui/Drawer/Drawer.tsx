@@ -15,8 +15,9 @@ import {
 } from '@chakra-ui/react'
 import { Logo } from '@src/components/ui/Logo/Logo'
 import React from 'react'
-import { BsFillTelephoneFill, BsLine } from 'react-icons/bs'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 import { Link as Scroll } from 'react-scroll'
+
 import { LineButton } from '../Button/LineButton'
 
 type Props = BoxProps
