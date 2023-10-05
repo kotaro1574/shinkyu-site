@@ -1,8 +1,9 @@
 import { AspectRatio, Box, Divider, Grid } from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
+import { ReactNode } from 'react'
 
 type Props = {
-  description: string
+  description: ReactNode
   imagePath: string
   isOdd: boolean
   subTitle: string

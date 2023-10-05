@@ -39,7 +39,7 @@ export const QuestionAccordion = ({ items, ...props }: Props) => {
             fontSize={{ base: 'md', md: 'lg' }}
             py={8}
           >
-            ・{item.answer}
+            {item.answer}
           </AccordionPanel>
         </AccordionItem>
       ))}

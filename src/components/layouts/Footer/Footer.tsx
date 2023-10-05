@@ -24,7 +24,7 @@ export const Footer = ({ ...props }: Props) => {
                 <Box>〒739-0035</Box>
                 <Box>広島県東広島市西条町郷曽340-8</Box>
                 <Box>アルソーレ東広島6番館101号室</Box>
-                <Box>tel:090-1111-1111</Box>
+                <Box>tel:080-6335-9995</Box>
               </Box>
               <Flex alignItems={'center'} gap={4} mt={4}>
                 <LineButton />
