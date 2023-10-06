@@ -11,18 +11,20 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
   return (
     <ChakraProvider theme={theme}>
       <OverviewHeightProvider>
-        {/*TODO: SEOの設定を決める*/}
         <DefaultSeo
           defaultTitle={'繁内鍼灸治療院'}
-          description={'デフォルトの説明'}
+          description={
+            '東広島市西条町に位置する繁内鍼灸治療院では、経験豊富で勉強熱心な院長のもと、伝統的な針や灸から整体、産後ケア、吸い玉まで幅広く対応。一人ひとりの健康を真心でサポートします。'
+          }
           openGraph={{
-            description: 'デフォルトの説明',
+            description:
+              '東広島市西条町に位置する繁内鍼灸治療院では、経験豊富で勉強熱心な院長のもと、伝統的な針や灸から整体、産後ケア、吸い玉まで幅広く対応。一人ひとりの健康を真心でサポートします。',
             images: [
               {
                 alt: 'Og Image Alt',
                 height: 600,
                 type: 'image/jpeg',
-                url: staticPath.images.mainVisual1_jpg,
+                url: staticPath.images.mainVisual2_jpg,
                 width: 800,
               },
             ],
@@ -31,7 +33,7 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
             site_name: '繁内鍼灸治療院',
             title: '繁内鍼灸治療院',
             type: 'website',
-            url: 'http://localhost:3000/',
+            url: 'https://shinkyu-site.vercel.app/',
           }}
           twitter={{
             cardType: 'summary_large_image',
