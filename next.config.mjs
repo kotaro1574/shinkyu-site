@@ -1,4 +1,10 @@
-/** @type {{reactStrictMode: boolean, pageExtensions: string[], experimental: {optimizeFonts: boolean}}} */
+import analyze from '@next/bundle-analyzer'
+
+const withBundleAnalyzer = analyze({
+  defaultSizes: 'gzip',
+  enabled: true,
+})
+
 const nextConfig = {
   experimental: {
     optimizeFonts: true,
@@ -10,4 +16,4 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+export default withBundleAnalyzer(nextConfig)
