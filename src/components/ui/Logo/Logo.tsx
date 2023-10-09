@@ -7,7 +7,11 @@ type Props = {
   type?: 'black' | 'white'
 } & AspectRatioProps
 
-export const Logo = ({ isPreload, type = 'black', ...props }: Props) => {
+export const Logo = ({
+  isPreload = false,
+  type = 'black',
+  ...props
+}: Props) => {
   const imagePath: string = (() => {
     switch (type) {
       case 'black':
@@ -24,7 +28,7 @@ export const Logo = ({ isPreload, type = 'black', ...props }: Props) => {
       <Image
         alt={'繁内鍼灸治療院'}
         layout={'fill'}
-        preload={isPreload}
+        priority={isPreload}
         src={imagePath}
       />
     </AspectRatio>
