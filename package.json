@@ -15,15 +15,13 @@
     "format:eslint": "yarn lint:eslint --fix",
     "format:prettier": "yarn lint:prettier --write",
     "typecheck": "tsc --pretty --noEmit",
-    "gen:theme-typings": "chakra-cli tokens /src/lib/chakra/theme.ts",
-    "analyze": "next build"
+    "gen:theme-typings": "chakra-cli tokens /src/lib/chakra/theme.ts"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
     "@chakra-ui/react": "^1.8.3",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "@next/bundle-analyzer": "^13.5.4",
     "@types/recoil": "^0.0.9",
     "framer-motion": "^6",
     "next": "12.1.0",
