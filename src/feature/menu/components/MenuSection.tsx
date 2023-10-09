@@ -10,7 +10,7 @@ export const MenuSection = (props: BoxProps) => {
     <SectionContainer pb={'50px'} pt={'50px'} {...props}>
       <Grid gap={8}>
         <Center>
-          <Logo isPreload />
+          <Logo />
         </Center>
         <Center>
           <Flex
