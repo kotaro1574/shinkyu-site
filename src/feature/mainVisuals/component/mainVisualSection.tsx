@@ -64,6 +64,7 @@ export const MainVisualSection = ({ ...props }: BoxProps) => {
                 roundedBottom={{ sm: 4 }}
               >
                 <Image
+                  priority
                   alt={'top_image'}
                   layout={'fill'}
                   objectFit={'cover'}
