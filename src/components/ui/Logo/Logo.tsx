@@ -3,15 +3,10 @@ import { Image } from '@src/components/ui/Image'
 import { staticPath } from '@src/lib/$path'
 
 type Props = {
-  isPreload?: boolean
   type?: 'black' | 'white'
 } & AspectRatioProps
 
-export const Logo = ({
-  isPreload = false,
-  type = 'black',
-  ...props
-}: Props) => {
+export const Logo = ({ type = 'black', ...props }: Props) => {
   const imagePath: string = (() => {
     switch (type) {
       case 'black':
@@ -25,12 +20,7 @@ export const Logo = ({
 
   return (
     <AspectRatio ratio={155 / 30} w={{ base: '255px', md: '355px' }} {...props}>
-      <Image
-        alt={'繁内鍼灸治療院'}
-        layout={'fill'}
-        priority={isPreload}
-        src={imagePath}
-      />
+      <Image alt={'繁内鍼灸治療院'} layout={'fill'} src={imagePath} />
     </AspectRatio>
   )
 }
