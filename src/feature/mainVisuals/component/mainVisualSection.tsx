@@ -65,7 +65,6 @@ export const MainVisualSection = ({ ...props }: BoxProps) => {
               >
                 <Image
                   alt={'top_image'}
-                  layout={'fill'}
                   objectFit={'cover'}
                   src={image}
                   transform={isActive ? 'scale(1.05)' : ''}

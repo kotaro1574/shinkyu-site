@@ -37,7 +37,6 @@ export const IntroductionSection = ({ ...props }: Props) => {
           >
             <Image
               alt={'director_image'}
-              layout={'fill'}
               objectFit={'cover'}
               src={staticPath.images.director_image_jpg}
             />

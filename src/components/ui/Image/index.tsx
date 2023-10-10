@@ -1,11 +1,5 @@
-import { chakra } from '@chakra-ui/react'
-// eslint-disable-next-line no-restricted-imports
-import NextImage from 'next/image'
-import { ComponentProps } from 'react'
+import { Image as ChakraImage, ImageProps } from '@chakra-ui/react'
 
-const ChakraNextImage = chakra(NextImage)
-type Props = ComponentProps<typeof ChakraNextImage>
-
-export const Image = (props: Props) => {
-  return <ChakraNextImage {...props} />
+export const Image = (props: ImageProps) => {
+  return <ChakraImage {...props} />
 }

@@ -20,7 +20,7 @@ export const Logo = ({ type = 'black', ...props }: Props) => {
 
   return (
     <AspectRatio ratio={155 / 30} w={{ base: '255px', md: '355px' }} {...props}>
-      <Image alt={'繁内鍼灸治療院'} layout={'fill'} src={imagePath} />
+      <Image alt={'繁内鍼灸治療院'} src={imagePath} />
     </AspectRatio>
   )
 }
