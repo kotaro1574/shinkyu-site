@@ -28,6 +28,7 @@ export const TreatmentDetail = ({
       >
         <Image
           alt={title}
+          layout={'fill'}
           objectFit={'cover'}
           src={imagePath}
         />
