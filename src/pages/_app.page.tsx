@@ -33,7 +33,7 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
             site_name: '繁内鍼灸治療院',
             title: '繁内鍼灸治療院',
             type: 'website',
-            url: 'https://shinkyu-site.vercel.app/',
+            url: process.env.NEXT_PUBLIC_SITE_URL || '',
           }}
           twitter={{
             cardType: 'summary_large_image',

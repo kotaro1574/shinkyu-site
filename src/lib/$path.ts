@@ -22,7 +22,9 @@ export const staticPath = {
     treatment_okyu_jpg: '/images/treatment-okyu.jpg',
     treatment_seitai_jpg: '/images/treatment-seitai.jpg',
     treatment_suidama_jpg: '/images/treatment-suidama.jpg'
-  }
+  },
+  robots_txt: '/robots.txt',
+  sitemap_xml: '/sitemap.xml'
 } as const
 
 // prettier-ignore

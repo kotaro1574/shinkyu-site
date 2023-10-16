@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://shinkyu-site.vercel.app/
+
+# Sitemaps
+Sitemap: https://shinkyu-site.vercel.app/sitemap.xml
