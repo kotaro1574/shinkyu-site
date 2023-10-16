@@ -15,7 +15,8 @@
     "format:eslint": "yarn lint:eslint --fix",
     "format:prettier": "yarn lint:prettier --write",
     "typecheck": "tsc --pretty --noEmit",
-    "gen:theme-typings": "chakra-cli tokens /src/lib/chakra/theme.ts"
+    "gen:theme-typings": "chakra-cli tokens /src/lib/chakra/theme.ts",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
