@@ -25,7 +25,6 @@ export const HomeContent = () => {
         <MainVisualSection id={'top'} />
         <MenuSection id={'menu'} />
       </Box>
-      {/* <AboutSection id={'about'} /> */}
       <TreatmentSection id={'treatment'} />
       <IntroductionSection id={'introduction'} />
       <QuestionSection id={'question'} />
