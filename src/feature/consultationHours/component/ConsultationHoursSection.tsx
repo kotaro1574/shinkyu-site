@@ -1,4 +1,5 @@
 import {
+  Box,
   BoxProps,
   Center,
   Table,
@@ -20,19 +21,17 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
   return (
     <SectionContainer {...props}>
       <SectionHeading>診療時間</SectionHeading>
-      <Center mt={8}>
-        <TableContainer>
-          <Table size={'sm'}>
+      <Box>
+        <TableContainer mb={8}>
+          <Table>
             <Thead>
-              <Tr bg={'teal.400'}>
-                <Th color={'white'} p={{ base: 2.5, sm: 4 }}>
-                  診療時間
-                </Th>
+              <Tr bg={'gray.100'}>
+                <Th fontSize={{ base: 'sm', md: 'lg' }}>診療時間</Th>
                 {CONSULTATION_HOURS.weeks.map((week, index) => (
                   <Th
-                    color={'white'}
+                    fontSize={{ base: 'sm', md: 'lg' }}
                     key={`week_${index}`}
-                    p={{ base: 2.5, sm: 4 }}
+                    textAlign={'center'}
                   >
                     {week}
                   </Th>
@@ -41,17 +40,29 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
             </Thead>
             <Tbody>
               <Tr>
-                <Td p={{ base: 2.5, sm: 4 }}>09:00 ~ 18:00</Td>
+                <Td fontSize={{ base: 'sm', md: 'lg' }} fontWeight={'medium'}>
+                  09:00 ~ 18:00
+                </Td>
                 {CONSULTATION_HOURS.mornings.map((morning, index) => (
-                  <Th key={`morning_${index}`} p={{ base: 2.5, sm: 4 }}>
+                  <Th
+                    fontWeight={'normal'}
+                    key={`morning_${index}`}
+                    textAlign={'center'}
+                  >
                     {morning}
                   </Th>
                 ))}
               </Tr>
               <Tr>
-                <Td p={{ base: 2.5, sm: 4 }}>18:00 ~ 21:00</Td>
+                <Td fontSize={{ base: 'sm', md: 'lg' }} fontWeight={'medium'}>
+                  18:00 ~ 21:00
+                </Td>
                 {CONSULTATION_HOURS.afternoons.map((afternoon, index) => (
-                  <Th key={`afternoon_${index}`} p={{ base: 2.5, sm: 4 }}>
+                  <Th
+                    fontWeight={'normal'}
+                    key={`afternoon_${index}`}
+                    textAlign={'center'}
+                  >
                     {afternoon}
                   </Th>
                 ))}
@@ -59,10 +70,8 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
             </Tbody>
           </Table>
         </TableContainer>
-      </Center>
-      <Text mt={8} textAlign={'center'}>
-        ※日曜、祝日はお休みです
-      </Text>
+      </Box>
+      <Text textAlign={'center'}>※日曜、祝日はお休みです</Text>
     </SectionContainer>
   )
 }
