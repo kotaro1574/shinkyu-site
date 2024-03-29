@@ -62,7 +62,6 @@ export const IntroductionSection = ({ ...props }: Props) => {
               <Text
                 fontSize={{ base: 'md', md: 'lg' }}
                 fontWeight={'medium'}
-                mt={1}
                 textAlign={'end'}
               >
                 院長 繁内俊輝
