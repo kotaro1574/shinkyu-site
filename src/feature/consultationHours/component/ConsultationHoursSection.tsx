@@ -1,7 +1,6 @@
 import {
   Box,
   BoxProps,
-  Center,
   Table,
   TableContainer,
   Tbody,

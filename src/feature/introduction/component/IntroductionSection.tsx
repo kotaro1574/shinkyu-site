@@ -24,7 +24,6 @@ export const IntroductionSection = ({ ...props }: Props) => {
           flexDirection={{ base: 'column', md: 'row' }}
           gap={{ base: 4, md: 8 }}
           justifyContent={'center'}
-          mt={8}
         >
           <AspectRatio
             flexShrink={0}
