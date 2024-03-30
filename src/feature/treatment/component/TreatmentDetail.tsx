@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Divider, Grid } from '@chakra-ui/react'
+import { AspectRatio, Box, chakra, Heading, Text } from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
 import { ReactNode } from 'react'
 
@@ -33,12 +33,11 @@ export const TreatmentDetail = ({
           src={imagePath}
         />
       </AspectRatio>
-      <Grid
+      <Box
         backdropFilter={'blur(3px)'}
         bg={'rgba(247,247,247,0.6)'}
         bottom={{ base: 5, md: 0 }}
         boxShadow={'base'}
-        gap={2}
         left={{ md: isOdd ? '50%' : '0' }}
         maxW={{ base: '90%', md: '50%' }}
         ml={{ base: 'auto', md: 0 }}
@@ -47,15 +46,42 @@ export const TreatmentDetail = ({
         py={5}
         rounded={4}
       >
-        <Box fontSize={{ base: '2xl', md: '5xl' }} fontWeight={'medium'}>
+        <Heading
+          _after={{
+            bgColor: 'teal.300',
+            bottom: 0,
+            content: '""',
+            display: 'inline-block',
+            h: '2px',
+            left: 0,
+            position: 'absolute',
+            w: '150px',
+          }}
+          as={'h3'}
+          fontSize={{ base: '2xl', md: '5xl' }}
+          fontWeight={'medium'}
+          lineHeight={1}
+          mb={3}
+          pb={3}
+          position={'relative'}
+        >
           {title}
-        </Box>
-        <Box fontSize={{ base: '10px', md: 'xxs' }}>{subTitle}</Box>
-        <Divider borderColor={'teal.300'} borderWidth={1} maxW={'150px'} />
-        <Box fontSize={{ base: 'md', md: 'lg' }} lineHeight={1.8}>
+          <br />
+          <chakra.span
+            fontSize={{ base: '10px', md: 'xxs' }}
+            fontWeight={'normal'}
+          >
+            {subTitle}
+          </chakra.span>
+        </Heading>
+        <Text
+          fontSize={{ base: 'md', md: 'lg' }}
+          lineHeight={1.8}
+          textAlign={'justify'}
+        >
           {description}
-        </Box>
-      </Grid>
+        </Text>
+      </Box>
     </Box>
   )
 }

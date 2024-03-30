@@ -1,4 +1,4 @@
-import { Box, Center, CenterProps } from '@chakra-ui/react'
+import { CenterProps, Heading } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 
 type Props = {
@@ -7,29 +7,28 @@ type Props = {
 
 export const SectionHeading = ({ children, ...props }: Props) => {
   return (
-    <Center
+    <Heading
+      LineHeight={1.5}
       _after={{
         bgColor: 'teal.300',
+        bottom: 0,
         content: '""',
         display: 'inline-block',
-        h: { base: '1px', md: '2px' },
-        ml: 4,
-        w: 6,
+        h: '3px',
+        left: '50%',
+        position: 'absolute',
+        transform: 'translateX(-50%)',
+        w: '50px',
       }}
-      _before={{
-        bgColor: 'teal.300',
-        content: '""',
-        display: 'inline-block',
-        h: { base: '1px', md: '2px' },
-        mr: 4,
-        w: 6,
-      }}
-      color={'teal.400'}
-      fontSize={{ base: '4xl', md: '7xl', sm: '5xl' }}
-      fontWeight={'medium'}
+      as={'h2'}
+      fontSize={{ base: '4xl', md: '7xl' }}
+      mb={{ base: 4, md: 8 }}
+      pb={3}
+      position={'relative'}
+      textAlign={'center'}
       {...props}
     >
-      <Box>{children}</Box>
-    </Center>
+      {children}
+    </Heading>
   )
 }
