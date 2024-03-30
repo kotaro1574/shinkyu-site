@@ -27,7 +27,7 @@ export const Footer = ({ ...props }: Props) => {
             <Box mb={5}>
               <Logo w={'255px'} />
             </Box>
-            <Text lineHeight={1.8} mb={4}>
+            <Text fontSize={{ base: 'md', md: 'lg' }} lineHeight={1.8} mb={4}>
               〒739-0035
               <br />
               広島県東広島市西条町郷曽340-8
