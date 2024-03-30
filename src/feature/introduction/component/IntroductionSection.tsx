@@ -49,7 +49,7 @@ export const IntroductionSection = ({ ...props }: Props) => {
             >
               伝統と現代の技術、最良の治療をあなたへ
             </Heading>
-            <Text lineHeight={1.8} mb={4}>
+            <Text lineHeight={1.8} mb={4} textAlign={'justify'}>
               当院は、広島県東広島市に位置し、鍼灸、整体、産後骨盤矯正、吸い玉などの治療を組み合わせて、あなたの体調や症状に合わせたケアを提供しています。
               <br />
               当院では、痛みや不調の原因をしっかりと捉え、より効果的な治療を目指します。治療の疑問や不安な点、ご相談はお気軽にどうぞ。

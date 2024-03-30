@@ -7,7 +7,7 @@ import { Link as Scroll } from 'react-scroll'
 
 export const MenuSection = (props: BoxProps) => {
   return (
-    <SectionContainer pb={'50px'} pt={'50px'} {...props}>
+    <SectionContainer pb={'30px'} pt={'50px'} {...props}>
       <Grid gap={8}>
         <Center>
           <Logo />

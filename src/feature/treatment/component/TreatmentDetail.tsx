@@ -74,7 +74,11 @@ export const TreatmentDetail = ({
             {subTitle}
           </chakra.span>
         </Heading>
-        <Text fontSize={{ base: 'md', md: 'lg' }} lineHeight={1.8}>
+        <Text
+          fontSize={{ base: 'md', md: 'lg' }}
+          lineHeight={1.8}
+          textAlign={'justify'}
+        >
           {description}
         </Text>
       </Box>

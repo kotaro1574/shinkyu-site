@@ -61,12 +61,9 @@ export const Footer = ({ ...props }: Props) => {
             templateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2, 1fr)' }}
           >
             <GridItem>
-              <Link
-                href={'../../privacy-policy'}
-                textAlign={{ base: 'center', md: 'left' }}
-              >
-                プライバシーポリシー
-              </Link>
+              <Text textAlign={{ base: 'center', md: 'left' }}>
+                <Link href={'../../privacy-policy'}>プライバシーポリシー</Link>
+              </Text>
             </GridItem>
             <GridItem>
               <Text textAlign={{ base: 'center', md: 'right' }}>
