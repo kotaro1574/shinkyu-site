@@ -28,6 +28,7 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
                 <Th
                   fontSize={{ base: 'xs', md: 'lg' }}
                   px={{ base: 1, md: 4 }}
+                  textAlign={'center'}
                   w={{ base: '120px', md: '250px' }}
                 >
                   診療時間
@@ -50,6 +51,7 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
                   fontSize={{ base: 'xs', md: 'lg' }}
                   fontWeight={'medium'}
                   px={{ base: 1, md: 4 }}
+                  textAlign={'center'}
                   w={{ base: '120px', md: '250px' }}
                 >
                   09:00 ~ 18:00
@@ -70,6 +72,7 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
                   fontSize={{ base: 'xs', md: 'lg' }}
                   fontWeight={'medium'}
                   px={{ base: 1, md: 4 }}
+                  textAlign={'center'}
                   w={{ base: '120px', md: '250px' }}
                 >
                   18:00 ~ 21:00
