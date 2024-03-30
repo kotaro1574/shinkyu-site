@@ -21,7 +21,7 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
     <SectionContainer {...props}>
       <SectionHeading>診療時間</SectionHeading>
       <Box>
-        <TableContainer mb={8}>
+        <TableContainer mb={{ base: 3, md: 8 }}>
           <Table>
             <Thead>
               <Tr bg={'gray.100'}>
