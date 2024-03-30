@@ -1,4 +1,12 @@
-import { Box, BoxProps, Flex, Text } from '@chakra-ui/react'
+import {
+  Box,
+  BoxProps,
+  Flex,
+  Grid,
+  GridItem,
+  Link,
+  Text,
+} from '@chakra-ui/react'
 import { LineButton } from '@src/components/ui/Button/LineButton'
 import { TelephoneButton } from '@src/components/ui/Button/TelephoneButton'
 import { Logo } from '@src/components/ui/Logo/Logo'
@@ -10,14 +18,12 @@ export const Footer = ({ ...props }: Props) => {
   return (
     <Box bg={'telegram.50'} {...props}>
       <SectionContainer pb={'20px'} pos={'relative'} pt={'50px'}>
-        <Flex
-          alignItems={{ base: 'center', md: 'start' }}
-          flexDirection={{ base: 'column', md: 'row' }}
-          gap={{ base: 4, md: 8 }}
-          justifyContent={'center'}
+        <Grid
+          gap={8}
           mb={8}
+          templateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2, 1fr)' }}
         >
-          <Box>
+          <GridItem mx={{ base: 'auto', md: '0' }}>
             <Box mb={5}>
               <Logo w={'255px'} />
             </Box>
@@ -34,24 +40,40 @@ export const Footer = ({ ...props }: Props) => {
               <LineButton />
               <TelephoneButton />
             </Flex>
-          </Box>
-          <Box>
+          </GridItem>
+          <GridItem>
             <iframe
-              // height={'200'}
+              height={'250px'}
               loading={'lazy'}
               referrerPolicy={'no-referrer-when-downgrade'}
               src={
                 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.945691620884!2d132.70690271604823!3d34.37730150797549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35506e1dbc5ea3d5%3A0x70f62b95765c90a8!2z44CSNzM5LTAwMzUg5bqD5bO255yM5p2x5bqD5bO25biC6KW_5p2h55S66YO35pu977yT77yU77yQ4oiS77yYIOOCouODq-OCveODvOODrOadseW6g-WztuWFreeVqumkqCAxMDE!5e0!3m2!1sja!2sjp!4v1660450601751!5m2!1sja!2sjp'
               }
-              // width={{ md: '340' }}
+              width={'100%'}
             />
-          </Box>
-        </Flex>
+          </GridItem>
+        </Grid>
         <Box pt={5}>
-          <Flex borderStart={'black'} justifyContent={'space-between'}>
-            <Text>プライバシーポリシー</Text>
-            <Text>&copy;2024 繁内鍼灸治療院</Text>
-          </Flex>
+          <Grid
+            borderStart={'black'}
+            fontSize={'xs'}
+            gap={{ base: 2, md: 4 }}
+            templateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2, 1fr)' }}
+          >
+            <GridItem>
+              <Link
+                href={'../../privacy-policy'}
+                textAlign={{ base: 'center', md: 'left' }}
+              >
+                プライバシーポリシー
+              </Link>
+            </GridItem>
+            <GridItem>
+              <Text textAlign={{ base: 'center', md: 'right' }}>
+                &copy;2024 繁内鍼灸治療院
+              </Text>
+            </GridItem>
+          </Grid>
         </Box>
       </SectionContainer>
     </Box>
