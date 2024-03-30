@@ -25,11 +25,18 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
           <Table>
             <Thead>
               <Tr bg={'gray.100'}>
-                <Th fontSize={{ base: 'sm', md: 'lg' }}>診療時間</Th>
+                <Th
+                  fontSize={{ base: 'xs', md: 'lg' }}
+                  px={{ base: 1, md: 4 }}
+                  w={{ base: '120px', md: '250px' }}
+                >
+                  診療時間
+                </Th>
                 {CONSULTATION_HOURS.weeks.map((week, index) => (
                   <Th
-                    fontSize={{ base: 'sm', md: 'lg' }}
+                    fontSize={{ base: 'xs', md: 'lg' }}
                     key={`week_${index}`}
+                    px={{ base: 1, md: 4 }}
                     textAlign={'center'}
                   >
                     {week}
@@ -39,13 +46,19 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
             </Thead>
             <Tbody>
               <Tr>
-                <Td fontSize={{ base: 'sm', md: 'lg' }} fontWeight={'medium'}>
+                <Td
+                  fontSize={{ base: 'xs', md: 'lg' }}
+                  fontWeight={'medium'}
+                  px={{ base: 1, md: 4 }}
+                  w={{ base: '120px', md: '250px' }}
+                >
                   09:00 ~ 18:00
                 </Td>
                 {CONSULTATION_HOURS.mornings.map((morning, index) => (
                   <Th
                     fontWeight={'normal'}
                     key={`morning_${index}`}
+                    px={{ base: 1, md: 4 }}
                     textAlign={'center'}
                   >
                     {morning}
@@ -53,13 +66,19 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
                 ))}
               </Tr>
               <Tr>
-                <Td fontSize={{ base: 'sm', md: 'lg' }} fontWeight={'medium'}>
+                <Td
+                  fontSize={{ base: 'xs', md: 'lg' }}
+                  fontWeight={'medium'}
+                  px={{ base: 1, md: 4 }}
+                  w={{ base: '120px', md: '250px' }}
+                >
                   18:00 ~ 21:00
                 </Td>
                 {CONSULTATION_HOURS.afternoons.map((afternoon, index) => (
                   <Th
                     fontWeight={'normal'}
                     key={`afternoon_${index}`}
+                    px={{ base: 1, md: 4 }}
                     textAlign={'center'}
                   >
                     {afternoon}
