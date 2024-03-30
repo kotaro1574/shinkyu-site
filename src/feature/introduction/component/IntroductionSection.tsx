@@ -17,7 +17,7 @@ type Props = BoxProps
 export const IntroductionSection = ({ ...props }: Props) => {
   return (
     <Box bg={'telegram.50'} {...props}>
-      <SectionContainer pb={'100px'} pt={'50px'}>
+      <SectionContainer pb={'100px'} pt={'64px'}>
         <SectionHeading>当院について</SectionHeading>
         <Flex
           alignItems={{ base: 'center', md: 'start' }}

@@ -8,7 +8,7 @@ type Props = BoxProps
 
 export const QuestionSection = ({ ...props }: Props) => {
   return (
-    <SectionContainer pt={'100px'} {...props}>
+    <SectionContainer pt={{ base: '64px', md: '100px' }} {...props}>
       <SectionHeading>よくある質問</SectionHeading>
       <QuestionAccordion items={QUESTIONS_CONTENTS} />
     </SectionContainer>
