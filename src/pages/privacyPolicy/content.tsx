@@ -3,8 +3,8 @@ import {
   Heading,
   List,
   ListItem,
-  OrderedList,
   Text,
+  UnorderedList,
 } from '@chakra-ui/react'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
@@ -15,95 +15,78 @@ export const PrivacyPolicyContent = () => {
       <SectionHeading>プライバシーポリシー</SectionHeading>
       <Box>
         <Text mb={12}>
-          繁内鍼灸治療院（以下「当院」といいます）は、当院が取得した個人情報の取扱いに関し、個人情報の保護に関する法律、個人情報保護に関するガイドライン等の指針、その他個人情報保護に関する関係法令を遵守します。
+          繁内鍼灸治療院（以下、「当院」といいます。）は、当院の提供するサービス（以下、「本サービス」といいます。）において、利用者の皆様のプライバシーを尊重し、個人情報の保護に努めます。本プライバシーポリシーは、利用者が当院のサービスを利用する際に、当院がどのように個人情報を収集、利用、管理し、利用者の権利を保護するかについて説明します。
         </Text>
         <List>
           <ListItem mb={12}>
-            <Heading mb={4}>取得する情報およびその取得方法、利用目的</Heading>
+            <Heading mb={4}>収集する情報</Heading>
             <Text mb={2}>
-              当院が取得するユーザー情報は、取得方法に応じて以下のとおりとなります。
+              当院は、本サービスの提供にあたり、以下の情報を収集することがあります。
             </Text>
-            <OrderedList>
+            <UnorderedList>
+              <ListItem>氏名、年齢、性別などの個人を特定する情報</ListItem>
               <ListItem>
-                ユーザーから直接取得する情報と取得方法
-                <br />
-                当院は、当院が提供するインターネットサイト（以下「本サイト」といいます）の運営に必要な範囲で、本サイトの利用者（以下「ユーザー」といいます）から、個人情報保護法にいう「個人情報」を指すものとし、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日、住所、電話番号、連絡先その他の記述等により特定の個人を識別できる情報及び容貌、指紋、声紋にかかるデータ、及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人時期別情報）（以下「個人情報」といいます）を取得することがあります。
+                連絡先情報（電話番号、電子メールアドレスなど）
               </ListItem>
+              <ListItem>予約情報や治療履歴などのサービス利用情報</ListItem>
               <ListItem>
-                情報の利用目的
-                <br />
-                当院は、取得した個人情報を以下に定める目的のために使用します。
-                ※ここでは、商品・サービスの提供、利用料金の請求、ユーザーの本人確認など、個人情報の利用目的を記載します。
-                ※利用目的の変更についても、予め規定に入れておいた方が良いでしょう。
+                アクセスログ、Cookie（クッキー）を通じて収集されるWebブラウザの情報
               </ListItem>
-              <ListItem>
-                ユーザーが本サイトを利用する際に自動的に取得する情報
-              </ListItem>
-            </OrderedList>
+            </UnorderedList>
           </ListItem>
           <ListItem mb={12}>
-            <Heading mb={4}>個人情報の管理</Heading>
-            <Text mb={2}>
-              当院は、ユーザーから取得した個人情報の管理について、以下を徹底します。
-            </Text>
-            <OrderedList>
+            <Heading mb={4}>情報の利用目的</Heading>
+            <Text mb={2}>収集した個人情報は、以下の目的で利用します。</Text>
+            <UnorderedList>
+              <ListItem>本サービスの提供・運営のため</ListItem>
+              <ListItem>予約確認、変更、キャンセルなどの連絡のため</ListItem>
               <ListItem>
-                情報の正確性の確保
-                <br />
-                取得した個人情報については、常に正確かつ最新の情報となるよう努めます。
+                当院からのお知らせやキャンペーン情報の提供のため
               </ListItem>
-              <ListItem>
-                安全管理措置
-                <br />
-                当院は、組織的な個人情報の管理については、社内規定による厳重な取扱方法を規定し、規定に基づいた取扱いと厳格な運用を徹底しています。
-              </ListItem>
-              <ListItem>
-                個人情報管理の委託先の監督
-                <br />
-                個人情報の管理を外部委託する場合には、当院の規程に基づく委託先にのみ委託し適切に管理します。
-              </ListItem>
-              <ListItem>
-                個人情報の保存期間と廃棄
-                <br />
-                取得した個人情報は、保存期間を設定し、保存期間終了後は廃棄します。
-              </ListItem>
-            </OrderedList>
+              <ListItem>サービスの改善や新しいサービスの開発のため</ListItem>
+            </UnorderedList>
           </ListItem>
           <ListItem mb={12}>
-            <Heading mb={4}>個人情報の第三者への提供</Heading>
+            <Heading mb={4}>情報の共有と開示</Heading>
             <Text>
-              当院は、取得した個人情報を、第三者に提供することはありません。また、今後、第三者提供を行う場合は、提供する情報と目的を提示し、ユーザーの同意を得た場合のみ行います。
-              ※現在個人情報の第三者提供を行っていない場合も、将来の可能性に備えて記載しておきましょう。
+              当院は、以下の場合を除き、収集した個人情報を第三者に共有または開示しません。
             </Text>
+            <UnorderedList>
+              <ListItem>法令に基づく場合</ListItem>
+              <ListItem>利用者の同意がある場合</ListItem>
+              <ListItem>
+                外部サービス提供者がサービスの提供に必要な場合（ただし、これらの提供者にはプライバシーポリシーの遵守を義務付けます
+              </ListItem>
+            </UnorderedList>
           </ListItem>
           <ListItem mb={12}>
-            <Heading mb={4}>個人情報の共同利用</Heading>
+            <Heading mb={4}>情報の保護</Heading>
             <Text>
-              当院は、ユーザーの個人情報に関して、以下のとおり共同利用します。
+              当院は、収集した個人情報の紛失、盗用、不正アクセス、開示、改ざん、破壊から保護するために、適切な物理的、技術的、組織的セキュリティ対策を講じます。
             </Text>
           </ListItem>
           <ListItem mb={12}>
-            <Heading mb={4}>個人情報の開示・訂正・利用停止</Heading>
+            <Heading mb={4}>ユーザーの権利</Heading>
             <Text>
-              個人情報について、開示、訂正、利用停止等のお申し出があった場合には、本人の申し出であることを確認の上、当院所定の方法に基づき対応致します。具体的な方法は、個別にご案内しますので、下記受付窓口までお問い合わせください。
+              利用者は、自己の個人情報に関して、以下の権利を有します。
             </Text>
+            <UnorderedList>
+              <ListItem>情報の確認や訂正を要求する権利</ListItem>
+              <ListItem>情報の削除を要求する権利</ListItem>
+              <ListItem>情報の利用停止を要求する権利</ListItem>
+            </UnorderedList>
           </ListItem>
           <ListItem mb={12}>
-            <Heading mb={4}>お問い合わせ先</Heading>
+            <Heading mb={4}>プライバシーポリシーの変更</Heading>
             <Text>
-              本サービス、個人情報の取扱いについては、以下の窓口にご連絡ください。
-              ※苦情や問合せに対応する窓口について、問合せ可能な連絡先と連絡方法を記しておきます。
+              当院は、必要に応じて、本プライバシーポリシーを更新することがあります。変更があった場合は、当院のウェブサイト上で通知します。
             </Text>
           </ListItem>
           <ListItem mb={12}>
-            <Heading mb={4}>セキュリティ</Heading>
+            <Heading mb={4}>お問い合わせ</Heading>
             <Text>
-              当院は、ウェブサイト経由で、SSLによって個人情報を取得することがあります。
+              本プライバシーポリシーに関するお問い合わせは、[連絡先情報]までお願いいたします。
             </Text>
-          </ListItem>
-          <ListItem mb={12}>
-            <Heading mb={4}>制定日</Heading>
-            <Text>制定日 2024年4月1日</Text>
           </ListItem>
         </List>
       </Box>
