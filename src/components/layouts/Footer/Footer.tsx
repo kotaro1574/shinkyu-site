@@ -62,7 +62,7 @@ export const Footer = ({ ...props }: Props) => {
           >
             <GridItem>
               <Text textAlign={{ base: 'center', md: 'left' }}>
-                <Link href={'../../privacy-policy'}>プライバシーポリシー</Link>
+                <Link href={'/privacyPolicy'}>プライバシーポリシー</Link>
               </Text>
             </GridItem>
             <GridItem>
