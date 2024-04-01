@@ -34,7 +34,7 @@ export const Footer = ({ ...props }: Props) => {
               <br />
               アルソーレ東広島6番館101号室
               <br />
-              tel:080-6335-9995
+              TEL:080-6335-9995
             </Text>
             <Flex gap={4}>
               <LineButton />
@@ -62,7 +62,7 @@ export const Footer = ({ ...props }: Props) => {
           >
             <GridItem>
               <Text textAlign={{ base: 'center', md: 'left' }}>
-                <Link href={'../../privacy-policy'}>プライバシーポリシー</Link>
+                <Link href={'/privacyPolicy'}>プライバシーポリシー</Link>
               </Text>
             </GridItem>
             <GridItem>
