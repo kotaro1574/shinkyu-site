@@ -11,7 +11,7 @@ import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading
 
 export const PrivacyPolicyContent = () => {
   return (
-    <SectionContainer>
+    <SectionContainer pt={{ base: '100px', md: '160px' }}>
       <SectionHeading>プライバシーポリシー</SectionHeading>
       <Box>
         <Text mb={12}>
@@ -48,14 +48,14 @@ export const PrivacyPolicyContent = () => {
           </ListItem>
           <ListItem mb={12}>
             <Heading mb={4}>情報の共有と開示</Heading>
-            <Text>
+            <Text mb={2}>
               当院は、以下の場合を除き、収集した個人情報を第三者に共有または開示しません。
             </Text>
             <UnorderedList>
               <ListItem>法令に基づく場合</ListItem>
               <ListItem>利用者の同意がある場合</ListItem>
               <ListItem>
-                外部サービス提供者がサービスの提供に必要な場合（ただし、これらの提供者にはプライバシーポリシーの遵守を義務付けます
+                外部サービス提供者がサービスの提供に必要な場合（ただし、これらの提供者にはプライバシーポリシーの遵守を義務付けます）
               </ListItem>
             </UnorderedList>
           </ListItem>
@@ -67,7 +67,7 @@ export const PrivacyPolicyContent = () => {
           </ListItem>
           <ListItem mb={12}>
             <Heading mb={4}>ユーザーの権利</Heading>
-            <Text>
+            <Text mb={2}>
               利用者は、自己の個人情報に関して、以下の権利を有します。
             </Text>
             <UnorderedList>
@@ -79,13 +79,13 @@ export const PrivacyPolicyContent = () => {
           <ListItem mb={12}>
             <Heading mb={4}>プライバシーポリシーの変更</Heading>
             <Text>
-              当院は、必要に応じて、本プライバシーポリシーを更新することがあります。変更があった場合は、当院のウェブサイト上で通知します。
+              当院は、必要に応じて、本プライバシーポリシーを更新することがあります。
             </Text>
           </ListItem>
           <ListItem mb={12}>
             <Heading mb={4}>お問い合わせ</Heading>
             <Text>
-              本プライバシーポリシーに関するお問い合わせは、[連絡先情報]までお願いいたします。
+              本プライバシーポリシーに関するお問い合わせは、当院までご連絡ください。
             </Text>
           </ListItem>
         </List>
