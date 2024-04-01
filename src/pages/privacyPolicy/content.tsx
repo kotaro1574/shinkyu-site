@@ -30,9 +30,17 @@ export const PrivacyPolicyContent = () => {
               </ListItem>
               <ListItem>予約情報や治療履歴などのサービス利用情報</ListItem>
               <ListItem>
-                アクセスログ、Cookie（クッキー）を通じて収集されるWebブラウザの情報
+                アクセスログ、Cookie（クッキー）を通じて収集されるウェブブラウザの情報
               </ListItem>
             </UnorderedList>
+          </ListItem>
+          <ListItem mb={12}>
+            <Heading mb={4}>Google Analyticsの使用について</Heading>
+            <Text>
+              当院のウェブサイトでは、サービスの利用状況を把握し、ユーザー体験を向上させるためにGoogle
+              Analyticsを使用しています。Google Analyticsは、Google
+              Inc.が提供するウェブ分析サービスであり、クッキー（Cookie）を使用してウェブサイトの利用情報を収集します。これには、訪問者のウェブサイト利用パターンや訪問回数などが含まれますが、個人を特定する情報は収集されません。収集された情報はGoogleによって管理され、当院のウェブサイトの利用分析に役立てられます。
+            </Text>
           </ListItem>
           <ListItem mb={12}>
             <Heading mb={4}>情報の利用目的</Heading>
