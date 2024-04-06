@@ -24,9 +24,9 @@ export const Footer = ({ ...props }: Props) => {
           templateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2, 1fr)' }}
         >
           <GridItem mx={{ base: 'auto', md: '0' }}>
-            <Box mb={5}>
+            <Link href={'/'} mb={5}>
               <Logo w={'255px'} />
-            </Box>
+            </Link>
             <Text fontSize={{ base: 'md', md: 'lg' }} lineHeight={1.8} mb={4}>
               〒739-0035
               <br />
