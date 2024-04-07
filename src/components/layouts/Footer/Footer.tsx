@@ -25,8 +25,11 @@ export const Footer = ({ ...props }: Props) => {
         >
           <GridItem mx={{ base: 'auto', md: '0' }}>
             <Box mb={5}>
-              <Logo w={'255px'} />
+              <Link href={'/'}>
+                <Logo w={'255px'} />
+              </Link>
             </Box>
+
             <Text fontSize={{ base: 'md', md: 'lg' }} lineHeight={1.8} mb={4}>
               〒739-0035
               <br />
