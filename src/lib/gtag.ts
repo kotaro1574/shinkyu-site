@@ -5,7 +5,7 @@ export const GA_ID = process.env.NEXT_PUBLIC_GA_ID || ''
 export const pageview = (url: string) => {
   if (!GA_ID) return
   window.gtag('config', GA_ID, {
-    page_path: url,
+    pagePath: url,
   })
 }
 
@@ -24,8 +24,8 @@ export const event = ({
 }): void => {
   if (!GA_ID) return
   window.gtag('event', action, {
-    event_category: category,
-    event_label: label,
+    eventCategory: category,
+    eventLabel: label,
     value: value,
   })
 }

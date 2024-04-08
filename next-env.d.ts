@@ -10,8 +10,8 @@ interface Window {
     type: 'event',
     eventAction: string,
     fieldObject: {
-      event_label: string
-      event_category: string
+      eventCategory: string
+      eventLabel: string
       value?: number
     }
   )
