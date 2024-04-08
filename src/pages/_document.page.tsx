@@ -21,6 +21,7 @@ const Document = () => {
             />
             <script
               dangerouslySetInnerHTML={{
+                // eslint-disable-next-line @typescript-eslint/naming-convention
                 __html: `
                    window.dataLayer = window.dataLayer || [];
                    function gtag(){dataLayer.push(arguments);}
