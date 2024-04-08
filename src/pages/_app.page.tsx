@@ -4,9 +4,12 @@ import { theme } from '@src/lib/chakra/theme'
 import { OverviewHeightProvider } from '@src/provider/overViewHeight'
 import type { AppPropsWithLayout } from 'next/app'
 import { DefaultSeo } from 'next-seo'
+import { usePageView } from 'src/hooks/usePageView'
 
 const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout ?? ((page) => page)
+  // Google Analytics の PV をカウントするイベント
+  usePageView()
 
   return (
     <ChakraProvider theme={theme}>
