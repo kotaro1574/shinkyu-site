@@ -11,6 +11,11 @@ const Document = () => {
           }
           rel={'stylesheet'}
         />
+        <link
+          as={'image'}
+          href={'../../public/images/mainVisual1.jpg'}
+          rel={'preload'}
+        />
 
         {/* Google Analytics */}
         {GA_ID && (
