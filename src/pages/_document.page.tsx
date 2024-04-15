@@ -1,3 +1,4 @@
+import { staticPath } from '@src/lib/$path'
 import { GA_ID } from '@src/lib/gtag'
 import { Head, Html, Main, NextScript } from 'next/document'
 
@@ -13,9 +14,10 @@ const Document = () => {
         />
         <link
           as={'image'}
-          href={'../../public/images/mainVisual1.jpg'}
+          href={staticPath.images.mainVisual1_jpg}
           rel={'preload'}
         />
+        <link href={staticPath.favicon_ico} rel={'icon'} />
 
         {/* Google Analytics */}
         {GA_ID && (

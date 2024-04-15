@@ -12,6 +12,7 @@ export type PagesPath = typeof pagesPath
 
 // prettier-ignore
 export const staticPath = {
+  favicon_ico: '/favicon.ico',
   images: {
     director_image_jpg: '/images/director_image.jpg',
     logo_black_png: '/images/logo_black.png',
