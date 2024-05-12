@@ -17,7 +17,7 @@ export const TREATMENT_DETAIL_CONTENTS = [
     imagePath: staticPath.images.treatment_hari_jpg,
     price: '90分：12,000円（税込）',
     subTitle: 'acupuncture',
-    title: '骨格&神経&筋膜整体（全身）',
+    title: '骨格、神経、筋膜整体（全身）',
   },
   {
     description: (
@@ -28,7 +28,7 @@ export const TREATMENT_DETAIL_CONTENTS = [
     imagePath: staticPath.images.treatment_seitai_jpg,
     price: '60分：6,500円（税込）',
     subTitle: '肩と腰が痛む。症状の再発を予防したい etc...',
-    title: '複数の症状改善・再発予防特化施術（2〜3部位）',
+    title: '複数の症状改善、再発予防特化施術（2〜3部位）',
   },
   {
     description: (
@@ -40,7 +40,7 @@ export const TREATMENT_DETAIL_CONTENTS = [
     price: '40分：5,000円（税込）',
     subTitle:
       '五十肩、腰痛、膝痛、股関節痛、顎関節症、坐骨神経痛、ヘルニア、頭痛、眼痛 etc...',
-    title: '痛み・痺れ特化施術（1部位）',
+    title: '痛み、痺れ特化施術（1部位）',
   },
   {
     description: (
