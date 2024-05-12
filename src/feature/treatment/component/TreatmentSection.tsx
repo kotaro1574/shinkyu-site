@@ -1,4 +1,4 @@
-import { Box, BoxProps, chakra, Grid, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Grid, Text } from '@chakra-ui/react'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
 import { TreatmentDetail } from '@src/feature/treatment/component/TreatmentDetail'
