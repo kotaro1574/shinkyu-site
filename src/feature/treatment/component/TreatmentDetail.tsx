@@ -6,7 +6,8 @@ type Props = {
   description: ReactNode
   imagePath: string
   isOdd: boolean
-  subTitle: string
+  price: string
+  subTitle: string,
   title: string
 }
 
@@ -14,6 +15,7 @@ export const TreatmentDetail = ({
   description,
   imagePath,
   isOdd,
+  price,
   subTitle,
   title,
 }: Props) => {
@@ -81,6 +83,7 @@ export const TreatmentDetail = ({
         >
           {description}
         </Text>
+        <Text>{price}</Text>
       </Box>
     </Box>
   )

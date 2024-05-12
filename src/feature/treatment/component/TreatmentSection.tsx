@@ -25,6 +25,7 @@ export const TreatmentSection = ({ ...props }: Props) => {
             imagePath={treatment.imagePath}
             isOdd={isOdd(index)}
             key={`treatment ${index}`}
+            price={treatment.price}
             subTitle={treatment.subTitle}
             title={treatment.title}
           />
