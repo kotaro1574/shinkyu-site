@@ -17,13 +17,6 @@ export const TreatmentSection = ({ ...props }: Props) => {
           患者さまの症状や現在の状態やご希望をしっかり問診、確認させていただきます。
           下記の施術方法より一人一人に合わせた施術を選択し、相談しながら施術していきます。
         </Text>
-        <Text fontWeight={'bold'} textAlign={'center'}>
-          1回
-          <chakra.span fontSize={'7xl'} ml={4}>
-            5,000
-          </chakra.span>
-          円(税込)
-        </Text>
       </Box>
       <Grid gap={{ base: 10, md: 16 }} pt={{ base: 10, md: 16 }}>
         {TREATMENT_DETAIL_CONTENTS.map((treatment, index) => (
