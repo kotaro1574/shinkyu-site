@@ -156,7 +156,7 @@ export const TreatmentDetail = ({
           fontSize={{ base: 'md', md: 'lg' }}
           fontWeight={'medium'}
         >
-          {time}分 {price}
+          {time} {price}
         </Text>
       </Box>
     </Flex>
