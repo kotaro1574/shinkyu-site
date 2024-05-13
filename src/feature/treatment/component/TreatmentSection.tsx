@@ -1,4 +1,4 @@
-import { Box, BoxProps, chakra, Grid, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Grid, Text } from '@chakra-ui/react'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
 import { TreatmentDetail } from '@src/feature/treatment/component/TreatmentDetail'
@@ -13,26 +13,19 @@ export const TreatmentSection = ({ ...props }: Props) => {
     <SectionContainer pb={'100px'} w={'100%'} {...props}>
       <SectionHeading>施術について</SectionHeading>
       <Box lineHeight={1.8} maxW={'500px'} mx={'auto'}>
-        <Text mb={5} textAlign={'justify'}>
+        <Text textAlign={'justify'}>
           患者さまの症状や現在の状態やご希望をしっかり問診、確認させていただきます。
           下記の施術方法より一人一人に合わせた施術を選択し、相談しながら施術していきます。
         </Text>
-        <Text fontWeight={'bold'} textAlign={'center'}>
-          1回
-          <chakra.span fontSize={'7xl'} ml={4}>
-            5,000
-          </chakra.span>
-          円(税込)
-        </Text>
       </Box>
-      <Grid gap={{ base: 10, md: 16 }} pt={{ base: 10, md: 16 }}>
+      <Grid gap={16} pt={{ base: 10, md: 16 }}>
         {TREATMENT_DETAIL_CONTENTS.map((treatment, index) => (
           <TreatmentDetail
+            advice={treatment.advice}
             description={treatment.description}
             imagePath={treatment.imagePath}
             isOdd={isOdd(index)}
             key={`treatment ${index}`}
-            subTitle={treatment.subTitle}
             title={treatment.title}
           />
         ))}
