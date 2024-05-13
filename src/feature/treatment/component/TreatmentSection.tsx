@@ -13,7 +13,7 @@ export const TreatmentSection = ({ ...props }: Props) => {
     <SectionContainer pb={'100px'} w={'100%'} {...props}>
       <SectionHeading>施術について</SectionHeading>
       <Box lineHeight={1.8} maxW={'500px'} mx={'auto'}>
-        <Text mb={5} textAlign={'justify'}>
+        <Text textAlign={'justify'}>
           患者さまの症状や現在の状態やご希望をしっかり問診、確認させていただきます。
           下記の施術方法より一人一人に合わせた施術を選択し、相談しながら施術していきます。
         </Text>
@@ -26,8 +26,6 @@ export const TreatmentSection = ({ ...props }: Props) => {
             imagePath={treatment.imagePath}
             isOdd={isOdd(index)}
             key={`treatment ${index}`}
-            price={treatment.price}
-            time={treatment.time}
             title={treatment.title}
           />
         ))}
