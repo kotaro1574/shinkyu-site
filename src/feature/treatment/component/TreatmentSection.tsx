@@ -21,12 +21,13 @@ export const TreatmentSection = ({ ...props }: Props) => {
       <Grid gap={16} pt={{ base: 10, md: 16 }}>
         {TREATMENT_DETAIL_CONTENTS.map((treatment, index) => (
           <TreatmentDetail
-            condition={treatment.condition}
+            advice={treatment.advice}
             description={treatment.description}
             imagePath={treatment.imagePath}
             isOdd={isOdd(index)}
             key={`treatment ${index}`}
             price={treatment.price}
+            time={treatment.time}
             title={treatment.title}
           />
         ))}

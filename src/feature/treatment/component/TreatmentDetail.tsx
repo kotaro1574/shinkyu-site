@@ -1,21 +1,24 @@
-import { AspectRatio, Box, Flex, Heading, Text } from '@chakra-ui/react'
+import { AspectRatio, Box, chakra, Flex, Heading, Text } from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
 import { ReactNode } from 'react'
 
 type Props = {
-  condition: string
+  advice: string
   description: ReactNode
   imagePath: string
   isOdd: boolean
   price: string
+  time: string
   title: string
 }
 
 export const TreatmentDetail = ({
-  condition,
+  advice,
   description,
   imagePath,
+  isOdd,
   price,
+  time,
   title,
 }: Props) => {
   return (
@@ -86,7 +89,7 @@ export const TreatmentDetail = ({
     //   </Box>
     // </Box>
     <Flex
-      flexDirection={{ base: 'column', md: 'row' }}
+      flexDirection={{ base: 'column', md: isOdd ? 'row-reverse' : 'row' }}
       justifyContent={'space-between'}
     >
       <Box w={{ base: '100%', md: '50%' }}>
@@ -143,12 +146,18 @@ export const TreatmentDetail = ({
         >
           {description}
         </Text>
-        <Text lineHeight={1.8} mb={4}>
-          こんな症状の方におすすめ
+        <Text mb={8}>
+          <chakra.span color={'teal.500'}>こんな方におすすめ</chakra.span>
           <br />
-          {condition}
+          {advice}
         </Text>
-        <Text>{price}</Text>
+        <Text
+          color={'teal.500'}
+          fontSize={{ base: 'md', md: 'lg' }}
+          fontWeight={'medium'}
+        >
+          {time}分 {price}
+        </Text>
       </Box>
     </Flex>
   )
