@@ -18,15 +18,15 @@ export const TreatmentSection = ({ ...props }: Props) => {
           下記の施術方法より一人一人に合わせた施術を選択し、相談しながら施術していきます。
         </Text>
       </Box>
-      <Grid gap={{ base: 10, md: 16 }} pt={{ base: 10, md: 16 }}>
+      <Grid gap={16} pt={{ base: 10, md: 16 }}>
         {TREATMENT_DETAIL_CONTENTS.map((treatment, index) => (
           <TreatmentDetail
+            condition={treatment.condition}
             description={treatment.description}
             imagePath={treatment.imagePath}
             isOdd={isOdd(index)}
             key={`treatment ${index}`}
             price={treatment.price}
-            subTitle={treatment.subTitle}
             title={treatment.title}
           />
         ))}
