@@ -3,6 +3,7 @@ import { ConsultationHoursSection } from '@src/feature/consultationHours/compone
 import { IntroductionSection } from '@src/feature/introduction/component/IntroductionSection'
 import { MainVisualSection } from '@src/feature/mainVisuals/component/mainVisualSection'
 import { MenuSection } from '@src/feature/menu/components/MenuSection'
+import { PriceSection } from '@src/feature/price/component/PriceSection'
 import { QuestionSection } from '@src/feature/question/component/QuestionSection'
 import { TreatmentSection } from '@src/feature/treatment/component/TreatmentSection'
 import { useGetElementProperty } from '@src/hooks/useGetElementProperty'
@@ -26,6 +27,7 @@ export const HomeContent = () => {
         <MenuSection id={'menu'} />
       </Box>
       <TreatmentSection id={'treatment'} />
+      <PriceSection id={'price'} />
       <IntroductionSection id={'introduction'} />
       <QuestionSection id={'question'} />
       <ConsultationHoursSection id={'hours'} />
