@@ -75,13 +75,6 @@
     ],
     "react/destructuring-assignment": ["warn", "always"],
     "react/display-name": "off",
-    "react/function-component-definition": [
-      "warn",
-      {
-        "namedComponents": "arrow-function",
-        "unnamedComponents": "arrow-function"
-      }
-    ],
     "react/self-closing-comp": [
       "warn",
       {

@@ -1,4 +1,7 @@
+'use client'
+
 import { Box } from '@chakra-ui/react'
+import { BaseLayout } from '@src/components/layouts/BaseLayout/BaseLayout'
 import { ConsultationHoursSection } from '@src/feature/consultationHours/component/ConsultationHoursSection'
 import { IntroductionSection } from '@src/feature/introduction/component/IntroductionSection'
 import { MainVisualSection } from '@src/feature/mainVisuals/component/mainVisualSection'
@@ -10,7 +13,7 @@ import { useGetElementProperty } from '@src/hooks/useGetElementProperty'
 import { useOverViewHeightContext } from '@src/provider/overViewHeight'
 import { useEffect, useRef } from 'react'
 
-export const HomeContent = () => {
+export default function Home() {
   const targetRef = useRef(null)
   const { getElementProperty } =
     useGetElementProperty<HTMLDivElement>(targetRef)
@@ -21,16 +24,18 @@ export const HomeContent = () => {
   }, [getElementProperty, setOverviewHeight])
 
   return (
-    <Box>
-      <Box ref={targetRef}>
-        <MainVisualSection id={'top'} />
-        <MenuSection id={'menu'} />
+    <BaseLayout>
+      <Box>
+        <Box ref={targetRef}>
+          <MainVisualSection id={'top'} />
+          <MenuSection id={'menu'} />
+        </Box>
+        <TreatmentSection id={'treatment'} />
+        <PriceSection id={'price'} />
+        <IntroductionSection id={'introduction'} />
+        <QuestionSection id={'question'} />
+        <ConsultationHoursSection id={'hours'} />
       </Box>
-      <TreatmentSection id={'treatment'} />
-      <PriceSection id={'price'} />
-      <IntroductionSection id={'introduction'} />
-      <QuestionSection id={'question'} />
-      <ConsultationHoursSection id={'hours'} />
-    </Box>
+    </BaseLayout>
   )
 }

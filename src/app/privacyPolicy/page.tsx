@@ -8,8 +8,9 @@ import {
 } from '@chakra-ui/react'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
+import React from 'react'
 
-export const PrivacyPolicyContent = () => {
+export default function PrivacyPolicy() {
   return (
     <SectionContainer pt={{ base: '60px', md: '100px' }}>
       <SectionHeading
