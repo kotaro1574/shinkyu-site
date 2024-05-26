@@ -1,6 +1,5 @@
 import { AspectRatio, AspectRatioProps } from '@chakra-ui/react'
 import { Image } from '@src/components/ui/Image'
-import { staticPath } from '@src/lib/$path'
 
 type Props = {
   type?: 'black' | 'white'
@@ -10,9 +9,9 @@ export const Logo = ({ type = 'black', ...props }: Props) => {
   const imagePath: string = (() => {
     switch (type) {
       case 'black':
-        return staticPath.images.logo_black_png
+        return '/images/logo_black.png'
       case 'white':
-        return staticPath.images.logo_white_png
+        return '/images/logo_white.png'
       default:
         throw new Error(`Unexpected type: ${type}`)
     }
