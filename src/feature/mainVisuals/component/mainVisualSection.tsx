@@ -1,3 +1,4 @@
+'use client'
 /* eslint-disable @typescript-eslint/naming-convention */
 // Import Swiper stles
 import 'swiper/css'
@@ -13,7 +14,9 @@ import type SwiperCore from 'swiper'
 import { Autoplay, Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-export const MainVisualSection = ({ ...props }: BoxProps) => {
+type Props = {}
+
+export default function MainVisualSection({ ...props }: Props) {
   const prevRef = useRef<HTMLDivElement>(null)
   const nextRef = useRef<HTMLDivElement>(null)
 
@@ -25,6 +28,7 @@ export const MainVisualSection = ({ ...props }: BoxProps) => {
       navigation.nextEl = nextRef.current
     }
   }
+
   return (
     <Box {...props}>
       <Swiper
