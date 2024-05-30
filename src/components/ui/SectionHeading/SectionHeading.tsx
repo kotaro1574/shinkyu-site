@@ -8,7 +8,7 @@ type Props = {
 export const SectionHeading = ({ children, ...props }: Props) => {
   return (
     <Heading
-      LineHeight={1.5}
+      lineHeight={1.5}
       _after={{
         bgColor: 'teal.300',
         bottom: 0,
