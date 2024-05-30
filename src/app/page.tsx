@@ -65,7 +65,6 @@ export default function Home() {
         <QuestionSection id={'question'} />
         <ConsultationHoursSection id={'hours'} />
       </Box>
-       
     </BaseLayout>
   )
 }
