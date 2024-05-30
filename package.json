@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "run-p dev:*",
     "dev:next": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "run-p lint:*",
     "lint:eslint": "eslint --ext .js,.ts,.jsx,.tsx . --ignore-path .gitignore --max-warnings 0",
