@@ -27,7 +27,6 @@ export default function MainVisualSection({ ...props }: BoxProps) {
     }
   }
 
-
   return (
     <Box {...props}>
       <Swiper
