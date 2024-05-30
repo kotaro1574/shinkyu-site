@@ -33,13 +33,13 @@ export const IntroductionSection = ({ ...props }: Props) => {
             w={'100%'}
           >
             <Image
-              alt={'director_image'}
               fill
+              alt={'director_image'}
               sizes={'100%'}
+              src={'/images/director_image.jpg'}
               style={{
                 objectFit: 'cover',
               }}
-              src="/images/director_image.jpg"
             />
           </AspectRatio>
           <Box maxW={'500px'}>

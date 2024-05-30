@@ -1,8 +1,8 @@
 'use client'
 
-import dynamic from 'next/dynamic'
 import { AspectRatio, Box } from '@chakra-ui/react'
 import { BaseLayout } from '@src/components/layouts/BaseLayout/BaseLayout'
+import { Image } from '@src/components/ui/Image'
 import { ConsultationHoursSection } from '@src/feature/consultationHours/component/ConsultationHoursSection'
 import { IntroductionSection } from '@src/feature/introduction/component/IntroductionSection'
 import { MenuSection } from '@src/feature/menu/components/MenuSection'
@@ -11,28 +11,28 @@ import { QuestionSection } from '@src/feature/question/component/QuestionSection
 import { TreatmentSection } from '@src/feature/treatment/component/TreatmentSection'
 import { useGetElementProperty } from '@src/hooks/useGetElementProperty'
 import { useOverViewHeightContext } from '@src/provider/overViewHeight'
+import dynamic from 'next/dynamic'
 import { useEffect, useRef } from 'react'
-import { Image } from '@src/components/ui/Image'
 
 const DynamicMainVisual = dynamic(
   () => import('@src/feature/mainVisuals/component/mainVisualSection'),
   {
     loading: () => (
       <AspectRatio
-        maxWidth={'968px'}
         h={{ base: '300px', lg: '450px', md: '350px' }}
+        maxWidth={'968px'}
+        mx={'auto'}
         overflow={'hidden'}
         roundedBottom={{ sm: 4 }}
-        mx={'auto'}
       >
         <Image
-          alt={'top_image'}
           fill
+          alt={'top_image'}
           sizes={'100%'}
+          src={'/images/mainVisual1.jpg'}
           style={{
             objectFit: 'cover',
           }}
-          src={'/images/mainVisual1.jpg'}
         />
       </AspectRatio>
     ),
@@ -54,7 +54,7 @@ export default function Home() {
     <BaseLayout>
       <Box>
         <Box ref={targetRef}>
-          <Box id="top">
+          <Box id={'top'}>
             <DynamicMainVisual />
           </Box>
           <MenuSection id={'menu'} />

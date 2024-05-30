@@ -14,9 +14,7 @@ import type SwiperCore from 'swiper'
 import { Autoplay, Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-type Props = {}
-
-export default function MainVisualSection({ ...props }: Props) {
+export default function MainVisualSection({ ...props }: BoxProps) {
   const prevRef = useRef<HTMLDivElement>(null)
   const nextRef = useRef<HTMLDivElement>(null)
 
@@ -68,14 +66,14 @@ export default function MainVisualSection({ ...props }: Props) {
                 roundedBottom={{ sm: 4 }}
               >
                 <Image
-                  alt={'top_image'}
                   fill
+                  alt={'top_image'}
                   sizes={'100%'}
                   src={image}
                   style={{
+                    objectFit: 'cover',
                     transform: isActive ? 'scale(1.05)' : '',
                     transitionDuration: '10s',
-                    objectFit: 'cover',
                   }}
                 />
               </AspectRatio>

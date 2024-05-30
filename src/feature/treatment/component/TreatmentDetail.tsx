@@ -25,8 +25,8 @@ export const TreatmentDetail = ({
       <Box w={{ base: '100%', md: '50%' }}>
         <AspectRatio height={{ base: '200px', md: '410px', sm: '300px' }}>
           <Image
-            alt={title}
             fill
+            alt={title}
             sizes={'100%'}
             src={imagePath}
             style={{

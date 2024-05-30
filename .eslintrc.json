@@ -22,12 +22,10 @@
     "simple-import-sort",
     "typescript-sort-keys",
     "sort-keys-fix",
-    "sort-destructure-keys",
     "@typescript-eslint"
   ],
   "rules": {
     "sort-keys-fix/sort-keys-fix": "warn",
-    "sort-destructure-keys/sort-destructure-keys": "warn",
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "warn",
     "typescript-sort-keys/interface": "warn",

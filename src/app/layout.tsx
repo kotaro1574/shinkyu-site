@@ -1,8 +1,8 @@
 'use client'
 
 import { ChakraProvider } from '@chakra-ui/react'
-import { OverviewHeightProvider } from '@src/provider/overViewHeight'
 import { theme } from '@src/lib/chakra/theme'
+import { OverviewHeightProvider } from '@src/provider/overViewHeight'
 
 export default function RootLayout({
   children,
@@ -10,7 +10,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang={'en'}>
       <body>
         <ChakraProvider theme={theme}>
           <OverviewHeightProvider>{children}</OverviewHeightProvider>

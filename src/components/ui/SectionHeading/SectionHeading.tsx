@@ -8,7 +8,6 @@ type Props = {
 export const SectionHeading = ({ children, ...props }: Props) => {
   return (
     <Heading
-      lineHeight={1.5}
       _after={{
         bgColor: 'teal.300',
         bottom: 0,
@@ -22,6 +21,7 @@ export const SectionHeading = ({ children, ...props }: Props) => {
       }}
       as={'h2'}
       fontSize={{ base: '4xl', md: '7xl' }}
+      lineHeight={1.5}
       mb={{ base: 4, md: 8 }}
       pb={3}
       position={'relative'}
