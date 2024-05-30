@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     domains: ['source.unsplash.com'],
   },
-  outPut: 'export',
+  output: 'export',
   reactStrictMode: true,
 }
 
