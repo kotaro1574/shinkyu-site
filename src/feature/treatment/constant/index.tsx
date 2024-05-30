@@ -1,5 +1,4 @@
 import { chakra, Text } from '@chakra-ui/react'
-import { staticPath } from '@src/lib/$path'
 
 export const TREATMENT_DETAIL_CONTENTS = [
   {
@@ -20,7 +19,7 @@ export const TREATMENT_DETAIL_CONTENTS = [
         長年の痛みや疲れ、自律神経の乱れなどに効果を発揮します。
       </Text>
     ),
-    imagePath: staticPath.images.treatment_hari_jpg,
+    imagePath: '/images/treatment-hari.jpg',
     title: '骨格、神経、筋膜整体（全身）',
   },
   {
@@ -38,7 +37,7 @@ export const TREATMENT_DETAIL_CONTENTS = [
         一度に複数箇所を施術したい場合や再発予防、体調管理に特化し、日々のパフォーマンスアップを目的とした施術です。複数箇所の症状を同時に改善したい方や、改善後の再発予防にも効果的です。
       </Text>
     ),
-    imagePath: staticPath.images.treatment_seitai_jpg,
+    imagePath: '/images/treatment-seitai.jpg',
     title: '複数の症状改善、再発予防特化施術（2〜3部位）',
   },
   {
@@ -56,7 +55,7 @@ export const TREATMENT_DETAIL_CONTENTS = [
         当院が自信を持っているメニューです。積極的に症状を取り除いていく施術です。
       </Text>
     ),
-    imagePath: staticPath.images.treatment_kotsuban_jpg,
+    imagePath: '/images/treatment-kotsuban.jpg',
     title: '痛み、痺れ特化施術（1部位）',
   },
   {
@@ -76,7 +75,7 @@ export const TREATMENT_DETAIL_CONTENTS = [
         ※オプションをご希望の方は予約時にお伝えください。
       </Text>
     ),
-    imagePath: staticPath.images.treatment_suidama_jpg,
+    imagePath: '/images/treatment-suidama.jpg',
     title: 'オプション',
   },
 ]

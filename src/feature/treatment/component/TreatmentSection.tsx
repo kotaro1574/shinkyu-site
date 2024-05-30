@@ -10,7 +10,7 @@ export const TreatmentSection = ({ ...props }: Props) => {
   const isOdd = (index: number) => index % 2 === 0
 
   return (
-    <SectionContainer pb={'100px'} w={'100%'} {...props}>
+    <SectionContainer w={'100%'} {...props}>
       <SectionHeading>施術について</SectionHeading>
       <Box lineHeight={1.8} maxW={'500px'} mx={'auto'}>
         <Text textAlign={'justify'}>

@@ -10,7 +10,6 @@ import { InstagramButton } from '@src/components/ui/Button/InstagramButton'
 import { Image } from '@src/components/ui/Image'
 import { SectionContainer } from '@src/components/ui/SectionContainer/SectionContainer'
 import { SectionHeading } from '@src/components/ui/SectionHeading/SectionHeading'
-import { staticPath } from '@src/lib/$path'
 
 type Props = BoxProps
 
@@ -34,10 +33,13 @@ export const IntroductionSection = ({ ...props }: Props) => {
             w={'100%'}
           >
             <Image
+              fill
               alt={'director_image'}
-              layout={'fill'}
-              objectFit={'cover'}
-              src={staticPath.images.director_image_jpg}
+              sizes={'100%'}
+              src={'/images/director_image.jpg'}
+              style={{
+                objectFit: 'cover',
+              }}
             />
           </AspectRatio>
           <Box maxW={'500px'}>

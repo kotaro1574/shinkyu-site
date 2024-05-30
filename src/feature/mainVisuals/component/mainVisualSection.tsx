@@ -1,3 +1,4 @@
+'use client'
 /* eslint-disable @typescript-eslint/naming-convention */
 // Import Swiper stles
 import 'swiper/css'
@@ -13,7 +14,7 @@ import type SwiperCore from 'swiper'
 import { Autoplay, Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-export const MainVisualSection = ({ ...props }: BoxProps) => {
+export default function MainVisualSection({ ...props }: BoxProps) {
   const prevRef = useRef<HTMLDivElement>(null)
   const nextRef = useRef<HTMLDivElement>(null)
 
@@ -25,6 +26,7 @@ export const MainVisualSection = ({ ...props }: BoxProps) => {
       navigation.nextEl = nextRef.current
     }
   }
+
   return (
     <Box {...props}>
       <Swiper
@@ -64,12 +66,15 @@ export const MainVisualSection = ({ ...props }: BoxProps) => {
                 roundedBottom={{ sm: 4 }}
               >
                 <Image
+                  fill
                   alt={'top_image'}
-                  layout={'fill'}
-                  objectFit={'cover'}
+                  sizes={'100%'}
                   src={image}
-                  transform={isActive ? 'scale(1.05)' : ''}
-                  transitionDuration={'10s'}
+                  style={{
+                    objectFit: 'cover',
+                    transform: isActive ? 'scale(1.05)' : '',
+                    transitionDuration: '10s',
+                  }}
                 />
               </AspectRatio>
             )}
