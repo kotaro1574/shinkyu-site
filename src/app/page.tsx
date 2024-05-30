@@ -27,8 +27,11 @@ const DynamicMainVisual = dynamic(
       >
         <Image
           alt={'top_image'}
-          layout={'fill'}
-          objectFit={'cover'}
+          fill
+          sizes={'100%'}
+          style={{
+            objectFit: 'cover',
+          }}
           src={'/images/mainVisual1.jpg'}
         />
       </AspectRatio>

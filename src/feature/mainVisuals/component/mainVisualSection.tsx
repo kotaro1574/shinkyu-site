@@ -69,11 +69,14 @@ export default function MainVisualSection({ ...props }: Props) {
               >
                 <Image
                   alt={'top_image'}
-                  layout={'fill'}
-                  objectFit={'cover'}
+                  fill
+                  sizes={'100%'}
                   src={image}
-                  transform={isActive ? 'scale(1.05)' : ''}
-                  transitionDuration={'10s'}
+                  style={{
+                    transform: isActive ? 'scale(1.05)' : '',
+                    transitionDuration: '10s',
+                    objectFit: 'cover',
+                  }}
                 />
               </AspectRatio>
             )}

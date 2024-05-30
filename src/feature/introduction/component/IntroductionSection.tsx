@@ -34,8 +34,11 @@ export const IntroductionSection = ({ ...props }: Props) => {
           >
             <Image
               alt={'director_image'}
-              layout={'fill'}
-              objectFit={'cover'}
+              fill
+              sizes={'100%'}
+              style={{
+                objectFit: 'cover',
+              }}
               src="/images/director_image.jpg"
             />
           </AspectRatio>

@@ -26,11 +26,13 @@ export const TreatmentDetail = ({
         <AspectRatio height={{ base: '200px', md: '410px', sm: '300px' }}>
           <Image
             alt={title}
-            height={'100%'}
-            layout={'fill'}
-            objectFit={'cover'}
-            rounded={4}
+            fill
+            sizes={'100%'}
             src={imagePath}
+            style={{
+              borderRadius: '4px',
+              objectFit: 'cover',
+            }}
           />
         </AspectRatio>
       </Box>
