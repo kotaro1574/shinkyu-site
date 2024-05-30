@@ -124,7 +124,11 @@ export const PriceSection = (props: BoxProps) => {
               </Heading>
               <Flex alignItems={'center'} justifyContent={'space-between'}>
                 <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                  初診の方・半年以上期間が空いた方
+                  初診の方・
+                  <Box as={'span'} display={{ base: 'inline', md: 'none' }}>
+                    <br />
+                  </Box>
+                  半年以上期間が空いた方
                 </Text>
                 <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
                   1,000円
