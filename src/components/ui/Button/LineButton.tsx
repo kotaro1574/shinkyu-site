@@ -13,6 +13,7 @@ export const LineButton = () => {
         borderWidth={'1px'}
         color={'white'}
         colorScheme={'green'}
+        fontSize={'xs'}
         leftIcon={<BsLine />}
       >
         LINEで予約

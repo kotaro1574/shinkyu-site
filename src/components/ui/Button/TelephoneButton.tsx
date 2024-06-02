@@ -10,6 +10,7 @@ export const TelephoneButton = () => {
         borderWidth={'1px'}
         color={'white'}
         colorScheme={'teal'}
+        fontSize={'xs'}
         leftIcon={<BsFillTelephoneFill />}
       >
         電話で予約
