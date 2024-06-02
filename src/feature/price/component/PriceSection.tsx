@@ -140,9 +140,12 @@ export const PriceSection = (props: BoxProps) => {
             </Box>
           </Stack>
         </CardBody>
-        <CardFooter>
+        <CardFooter flexDirection={'column'}>
           <Text fontSize={{ base: 'xs', md: 'sm' }}>
             ※施術時間は問診、お着替え、施術、お会計の時間も含まれます。
+          </Text>
+          <Text fontSize={{ base: 'xs', md: 'sm' }}>
+            ※無断でキャンセルされた場合は、治療費の100%を頂戴いたします。
           </Text>
         </CardFooter>
       </Card>
