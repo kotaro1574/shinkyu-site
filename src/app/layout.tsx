@@ -1,5 +1,3 @@
-'use client'
-
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { theme } from '@src/lib/chakra/theme'
 import { ChakraProvider } from '@src/provider/ChakraProvider'
