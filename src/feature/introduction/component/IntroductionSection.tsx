@@ -57,17 +57,17 @@ export const IntroductionSection = ({ ...props }: Props) => {
               mb={4}
               textAlign={'justify'}
             >
-              当院は、広島県東広島市に位置し、鍼灸、整体、産後骨盤矯正、吸い玉などの治療を組み合わせて、あなたの体調や症状に合わせたケアを提供しています。
+              当院は、広島県東広島市に位置し、鍼灸、整体、産後骨盤矯正、吸い玉などの治療を組み合わせて、患者さまの体調や症状に合わせたケアを提供しています。
               <br />
               当院では、痛みや不調の原因をしっかりと捉え、より効果的な治療を目指します。治療の疑問や不安な点、ご相談はお気軽にどうぞ。
               <br />
-              また、日々の活動や治療情報はInstagramでも更新中。ぜひチェックしてください。
+              また、日々の活動や治療情報はInstagramでも更新中です。ぜひチェックしてください。
             </Text>
             <Flex alignItems={'center'} justifyContent={'space-between'}>
               <InstagramButton />
               <Text
                 fontSize={{ base: 'md', md: 'lg' }}
-                fontWeight={'medium'}
+                fontWeight={'bold'}
                 textAlign={'end'}
               >
                 院長 繁内俊輝

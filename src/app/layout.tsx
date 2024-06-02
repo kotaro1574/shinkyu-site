@@ -1,3 +1,6 @@
+'use client'
+
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { theme } from '@src/lib/chakra/theme'
 import { ChakraProvider } from '@src/provider/ChakraProvider'
 import { OverviewHeightProvider } from '@src/provider/overViewHeight'
@@ -53,6 +56,8 @@ export default function RootLayout({
           <OverviewHeightProvider>{children}</OverviewHeightProvider>
         </ChakraProvider>
       </body>
+      {/* google analytics */}
+      <GoogleAnalytics gaId={'G-99HLQ1RB0J'} />
     </html>
   )
 }
