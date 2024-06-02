@@ -1,3 +1,4 @@
+'use client'
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 import { extendTheme } from '@chakra-ui/react'
