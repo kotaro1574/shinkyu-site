@@ -68,7 +68,7 @@ export const Drawer = ({ ...props }: Props) => {
             </DrawerHeader>
             <DrawerBody cursor={'pointer'} px={'0'} py={'0'}>
               <Box>
-                <Box _hover={{ opacity: '0.7' }} p={'24px'}>
+                <Box _hover={{ opacity: '0.7' }} px={'24px'} py={'8px'}>
                   <Scroll
                     smooth
                     duration={600}
@@ -76,10 +76,21 @@ export const Drawer = ({ ...props }: Props) => {
                     to={'about'}
                     onClick={onClose}
                   >
-                    ・当院について
+                    当院について
                   </Scroll>
                 </Box>
-                <Box _hover={{ opacity: '0.7' }} p={'24px'}>
+                <Box _hover={{ opacity: '0.7' }} px={'24px'} py={'8px'}>
+                  <Scroll
+                    smooth
+                    duration={600}
+                    offset={-60}
+                    to={'price'}
+                    onClick={onClose}
+                  >
+                    料金表
+                  </Scroll>
+                </Box>
+                <Box _hover={{ opacity: '0.7' }} px={'24px'} py={'8px'}>
                   <Scroll
                     smooth
                     duration={600}
@@ -87,10 +98,10 @@ export const Drawer = ({ ...props }: Props) => {
                     to={'treatment'}
                     onClick={onClose}
                   >
-                    ・施術について
+                    施術について
                   </Scroll>
                 </Box>
-                <Box _hover={{ opacity: '0.7' }} p={'24px'}>
+                <Box _hover={{ opacity: '0.7' }} px={'24px'} py={'8px'}>
                   <Scroll
                     smooth
                     duration={600}
@@ -98,16 +109,16 @@ export const Drawer = ({ ...props }: Props) => {
                     to={'question'}
                     onClick={onClose}
                   >
-                    ・よくある質問
+                    よくある質問
                   </Scroll>
                 </Box>
-                <Box _hover={{ opacity: '0.7' }} p={'24px'}>
+                <Box _hover={{ opacity: '0.7' }} px={'24px'} py={'8px'}>
                   <Scroll smooth duration={600} to={'hours'} onClick={onClose}>
-                    ・診療時間
+                    診療時間
                   </Scroll>
                 </Box>
               </Box>
-              <Grid gap={4} p={4} templateColumns={'1fr, 1fr'}>
+              <Grid gap={4} p={'24px'} templateColumns={'1fr, 1fr'}>
                 <GridItem colSpan={1}>
                   <LineButton />
                 </GridItem>

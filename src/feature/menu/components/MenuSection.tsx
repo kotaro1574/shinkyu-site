@@ -16,12 +16,18 @@ export const MenuSection = (props: BoxProps) => {
           <Flex
             flexWrap={'wrap'}
             gap={4}
-            maxW={{ base: '255px', md: '500px' }}
+            justifyContent={'center'}
+            maxWidth={'968px'}
             mx={'auto'}
           >
             <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
               <Scroll smooth duration={600} offset={-60} to={'treatment'}>
                 施術について
+              </Scroll>
+            </Box>
+            <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>
+              <Scroll smooth duration={600} offset={-60} to={'price'}>
+                料金表
               </Scroll>
             </Box>
             <Box _hover={{ opacity: '0.7' }} cursor={'pointer'}>

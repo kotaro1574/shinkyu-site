@@ -58,12 +58,19 @@ export const Header = ({ ...props }: Props) => {
           color={'white'}
           cursor={'pointer'}
           display={{ base: 'none', lg: 'flex' }}
+          flexShrink={0}
+          fontSize={'15px'}
           fontWeight={'medium'}
-          gap={4}
+          gap={3}
         >
           <Box _hover={{ opacity: '0.7' }}>
             <Scroll smooth duration={600} offset={-60} to={'treatment'}>
               施術について
+            </Scroll>
+          </Box>
+          <Box _hover={{ opacity: '0.7' }}>
+            <Scroll smooth duration={600} offset={-60} to={'price'}>
+              料金表
             </Scroll>
           </Box>
           <Box _hover={{ opacity: '0.7' }}>
