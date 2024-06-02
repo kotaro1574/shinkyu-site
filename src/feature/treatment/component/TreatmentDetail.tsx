@@ -63,7 +63,6 @@ export const TreatmentDetail = ({
           }}
           as={'h3'}
           fontSize={{ base: '2xl', md: '5xl' }}
-          fontWeight={'medium'}
           lineHeight={1.5}
           mb={3}
           pb={3}

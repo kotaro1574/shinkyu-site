@@ -25,12 +25,12 @@ export const PriceSection = (props: BoxProps) => {
                 fontSize={{ base: '15px', md: '18px' }}
                 textTransform={'uppercase'}
               >
-                骨格&神経&筋膜整体（全身）
+                骨格、神経、筋膜整体（全身）
               </Heading>
               <Flex alignItems={'center'} justifyContent={'space-between'}>
                 <Box>
                   <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                    鍼灸・整体併用
+                    鍼灸、整体併用
                   </Text>
                   <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
                     整体のみ
@@ -46,12 +46,12 @@ export const PriceSection = (props: BoxProps) => {
                 fontSize={{ base: '15px', md: '18px' }}
                 textTransform={'uppercase'}
               >
-                複数の症状改善・再発予防特化施術（2〜3部位）
+                複数の症状改善、再発予防特化施術（2〜3部位）
               </Heading>
               <Flex alignItems={'center'} justifyContent={'space-between'}>
                 <Box>
                   <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                    鍼灸・整体併用
+                    鍼灸、整体併用
                   </Text>
                   <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
                     整体のみ
@@ -67,12 +67,12 @@ export const PriceSection = (props: BoxProps) => {
                 fontSize={{ base: '15px', md: '18px' }}
                 textTransform={'uppercase'}
               >
-                痛み・痺れ特化施術（1部位）
+                痛み、痺れ特化施術（1部位）
               </Heading>
               <Flex alignItems={'center'} justifyContent={'space-between'}>
                 <Box>
                   <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                    鍼灸・整体併用
+                    鍼灸、整体併用
                   </Text>
                   <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
                     整体のみ
@@ -88,7 +88,7 @@ export const PriceSection = (props: BoxProps) => {
                 fontSize={{ base: '15px', md: '18px' }}
                 textTransform={'uppercase'}
               >
-                オプション（予約時にお伝えください）
+                オプション
               </Heading>
               <Flex alignItems={'center'} justifyContent={'space-between'}>
                 <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
@@ -114,17 +114,20 @@ export const PriceSection = (props: BoxProps) => {
                   20分 3,000円
                 </Text>
               </Flex>
+              <Text fontSize={{ base: 'xs', md: 'sm' }} pt={'2'}>
+                ※吸い玉のみはオプション価格に加え1,500円上乗せされます。
+              </Text>
             </Box>
             <Box>
               <Heading
                 fontSize={{ base: '15px', md: '18px' }}
                 textTransform={'uppercase'}
               >
-                初診料・再診料
+                初診料、再診料
               </Heading>
               <Flex alignItems={'center'} justifyContent={'space-between'}>
                 <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                  初診の方・
+                  初診の方、
                   <Box as={'span'} display={{ base: 'inline', md: 'none' }}>
                     <br />
                   </Box>
@@ -137,9 +140,12 @@ export const PriceSection = (props: BoxProps) => {
             </Box>
           </Stack>
         </CardBody>
-        <CardFooter>
+        <CardFooter flexDirection={'column'}>
           <Text fontSize={{ base: 'xs', md: 'sm' }}>
             ※施術時間は問診、お着替え、施術、お会計の時間も含まれます。
+          </Text>
+          <Text fontSize={{ base: 'xs', md: 'sm' }}>
+            ※無断でキャンセルされた場合は、治療費の100%を頂戴いたします。
           </Text>
         </CardFooter>
       </Card>

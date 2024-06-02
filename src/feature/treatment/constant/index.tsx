@@ -59,23 +59,15 @@ export const TREATMENT_DETAIL_CONTENTS = [
     title: '痛み、痺れ特化施術（1部位）',
   },
   {
-    advice: (
-      <Text>
-        <chakra.span color={'teal.500'} fontWeight={'medium'} mb={'3px'}>
-          オプションの種類
-        </chakra.span>
-        <br />
-        吸い玉／オイルスライドカッピング
-      </Text>
-    ),
+    advice: null,
     description: (
       <Text>
         吸い玉は滞った血行を改善し、疲労回復と循環改善を促します。オイルでスライドさせることにより、血行回復に加えて浅筋膜を剥がし、皮下の体液とリンパの滞りを改善します。吸い玉の跡は約2週間程残りますが、自然に消えていくため問題ありません。
         <br />
-        ※オプションをご希望の方は予約時にお伝えください。
+        ※吸い玉をご希望の方は予約時にお伝えください。
       </Text>
     ),
     imagePath: '/images/treatment-suidama.jpg',
-    title: 'オプション',
+    title: '吸い玉',
   },
 ]
