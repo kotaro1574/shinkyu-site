@@ -2,8 +2,8 @@
 const nextConfig = {
   images: {
     domains: ['source.unsplash.com'],
+    unoptimized: true,
   },
-  output: 'export',
   reactStrictMode: true,
 }
 
