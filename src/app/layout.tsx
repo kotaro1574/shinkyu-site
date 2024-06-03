@@ -47,6 +47,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const gaId = process.env.GAID ?? ''
   return (
     <html lang={'en'}>
       <body>
@@ -55,7 +56,7 @@ export default function RootLayout({
         </ChakraProvider>
       </body>
       {/* google analytics */}
-      <GoogleAnalytics gaId={'G-99HLQ1RB0J'} />
+      <GoogleAnalytics gaId={gaId} />
     </html>
   )
 }
