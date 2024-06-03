@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  metadataBase: new URL('https://www.shigeuchi.com'),
   openGraph: {
     description:
       '広島県東広島市西条町に位置する繁内鍼灸治療院では、経験豊富で勉強熱心な院長のもと、伝統的な針や灸から整体、産後ケア、吸い玉まで幅広く対応。一人ひとりの健康を真心でサポートします。',
@@ -47,7 +48,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const gaId = process.env.GAID ?? ''
   return (
     <html lang={'en'}>
       <body>
@@ -56,7 +56,7 @@ export default function RootLayout({
         </ChakraProvider>
       </body>
       {/* google analytics */}
-      <GoogleAnalytics gaId={gaId} />
+      <GoogleAnalytics gaId={'G-99HLQ1RB0J'} />
     </html>
   )
 }
