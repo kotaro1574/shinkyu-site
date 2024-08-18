@@ -93,7 +93,7 @@ export const ConsultationHoursSection = ({ ...props }: Props) => {
         </TableContainer>
       </Box>
       <Text fontSize={{ base: 'md', md: 'lg' }} textAlign={'center'}>
-        ※日曜、祝日はお休みです
+        ※日曜日はお休みです
       </Text>
     </SectionContainer>
   )
