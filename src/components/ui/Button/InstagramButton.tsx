@@ -5,7 +5,9 @@ export const InstagramButton = ({ ...props }: ButtonProps) => {
   return (
     <Link
       isExternal
-      href={'https://www.instagram.com/toshiki_harikyuu/?img_index=3'}
+      href={
+        'https://www.instagram.com/toshi_hariq.seitai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
+      }
     >
       <Button
         _hover={{ filter: 'brightness(0.7)' }}
