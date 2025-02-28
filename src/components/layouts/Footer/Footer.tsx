@@ -50,7 +50,7 @@ export const Footer = ({ ...props }: Props) => {
               loading={'lazy'}
               referrerPolicy={'no-referrer-when-downgrade'}
               src={
-                'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.101293769709!2d132.7313130129405!3d34.424182072906845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35506f8910987493%3A0x268650cddb1b4a51!2z44CSNzM5LTAwNDIg5bqD5bO255yM5p2x5bqD5bO25biC6KW_5p2h55S66KW_5p2h5p2x77yZ77yQ77yW4oiS77yRIOODoeOCvuODs-ODu-OCq-ODiOODrOOCoiAxMDE!5e0!3m2!1sja!2sjp!4v1740729479444!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
+                'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.101293769709!2d132.7313130129405!3d34.424182072906845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35506f8910987493%3A0x268650cddb1b4a51!2z44CSNzM5LTAwNDIg5bqD5bO255yM5p2x5bqD5bO25biC6KW_5p2h55S66KW_5p2h5p2x77yZ77yQ77yW4oiS77yRIOODoeOCvuODs-ODu-OCq-ODiOODrOOCoiAxMDE!5e0!3m2!1sja!2sjp!4v1740729479444!5m2!1sja!2sjp'
               }
               width={'100%'}
             />
