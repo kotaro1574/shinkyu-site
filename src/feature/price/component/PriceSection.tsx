@@ -21,129 +21,59 @@ export const PriceSection = (props: BoxProps) => {
         <CardBody>
           <Stack divider={<StackDivider />} spacing={'4'}>
             <Box>
-              <Heading
-                fontSize={{ base: '15px', md: '18px' }}
-                textTransform={'uppercase'}
-              >
-                骨格、神経、筋膜整体（全身）
-              </Heading>
               <Flex alignItems={'center'} justifyContent={'space-between'}>
-                <Box>
-                  <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                    鍼灸、整体併用
-                  </Text>
-                  <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                    整体のみ
-                  </Text>
-                </Box>
-                <Text fontSize={{ base: '14px', md: '16px' }}>
-                  90分 12,000円
+                <Heading
+                  fontSize={{ base: '15px', md: '18px' }}
+                  textTransform={'uppercase'}
+                >
+                  鍼灸、骨格矯正、整体
+                </Heading>
+                <Text
+                  fontSize={{ base: '14px', md: '16px' }}
+                  fontWeight={'medium'}
+                >
+                  8,800円
                 </Text>
               </Flex>
             </Box>
             <Box>
-              <Heading
-                fontSize={{ base: '15px', md: '18px' }}
-                textTransform={'uppercase'}
-              >
-                複数の症状改善、再発予防特化施術（2〜3部位）
-              </Heading>
               <Flex alignItems={'center'} justifyContent={'space-between'}>
-                <Box>
-                  <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                    鍼灸、整体併用
-                  </Text>
-                  <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                    整体のみ
-                  </Text>
-                </Box>
-                <Text fontSize={{ base: '14px', md: '16px' }}>
-                  60分 6,500円
+                <Heading
+                  fontSize={{ base: '15px', md: '18px' }}
+                  textTransform={'uppercase'}
+                >
+                  鍼灸、骨格矯正
+                </Heading>
+                <Text
+                  fontSize={{ base: '14px', md: '16px' }}
+                  fontWeight={'medium'}
+                >
+                  5,500円
                 </Text>
               </Flex>
             </Box>
             <Box>
-              <Heading
-                fontSize={{ base: '15px', md: '18px' }}
-                textTransform={'uppercase'}
-              >
-                痛み、痺れ特化施術（1部位）
-              </Heading>
               <Flex alignItems={'center'} justifyContent={'space-between'}>
-                <Box>
-                  <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                    鍼灸、整体併用
-                  </Text>
-                  <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                    整体のみ
-                  </Text>
-                </Box>
-                <Text fontSize={{ base: '14px', md: '16px' }}>
-                  40分 5,000円
-                </Text>
-              </Flex>
-            </Box>
-            <Box>
-              <Heading
-                fontSize={{ base: '15px', md: '18px' }}
-                textTransform={'uppercase'}
-              >
-                オプション
-              </Heading>
-              <Flex alignItems={'center'} justifyContent={'space-between'}>
-                <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                  吸い玉（カッピング）
-                </Text>
-                <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                  15分 1,500円
-                </Text>
-              </Flex>
-              <Flex alignItems={'center'} justifyContent={'space-between'}>
-                <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                  オイルスライドカッピング
-                </Text>
-                <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                  15分 2,000円
-                </Text>
-              </Flex>
-              <Flex alignItems={'center'} justifyContent={'space-between'}>
-                <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                  上記カッピング両方
-                </Text>
-                <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                  20分 3,000円
-                </Text>
-              </Flex>
-              <Text fontSize={{ base: 'xs', md: 'sm' }} pt={'2'}>
-                ※吸い玉のみはオプション価格に加え1,500円上乗せされます。
-              </Text>
-            </Box>
-            <Box>
-              <Heading
-                fontSize={{ base: '15px', md: '18px' }}
-                textTransform={'uppercase'}
-              >
-                初診料、再診料
-              </Heading>
-              <Flex alignItems={'center'} justifyContent={'space-between'}>
-                <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                  初診の方、
-                  <Box as={'span'} display={{ base: 'inline', md: 'none' }}>
-                    <br />
-                  </Box>
-                  半年以上期間が空いた方
-                </Text>
-                <Text fontSize={{ base: '14px', md: '16px' }} pt={'2'}>
-                  1,000円
+                <Heading
+                  fontSize={{ base: '15px', md: '18px' }}
+                  textTransform={'uppercase'}
+                >
+                  学生
+                </Heading>
+                <Text
+                  fontSize={{ base: '14px', md: '16px' }}
+                  fontWeight={'medium'}
+                >
+                  5,000円
                 </Text>
               </Flex>
             </Box>
           </Stack>
         </CardBody>
         <CardFooter flexDirection={'column'}>
-          <Text fontSize={{ base: 'xs', md: 'sm' }}>
+          {/* <Text fontSize={{ base: 'xs', md: 'sm' }}>
             ※施術時間は問診、お着替え、施術、お会計の時間も含まれます。
-          </Text>
+          </Text> */}
           <Text fontSize={{ base: 'xs', md: 'sm' }}>
             ※無断でキャンセルされた場合は、治療費の100%を頂戴いたします。
           </Text>
