@@ -36,7 +36,7 @@ export const PriceSection = (props: BoxProps) => {
                 </Text>
               </Flex>
             </Box>
-            <Box>
+            {/* <Box>
               <Flex alignItems={'center'} justifyContent={'space-between'}>
                 <Heading
                   fontSize={{ base: '15px', md: '18px' }}
@@ -51,7 +51,7 @@ export const PriceSection = (props: BoxProps) => {
                   5,500円
                 </Text>
               </Flex>
-            </Box>
+            </Box> */}
             <Box>
               <Flex alignItems={'center'} justifyContent={'space-between'}>
                 <Heading
