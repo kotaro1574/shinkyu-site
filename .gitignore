@@ -39,3 +39,7 @@ yarn-error.log*
 
 # idea
 .idea
+
+# ai tools
+.claude
+.serena
